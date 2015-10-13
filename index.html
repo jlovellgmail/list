@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <!--
+        ----------------------------------------------------------------------------------
+        -->
+        <style>
+	        body {
+	        	text-align: center;
+	        	padding: 0;
+	        	margin: 0;
+	        }
+	        .main {
+	            margin-top: 40px;
+	            margin-left: 10px;
+	            margin-right: 10px;
+	        }
+	        .group {
+	            margin-top: 10px;
+	        }
+	        .h-group {
+	            display: inline-block;
+	        }
+	        .button {
+	            margin-bottom: 6px;
+	            margin-left: 10px;
+	            margin-right: 10px;
+	            width: 80px;
+	            height: 20px;
+	            background-color: rgba(0,0,0, .05);
+	        }
+	        .list_length_input {
+	        	width: 40px;
+	        	margin-right: 5px;
+	        }
+	        .bottom-mark {
+	        	height: 20px;
+	        	background-color: red;
+	        }
+	        .list-item-container {
+	        	margin-bottom: 25px;
+	        	position: relative;
+	        }
+	        .line-number {
+	        	color: rgba(0,0,0, .3);
+	        	font-size: 11px;
+	        	font-family: arial;
+	        	text-align: right;
+	        	display: none;
+	        	position: absolute;
+	        	display: block;
+				top: 3px;
+			}
+	        .word {
+	        }
+	        .result {
+	        	margin-top: 50px;
+	        }
+		</style>
+    </head>
+    <body>
+        <!--
+        ----------------------------------------------------------------------------------
+        -->
+        <script src="jquery-1.11.3.min.js"></script>
+        <script src="data.js"></script>
+        <script src="executable.js"></script>
+        <!--
+        ----------------------------------------------------------------------------------
+        -->
+        <div class="main">
+            <div class="group">
+                <div class="h-group" style="text-align: center;">
+                    <input type="button" value="shuffle" 
+                        onclick="go()" 
+                        class="button"
+                        />
+                    <input class="list_length_input" type="text" id="list_length_input" name="list_length_input" 
+                        onkeypress="return check_keypress(event)" 
+                        autofocus
+                        />
+                    <script>setInputValue();</script>
+                </div>
+                <div class="h-group on-both-sides-of-button" style="text-align: left;">
+                    <div id="next_to_button"></div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="result">
+                    <p id="result" name="r1">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-mark"></div>
+        <!--
+        ----------------------------------------------------------------------------------
+        -->
+    </body>
+</html>
+
+
+
+
