@@ -45,22 +45,6 @@ add_item("de Chirico, Giorgio");
 //--------------------------------------------------
 // french
 add_item(
-    "a black hat"
-    ,"un chapeau noir"
-    ,[
-        "http://forvo.com/word/chapeau/#fr"
-        ,"http://forvo.com/word/noir/#fr"
-    ]
-);
-add_item(
-    "a grey suit"
-    ,"un costume gris"
-    ,[
-        "http://forvo.com/word/costume/#fr"
-        ,"http://forvo.com/word/gris/#fr"
-    ]
-);
-add_item(
     "how do you say ... in French?"
     ,"comment est-ce que on dit ... en fran\xe7ais ?"
 );
@@ -231,9 +215,30 @@ add_item("vest");
 add_item("beard");
 add_item("open");
 add_item("closed");
-add_item("in the class, how many tables are there?");
+add_item(
+    "in the class, how many tables are there?"
+    ,"Dans la classe, combien est-ce que il y a de tables ?"
+);
 add_item("notebook");
 add_item("desk");
+
+add_item(
+    "a black hat"
+    ,"un chapeau noir"
+    ,[
+        "http://forvo.com/word/chapeau/#fr"
+        ,"http://forvo.com/word/noir/#fr"
+    ]
+);
+add_item(
+    "a grey suit"
+    ,"un costume gris"
+    ,[
+        "http://forvo.com/word/costume/#fr"
+        ,"http://forvo.com/word/gris/#fr"
+    ]
+);
+
 
 //--------------------------------------------------
 console.log("data.js was loaded");

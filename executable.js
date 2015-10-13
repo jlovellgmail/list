@@ -595,8 +595,7 @@ var definitions = [
     ]
     ,[
     	// in the class, how many tables are there?
-    	// 
-    	"dans la classe, est-ce que il y a combien de table ?"
+    	//"dans la classe, est-ce que il y a combien de table ?"
     ]
     ,[
     	// notebook
