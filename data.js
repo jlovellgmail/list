@@ -26,18 +26,30 @@ data.items = [
     ]
     */
 
-    ,[
-	    {
-	    	word: 			"a black hat (object)"
-	    	,definition: 	"un chapeau noir"
-	    	,links: [
-	    		"http://forvo.com/word/chapeau/#fr"
-	    		,"http://forvo.com/word/noir/#fr"
-	    	]
-	    }
-    ]
-
-
 ];
+
+
+add_item(
+    "a black hat (object)"
+    ,"un chapeau noir"
+    ,[
+        "http://forvo.com/word/chapeau/#fr"
+        ,"http://forvo.com/word/noir/#fr"
+    ]
+);
+
+
+
+function add_item(word, definition, links){
+    var item =
+    {
+        word: word
+        ,definition: definition
+        ,links: links
+    }
+    item = [item];
+    data.items.push(item);
+}
+
 
 console.log("data.js was loaded");
