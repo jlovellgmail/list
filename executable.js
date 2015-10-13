@@ -1,149 +1,9 @@
 
 
-// html codes:
-// http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
-
-
 var cache = "_____"; // caché = hidden
 var definition_separator = " - - - ";
 var endash = "\u2013";
 
-var words = [
-    //--------------------------------------------------
-    // words
-    /*
-	["derelict"]
-	,["miasma"]
-	,["deus ex machina"]
-    ,["cosmopolitan"]
-    ,["de rigueur"]
-    ,["raison d'\xEAtre"]
-    ,["in statu nascendi"]
-    ,["participle"]
-    ,["tissue"]
-    ,["de novo"]
-    ,["diploid"]
-    ,["affect"]
-    //--------------------------------------------------
-    // dates
-    ,["Freud"]
-    ,["Magritte"]
-    ,["Pollock"]
-    ,["Picasso"]
-    ,["Hegel"]
-    ,["Marx"]
-    ,["Breuer treats Anna O."]
-    ,["Plato"]
-    ,["Aristotle"]
-    ,["Darwin"]
-    ,["de Chirico, Giorgio"]
-    ,
-    */
-    //--------------------------------------------------
-    // french
-    ["how do you say ... in French?"]
-    ,["what does ... mean?"]
-    ,["how do you write ... ?"]
-    ,["how do you spell ... ?"]
-    ,["can you repeat?"]
-    ,["I don't understand (this word / this sentence)"]
-    ,["I have a question"]
-    ,["I don't know"]
-
-    ,["This is "+cache+". He is wearing glasses, a yellow shirt and white shoes."]
-    ,["he wears glasses"]
-    ,["shoes"]
-    ,["yellow"]
-    ,["pink"]
-    ,["white"]
-    ,["wear"]
-    ,["glasses"]
-    ,["my name is..."]
-    ,["you're welcome"]
-    ,["what's your name?"]
-    ,["nice to meet you"]
-    ,["how are you?"]
-    ,["whatever"]
-    ,["and you?"]
-    ,["what's her name?"]
-    ,["tall"]
-    ,["small / little"]
-    ,["young"]
-    ,["old"]
-    ,["beautiful"]
-    ,["handsome"]
-    ,["ugly"]
-    ,["what are you wearing?"]
-    ,["light (of clothing)"]
-    ,["dark (of clothing)"]
-
-    ,["I am from ..."]
-    ,["I am a student (male) in french"]
-    ,["his name is Guillaume"]
-    ,["her name is Laura"]
-    ,["French"]
-    ,["English (m)"]
-    ,["history"]
-    ,["computer science"]
-    ,["what's your name? (formal)"]
-    ,["see you tomorrow"]
-    
-    ,["woman"]
-    ,["man"]
-    ,["brother"]
-    ,["table"]
-    ,["chair"]
-    ,["a boy"]// masculine singular indefinite article
-    ,["the boy"]// masculine singular definite article
-    ,["friends or some friends"]// plural indefinite article
-    ,["a girl"]// feminine singular indefinite article
-    ,["the girl, the actress"]// feminine singular definite article
-    ,["socks"]
-    ,["hair"]
-    ,["right"]
-    ,["left"]
-
-    ,["98"]
-    ,["21"]
-    ,["26"]
-    ,["91"]
-
-    ,["j"]
-    ,["a"]
-    ,["c"]
-    ,["k"]
-    ,["flip flops"]
-    ,["dress"]
-    ,["jacket"]
-    ,["top"]
-    ,["at the bottom"]
-    ,["pants"]
-
-    ,["jewelry"]
-    ,["job"]
-    ,["bathing suit"]
-    ,["butterfly"]
-    ,["sandal"]
-    ,["cold"]
-    ,["tie (clothing)"]
-    ,["how many"]
-    ,["there are"]
-    ,["in the class"]
-    ,["vest"]
-    ,["beard"]
-    ,["open"]
-    ,["closed"]
-    ,["in the class, how many tables are there?"]
-    ,["notebook"]
-    ,["desk"]
-
-
-    //--------------------------------------------------
-    // other
-    ,["student next to me"]
-    ,["professor's name"]
-    //--------------------------------------------------
-];
 
 var definitions = [
     //--------------------------------------------------
@@ -292,93 +152,93 @@ var definitions = [
     // french
     [
     	// how do you say ... in french?
-    	"comment est-ce que on dit ... en fran\xe7ais ?"
+    	//"comment est-ce que on dit ... en fran\xe7ais ?"
     ]
     ,[
     	// what does ... mean?
     	// https://www.youtube.com/watch?v=lFEwiNkaLns  - - 0:54
-    	"que est-ce que ... signifie ?"
+    	//"que est-ce que ... signifie ?"
     ]
 	,[
 		// how do you write ... ?
-		"comment est-ce que on \xe9crit ... ?"
+		//"comment est-ce que on \xe9crit ... ?"
 	]
     ,[
     	// how do you spell ... ?
-    	"comment est-ce que on \xe9pelle ... ?"
+    	//"comment est-ce que on \xe9pelle ... ?"
     ]
     ,[
     	// can you repeat?
-    	"est-ce que tu peux r\xe9p\xe9ter ?"
+    	//"est-ce que tu peux r\xe9p\xe9ter ?"
     ]
     ,[
     	// I don't understand (this word / this sentence)
-    	"je ne comprends pas (ce mot / cette phrase)"
+    	//"je ne comprends pas (ce mot / cette phrase)"
     ]
     ,[
     	// I have a question
     	// http://forvo.com/word/j%27ai_une_question/#fr
-    	"j'ai une question"
+    	//"j'ai une question"
     ]
     ,[
     	// I don't know
-    	"je ne sais pas"
+    	//"je ne sais pas"
     ]
 
 
     ,[
     	// This is Guillaume. He is wearing glasses, a yellow shirt and white shoes.
-    	"Voila "+cache+". il porte des lunettes, une chemise jaune et des chaussures blanches"
+    	//"Voila "+cache+". il porte des lunettes, une chemise jaune et des chaussures blanches"
     ]
     ,[
 		// he wears glasses
     	// Allons-y cd 1-14 @ 1:09, book page 67
-		"il porte des lunettes"
+		//"il porte des lunettes"
     ]
     ,[
     	// shoes
     	// http://www.linguee.fr/francais-anglais/traduction/chaussures.html
-    	"chaussures"
+    	//"chaussures"
     ]
     ,[
     	// yellow
-    	"jaune"
+    	//"jaune"
     ]
     ,[
     	// pink
     	// http://www.linguee.fr/francais-anglais/traduction/rose.html
-    	"rose"
+    	//"rose"
     ]
     ,[
     	// white
     	// http://forvo.com/word/blanc/#fr
     	// http://www.linguee.fr/francais-anglais/traduction/blanc.html
-    	"blanc"
+    	//"blanc"
     ]
     ,[
     	// wear
     	// http://www.linguee.fr/francais-anglais/traduction/porter.html
-    	"porter"
+    	//"porter"
     ]
     ,[
     	// glasses
-    	"lunettes"
+    	//"lunettes"
     ]
     ,[
     	// my name is ...
-    	"je m\'appelle ..."
+    	//"je m\'appelle ..."
     ]
     ,[
     	// you're welcome
     	// https://app.box.com/s/kl9mgkfafb2ncp26gsc531t98v54nrsw  - - 0:12
     	// http://forvo.com/word/je_vous_en_prie/
-    	"je vous en prie"
+    	//"je vous en prie"
     ]
     ,[
     	// what's your name?
     	// https://www.youtube.com/watch?v=_Xx0THT3otw  - - 0:07
     	// http://forvo.com/word/comment_tu_t%C2%B4appelles%3F/#fr
-    	"comment tu t'appelles?"
+    	//"comment tu t'appelles?"
     ]
     ,[
     	// nice to meet you
@@ -823,32 +683,20 @@ function display_count(list){
     output += "count: " + list.length;
     document.getElementById("next_to_button").innerHTML = output;
 }
-function display(list){
-    var output = "";
-    var newline = "<br>";
-    var separator = "<br><br>";
-
-	list.forEach(function(d){
-		output += d + separator;
-	});
-
-
-    output += newline;
-    output += newline;
-    output += newline;
-    output += newline;
-    document.getElementById("result").innerHTML = output;
-}
-
 function display_with_separate_elements(list){	
 	list.forEach(function(d,i){
 		var $container = $("<div class='list-item-container'></div>");
 		$("#result").append($container);
-		var $item = $("<div class='word'>" + d + "</div>");
+		var $item = $("<div class='word'>" + d.word + "</div>");
 		var $number = $("<div class='line-number'>" + (i+1) + "</div>");
 		$container.append($number);
-		$container.append($item);
 
+        if(d.links){
+            var $link0 = $("<div class='word-link'><a href='" + d.links[0] + "' target='_blank'>link0</a>" + "</div>");
+            $container.append($link0);
+        }
+
+        $container.append($item);
 	});
 
     var newline = "<br>";
@@ -859,7 +707,6 @@ function display_with_separate_elements(list){
 		+ newline
 	);
 }
-
 function get_two_layer_array_copy(array){
 	var out = [];
 	array.forEach(function(d){
@@ -868,14 +715,11 @@ function get_two_layer_array_copy(array){
 	return out;
 }
 function go(){
-	var shuffled = get_shuffled_list();
+	var shuffled = get_shuffled_list_new();
 	var length = parseFloat(document.getElementById('list_length_input').value) || shuffled.length;
 	var truncated = shuffled.slice(0,length);
 	display_count_new(truncated.length, shuffled.length);
-	
-	//display(truncated);
 	display_with_separate_elements(truncated);
-
 }
 function check_keypress(e) {
     if (e.keyCode == 13) {
@@ -891,139 +735,29 @@ function rint(n){
 	var random_integer = Math.trunc(Math.random()*n);
 	return random_integer;
 }
-
-
-
-
-
-function get_shuffled_list(){
-
+function get_shuffled_list_new(){
     var combo = [];
-
-
-    // add words
-	words.forEach(function(item){
-		item.forEach(function(word){
-			combo.push(word);
-		});
-	});
-
-
-	// add definitions
-	/*
-	definitions.forEach(function(item){
-		item.forEach(function(def){
-			if(typeof def == 'object'){
-				var rand = rint(3);
-				var result = "";
-				if(rand==0){
-					result = def.birth+" "+endash+" "+def.death;
-				}
-				else if(rand==1){
-					result = "birth: " + def.birth;
-				}
-				else{
-					result = "death: " + def.death;
-				}
-				if(def.period == "BC"){
-					result += " BC";
-				}
-				combo.push(result);
-			}
-			else{
-				combo.push(def);
-			}
-		});
-	});
-	*/
-
 	if(data.items){
 		data.items.forEach(function(item){
-			item.forEach(function(word){
-				combo.push(word);
-			});
+			if(typeof item == "object"){
+				
+                //combo.push(item.word);
+                combo.push(item);
+
+			}
+			else{
+				console.log("item was not an object");
+			}
 		});
 	}
 	else{
-		console.log("data.items: " + data.items);
+		console.log("data.items did not evaluate to true");
 	}
-
-
     var shuffled = get_shuffled(combo.slice());
     return shuffled;
 }
-function get_shuffled_list(){
-
-    var combo = [];
-
-
-    // add words
-	words.forEach(function(item){
-		item.forEach(function(word){
-			combo.push(word);
-		});
-	});
-
-	// add definitions
-	/*
-	definitions.forEach(function(item){
-		item.forEach(function(def){
-			if(typeof def == 'object'){
-				var rand = rint(3);
-				var result = "";
-				if(rand==0){
-					result = def.birth+" "+endash+" "+def.death;
-				}
-				else if(rand==1){
-					result = "birth: " + def.birth;
-				}
-				else{
-					result = "death: " + def.death;
-				}
-				if(def.period == "BC"){
-					result += " BC";
-				}
-				combo.push(result);
-			}
-			else{
-				combo.push(def);
-			}
-		});
-	});
-	*/
-
-	if(data.items){
-		data.items.forEach(function(item){
-			item.forEach(function(word){
-
-				/*
-				combo.push(word);
-				*/
-				if(typeof word == "object"){
-					combo.push(word.word);
-				}
-				else{
-					combo.push(word);
-				}
-
-
-			});
-		});
-	}
-	else{
-		console.log("data.items: " + data.items);
-	}
-
-
-    var shuffled = get_shuffled(combo.slice());
-    return shuffled;
-}
-
-
-
-
 function setInputValue(){
-	var count = get_shuffled_list().length;
+	var count = get_shuffled_list_new().length;
 	document.getElementById("list_length_input").value = count;
 }
 
