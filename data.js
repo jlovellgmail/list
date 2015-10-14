@@ -8,6 +8,7 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
 //--------------------------------------------------
 var cache = "_____"; // caché = hidden
 var endash = "\u2013";
+var ref_folder = "references/";
 //--------------------------------------------------
 var data = {};
 data.items = [];
@@ -346,21 +347,26 @@ add_item(
     ]
 );
 add_item("boots", "des bottes", ["http://forvo.com/word/bottes/#fr"]);
-add_item("pencil", "un crayon", ["http://forvo.com/word/crayon/#fr"]);
-add_item("a pen", "un stylo", ["http://forvo.com/word/stylo/#fr"]);
-add_item("a book", "un livre", ["http://forvo.com/word/un_livre/#fr"]);
-add_item("wall", "wall", ["http://forvo.com/word/mur/#fr"]);
-add_item("a computer", "un ordinateur", ["http://forvo.com/word/un_ordinateur/#fr"]);
-add_item("the floor", "le plancher", ["http://forvo.com/word/plancher/#fr"]);
-add_item("cell phone", "portable", ["http://forvo.com/word/portable/#fr"]);
-add_item("(f) a student", "une \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr"]);
-add_item("(m) a student", "un \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr"]);
-add_item("professor", "le professeur", ["http://forvo.com/word/le_professeur/#fr"]);
-add_item("clock", "l'horloge (f)", ["http://forvo.com/word/l%27horloge/#fr"]);
-add_item("door", "la porte", ["http://forvo.com/word/la_porte/#fr"]);
-add_item("lights", "les lumi\xe9res (f)", ["http://forvo.com/word/lumi%C3%A8res/#fr"]);
-add_item("window", "une fen\xeatre", ["http://forvo.com/word/fen%C3%AAtre/#fr"]);
-add_item("ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=le+plafond"]);
+//--------------------------------------------------
+//--------------------------------------------------
+var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
+add_item("pencil", "un crayon", ["http://forvo.com/word/crayon/#fr", slides2_page3]);
+add_item("a pen", "un stylo", ["http://forvo.com/word/stylo/#fr", slides2_page3]);
+add_item("a book", "un livre", ["http://forvo.com/word/un_livre/#fr", slides2_page3]);
+add_item("wall", "wall", ["http://forvo.com/word/mur/#fr", slides2_page3]);
+add_item("a computer", "un ordinateur", ["http://forvo.com/word/un_ordinateur/#fr"], slides2_page3);
+add_item("the floor", "le plancher", ["http://forvo.com/word/plancher/#fr", slides2_page3]);
+add_item("cell phone", "portable", ["http://forvo.com/word/portable/#fr", slides2_page3]);
+add_item("(f) a student", "une \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr", slides2_page3]);
+add_item("(m) a student", "un \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr", slides2_page3]);
+add_item("professor", "le professeur", ["http://forvo.com/word/le_professeur/#fr", slides2_page3]);
+add_item("clock", "l'horloge (f)", ["http://forvo.com/word/l%27horloge/#fr", slides2_page3]);
+add_item("door", "la porte", ["http://forvo.com/word/la_porte/#fr", slides2_page3]);
+add_item("lights", "les lumi\xe9res (f)", ["http://forvo.com/word/lumi%C3%A8res/#fr", slides2_page3]);
+add_item("window", "une fen\xeatre", ["http://forvo.com/word/fen%C3%AAtre/#fr", slides2_page3]);
+add_item("ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=le+plafond", slides2_page3]);
+//--------------------------------------------------
+//--------------------------------------------------
 
 
 
