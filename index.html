@@ -12,7 +12,7 @@
 	        .main {
 	            margin-top: 40px;
 	            margin-left: 10px;
-	            margin-right: 10px;
+	            margin-right: 12px;
 	        }
 	        .group {
 	            margin-top: 10px;
@@ -54,8 +54,7 @@
 	        .result {
 	        	margin-top: 50px;
 	        }
-	        .word-link{
-	        	color: red;
+	        .links-container {
 	        	font-size: 11px;
 	        	font-family: arial;
 	        	text-decoration: none;
@@ -63,12 +62,21 @@
 			    display: block;
 			    right: 0;
 	        }
-	        .word-link a {
-	        	text-decoration: none;
-	        	color: rgba(0,0,255, .3);
+	        .word-link{
+			    font-size: 11px;
+			    font-family: arial;
+			    display: inline-block;
+			    padding: 1px 3px 1px 3px;
+			    margin: 1px;
+			    margin-left: 2px;
+			    background-color: rgba(0,0,0, .1);
 	        }
-	        .word-link a:hover {
-	        	color: rgba(0,0,255, .7);
+	        .links-container a {
+	        	text-decoration: none;
+	        	color: rgba(0,0,0, .3);
+	        }
+	        .links-container a:hover {
+	        	color: rgba(0,0,0, .9);
 	        }
 		</style>
     </head>
@@ -84,6 +92,7 @@
         -->
         <div class="main">
             <div class="group">
+
                 <div class="h-group" style="text-align: center;">
                     <input type="button" value="shuffle" 
                         onclick="go()" 
@@ -95,14 +104,18 @@
                         />
                     <script>setInputValue();</script>
                 </div>
+            
                 <div class="h-group on-both-sides-of-button" style="text-align: left;">
                     <div id="next_to_button"></div>
                 </div>
+            
             </div>
             <div class="group">
+            
                 <div class="result">
                     <p id="result" name="r1">
                 </div>
+            
             </div>
         </div>
         <div class="bottom-mark"></div>

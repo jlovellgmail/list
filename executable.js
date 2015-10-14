@@ -689,15 +689,16 @@ function display_with_separate_elements(list){
 		var $item = $("<div class='word'>" + d.word + "</div>");
 		var $number = $("<div class='line-number'>" + (i+1) + "</div>");
 		$container.append($number);
-
         if(d.links){
-            var $link0 = $("<div class='word-link'><a href='" + d.links[0] + "' target='_blank'>link0</a>" + "</div>");
-            $container.append($link0);
+            var $links_container = $("<div class='links-container'></div>");
+            $container.append($links_container);
+            d.links.forEach(function(link,i){
+                var $current_link = $("<a href='" + link + "' target='_blank'><div class='word-link'>" + (i+1) + "</div></a>");
+                $links_container.append($current_link);
+            });
         }
-
         $container.append($item);
 	});
-
     var newline = "<br>";
 	$("#result").append(
 		newline
@@ -739,10 +740,7 @@ function get_shuffled_list_new(){
 	if(data.items){
 		data.items.forEach(function(item){
 			if(typeof item == "object"){
-				
-                //combo.push(item.word);
                 combo.push(item);
-
 			}
 			else{
 				console.log("item was not an object");
