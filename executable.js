@@ -209,6 +209,7 @@ function display_count(list){
     document.getElementById("next_to_button").innerHTML = output;
 }
 function display_with_separate_elements(list){	
+    $("#result").empty();
 	list.forEach(function(d,i){
 		var $container = $("<div class='list-item-container'></div>");
 		$("#result").append($container);

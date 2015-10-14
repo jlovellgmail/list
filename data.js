@@ -187,14 +187,7 @@ add_item(
     ,["http://www.linguee.fr/francais-anglais/traduction/clair.html"]
 );
 add_item("dark (of clothing)", "fonc\xe9");
-
-
-
-add_item(
-    "I am from ..."
-    ,"je suis de ..."
-    ,["http://forvo.com/word/je_suis_de_floride/#fr"]
-);
+add_item("I am from ...", "je suis de ...", ["http://forvo.com/word/je_suis_de_floride/#fr"]);
 add_item(
     "I am a student (male) in french"
     ,"je suis \xe9tudiant en le fran\xe7ais"
@@ -204,11 +197,7 @@ add_item("his name is Guillaume", "il s'appelle Guillaume");
 add_item("her name is Laura", "elle s'appelle Laura");
 add_item("French", "le fran\xe7ais");
 add_item("English (m)", "l'anglais");
-add_item(
-    "history"
-    ,"l'histoire (f)"
-    ,["http://forvo.com/word/l%27histoire/#fr"]
-);
+add_item("history", "l'histoire (f)", ["http://forvo.com/word/l%27histoire/#fr"]);
 add_item("computer science", "l'informatique (f)");
 add_item(
     "what's your name? (formal)"
@@ -218,36 +207,12 @@ add_item(
         ,"https://media.la.utexas.edu/fi/aud/voc/005.mp3" // @ 0:50
     ]
 );
-add_item(
-    "see you tomorrow"
-    ,"\xe0 demain"
-    ,["http://forvo.com/word/%C3%A0_demain/#fr"]
-);
-add_item(
-    "woman"
-    ,"femme"
-    ,["http://www.linguee.fr/francais-anglais/traduction/femme.html"]
-);
-add_item(
-    "man"
-    ,"homme"
-    ,["http://www.linguee.fr/francais-anglais/traduction/homme.html"]
-);
-add_item(
-    "brother"
-    ,"fr\xe9re"
-    ,["http://www.linguee.fr/francais-anglais/traduction/fr%C3%A8re.html"]
-);
-add_item(
-    "table"
-    ,"table"
-    ,["http://www.linguee.fr/francais-anglais/traduction/table.html"]
-);
-add_item(
-    "chair"
-    ,"chaise"
-    ,["http://www.linguee.fr/francais-anglais/traduction/chaise.html"]
-);
+add_item("see you tomorrow", "\xe0 demain", ["http://forvo.com/word/%C3%A0_demain/#fr"]);
+add_item("woman", "femme", ["http://www.linguee.fr/francais-anglais/traduction/femme.html"]);
+add_item("man", "homme", ["http://www.linguee.fr/francais-anglais/traduction/homme.html"]);
+add_item("brother", "fr\xe9re", ["http://www.linguee.fr/francais-anglais/traduction/fr%C3%A8re.html"]);
+add_item("table", "table", ["http://www.linguee.fr/francais-anglais/traduction/table.html"]);
+add_item("chair", "chaise", ["http://www.linguee.fr/francais-anglais/traduction/chaise.html"]);
 add_item(
     // masculine singular indefinite article
     "a boy"
@@ -294,11 +259,7 @@ add_item(
         ,"http://www.cliffsnotes.com/~/media/32b0277c448b4a609a7a0b6ba6b26da4.ashx?la=en"
     ]
 );
-add_item(
-    "socks"
-    ,"chaussettes"
-    ,["http://forvo.com/word/chaussettes/#fr"]
-);
+add_item("socks", "chaussettes", ["http://forvo.com/word/chaussettes/#fr"]);
 add_item(
     "hair"
     ,"cheveux"
@@ -307,105 +268,26 @@ add_item(
         ,"http://www.linguee.fr/francais-anglais/traduction/cheveux.html"
     ]
 );
-add_item(
-    "right"
-    ,"droit"
-    ,["http://www.linguee.fr/francais-anglais/traduction/droit.html"]
-);
-add_item(
-    "left"
-    ,"gauche"
-    ,["http://www.linguee.fr/francais-anglais/traduction/gauche.html"]
-);
-add_item(
-    "98"
-    ,"quatre vingt dix huit"
-    ,["http://forvo.com/word/quatre_vingt_dix_huit/#fr"]
-);
-add_item(
-    "21"
-    ,"vingt et un"
-    ,["http://forvo.com/word/vingt_et_un/#fr"]
-);
-add_item(
-    "26"
-    ,"vingt-six"
-    ,["http://forvo.com/word/vingt-six/#fr"]
-);
-add_item(
-    "91"
-    ,"quatre-vingt-onze"
-    ,["http://forvo.com/word/quatre-vingt-onze/#fr"]
-);
-add_item(
-    "j"
-    ,"j"
-    ,["http://forvo.com/word/j/#fr"]
-);
-add_item(
-    "a"
-    ,"a"
-    ,["http://forvo.com/word/a/#fr"]
-);
-add_item(
-    "c"
-    ,"c"
-    ,["http://forvo.com/word/c/#fr"]
-);
-add_item(
-    "k"
-    ,"k"
-    ,["http://forvo.com/word/k/#fr"]
-);
-add_item(
-    "flip flops"
-    ,"tongs"
-    ,["http://forvo.com/word/tongs/#fr"]
-);
-add_item(
-    "dress"
-    ,"robe"
-    ,["http://forvo.com/word/robe/#fr"]
-);
-add_item(
-    "jacket"
-    ,"veste"
-    ,["http://forvo.com/word/veste/#fr"]
-);
-add_item(
-    "top"
-    ,"en haut"
-    ,["http://forvo.com/word/en_haut/#fr"]
-);
-add_item(
-    "at the bottom"
-    ,"en bas"
-    ,["http://forvo.com/word/en_bas/#fr"]
-);
-add_item(
-    "pants"
-    ,"pantalon"
-    ,["http://forvo.com/word/pantalon/#fr"]
-);
-add_item(
-    "jewelry"
-    ,"bijoux"
-    ,["http://forvo.com/word/bijoux/#fr"]
-);
-add_item("job"
-    ,"travail"
-    ,["http://forvo.com/word/travail/#fr"]
-);
-add_item(
-    "bathing suit"
-    ,"maillot de bain"
-    ,["http://forvo.com/word/maillot_de_bain/#fr"]
-);
-add_item(
-    "butterfly"
-    ,"papillon"
-    ,["http://forvo.com/word/papillon/#fr"]
-);
+add_item("right", "droit", ["http://www.linguee.fr/francais-anglais/traduction/droit.html"]);
+add_item("left", "gauche", ["http://www.linguee.fr/francais-anglais/traduction/gauche.html"]);
+add_item("98", "quatre vingt dix huit", ["http://forvo.com/word/quatre_vingt_dix_huit/#fr"]);
+add_item("21", "vingt et un", ["http://forvo.com/word/vingt_et_un/#fr"]);
+add_item("26", "vingt-six", ["http://forvo.com/word/vingt-six/#fr"]);
+add_item("91", "quatre-vingt-onze", ["http://forvo.com/word/quatre-vingt-onze/#fr"]);
+add_item("j", "j", ["http://forvo.com/word/j/#fr"]);
+add_item("a", "a", ["http://forvo.com/word/a/#fr"]);
+add_item("c", "c", ["http://forvo.com/word/c/#fr"]);
+add_item("k", "k", ["http://forvo.com/word/k/#fr"]);
+add_item("flip flops", "tongs", ["http://forvo.com/word/tongs/#fr"]);
+add_item("dress", "robe", ["http://forvo.com/word/robe/#fr"]);
+add_item("jacket", "veste", ["http://forvo.com/word/veste/#fr"]);
+add_item("top", "en haut", ["http://forvo.com/word/en_haut/#fr"]);
+add_item("at the bottom", "en bas", ["http://forvo.com/word/en_bas/#fr"]);
+add_item("pants", "pantalon", ["http://forvo.com/word/pantalon/#fr"]);
+add_item("jewelry", "bijoux", ["http://forvo.com/word/bijoux/#fr"]);
+add_item("job", "travail", ["http://forvo.com/word/travail/#fr"]);
+add_item("bathing suit", "maillot de bain", ["http://forvo.com/word/maillot_de_bain/#fr"]);
+add_item("butterfly", "papillon", ["http://forvo.com/word/papillon/#fr"]);
 add_item(
     "sandal"
     ,"sandale"
@@ -414,46 +296,14 @@ add_item(
         ,"http://www.linguee.fr/francais-anglais/traduction/sandale.html"
     ]
 );
-add_item(
-    "cold"
-    ,"froide"
-    ,["http://forvo.com/word/froide/#fr"]
-);
-add_item(
-    "tie (clothing)"
-    ,"cravate"
-    ,["http://www.linguee.fr/francais-anglais/traduction/cravate.html"]
-);
-add_item(
-    "how many"
-    ,"combien"
-    ,["http://www.linguee.fr/francais-anglais/traduction/combien.html"]
-);
-add_item(
-    "there are"
-    ,"il y a"
-    ,["http://forvo.com/word/il_y_a/#fr"]
-);
-add_item(
-    "in the class"
-    ,"dans la classe"
-    ,["http://forvo.com/word/dans/#fr"]
-);
-add_item(
-    "vest"
-    ,"gilet"
-    ,["http://forvo.com/word/gilet/#fr"]
-);
-add_item(
-    "beard"
-    ,"barb\xe9"
-    ,["http://forvo.com/word/barb%C3%A9/#fr"]
-);
-add_item(
-    "open"
-    ,"ouverte"
-    ,["http://forvo.com/word/ouverte/#fr"]
-);
+add_item("cold", "froide", ["http://forvo.com/word/froide/#fr"]);
+add_item("tie (clothing)", "cravate", ["http://www.linguee.fr/francais-anglais/traduction/cravate.html"]);
+add_item("how many", "combien", ["http://www.linguee.fr/francais-anglais/traduction/combien.html"]);
+add_item("there are", "il y a", ["http://forvo.com/word/il_y_a/#fr"]);
+add_item("in the class", "dans la classe", ["http://forvo.com/word/dans/#fr"]);
+add_item("vest", "gilet", ["http://forvo.com/word/gilet/#fr"]);
+add_item("beard", "barb\xe9", ["http://forvo.com/word/barb%C3%A9/#fr"]);
+add_item("open", "ouverte", ["http://forvo.com/word/ouverte/#fr"]);
 add_item(
     "closed"
     ,"ferm\xe9e"
@@ -462,20 +312,9 @@ add_item(
         ,"http://www.linguee.fr/francais-anglais/traduction/ferm%C3%A9.html"
     ]
 );
-add_item(
-    "in the class, how many tables are there?"
-    ,"Dans la classe, combien est-ce que il y a de tables ?"
-);
-add_item(
-    "notebook"
-    ,"cahier"
-    ,["http://www.linguee.fr/francais-anglais/traduction/cahier.html"]
-);
-add_item(
-    "desk"
-    ,"bureau"
-    ,["http://www.linguee.fr/francais-anglais/traduction/bureau.html"]
-);
+add_item("in the class, how many tables are there?", "Dans la classe, combien est-ce que il y a de tables ?");
+add_item("notebook", "cahier", ["http://www.linguee.fr/francais-anglais/traduction/cahier.html"]);
+add_item("desk", "bureau", ["http://www.linguee.fr/francais-anglais/traduction/bureau.html"]);
 add_item(
     "a black hat"
     ,"un chapeau noir"
@@ -492,6 +331,22 @@ add_item(
         ,"http://forvo.com/word/gris/#fr"
     ]
 );
+add_item("some white basketball shoes", "des baskets blanches");
+add_item(
+    "a brown skirt"
+    ,"une jupe marron"
+    ,[
+        "http://forvo.com/word/marron/#fr"
+        ,"http://forvo.com/word/jupe/#fr"
+    ]
+);
+add_item("boots", "des bottes", ["http://forvo.com/word/bottes/#fr"]);
+add_item("pencil", "un crayon", ["http://forvo.com/word/crayon/#fr"]);
+add_item("a pen", "un stylo", ["http://forvo.com/word/stylo/#fr"]);
+add_item("a book", "un livre", ["http://forvo.com/word/un_livre/#fr"]);
+add_item("wall", "wall", ["http://forvo.com/word/mur/#fr"]);
+add_item("a computer", "un ordinateur", ["http://forvo.com/word/un_ordinateur/#fr"]);
+add_item("the floor", "le plancher", ["http://forvo.com/word/plancher/#fr"]);
 
 
 //--------------------------------------------------
