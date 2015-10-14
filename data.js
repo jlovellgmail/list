@@ -1,5 +1,10 @@
-// html codes:
-// http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
+/*
+html codes:
+http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
+é   \xe9
+ê   \xea
+à   \xe0
+*/
 //--------------------------------------------------
 var cache = "_____"; // caché = hidden
 var endash = "\u2013";
@@ -347,8 +352,21 @@ add_item("a book", "un livre", ["http://forvo.com/word/un_livre/#fr"]);
 add_item("wall", "wall", ["http://forvo.com/word/mur/#fr"]);
 add_item("a computer", "un ordinateur", ["http://forvo.com/word/un_ordinateur/#fr"]);
 add_item("the floor", "le plancher", ["http://forvo.com/word/plancher/#fr"]);
+add_item("cell phone", "portable", ["http://forvo.com/word/portable/#fr"]);
+add_item("(f) a student", "une \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr"]);
+add_item("(m) a student", "un \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr"]);
+add_item("professor", "le professeur", ["http://forvo.com/word/le_professeur/#fr"]);
+add_item("clock", "l'horloge (f)", ["http://forvo.com/word/l%27horloge/#fr"]);
+add_item("door", "la porte", ["http://forvo.com/word/la_porte/#fr"]);
+add_item("lights", "les lumi\xe9res (f)", ["http://forvo.com/word/lumi%C3%A8res/#fr"]);
+add_item("window", "une fen\xeatre", ["http://forvo.com/word/fen%C3%AAtre/#fr"]);
+add_item("ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=le+plafond"]);
 
 
+
+/*
+add_item("", "", [""]);
+*/
 //--------------------------------------------------
 console.log("data.js was loaded");
 
