@@ -63,7 +63,7 @@ add_item("I don't know", "je ne sais pas");
 add_item("student next to me", "Sheshank");
 add_item("professor's name", "Guillaume");
 add_item("This is "+cache+". He is wearing glasses, a yellow shirt and white shoes.", "Voila "+cache+". il porte des lunettes, une chemise jaune et des chaussures blanches");
-add_item("he wears glasses", "il porte des lunettes" /* Allons-y cd 1-14 @ 1:09, book page 67 */);
+add_item("he wears glasses", "il porte des lunettes"/* Allons-y cd 1-14 @ 1:09, book page 67 */);
 add_item("shoes", "chaussures", ["http://www.linguee.fr/francais-anglais/traduction/chaussures.html"]);
 add_item("yellow", "jaune");
 add_item("pink", "rose", ["http://www.linguee.fr/francais-anglais/traduction/rose.html"]);
@@ -71,22 +71,8 @@ add_item("white", "blanc", ["http://forvo.com/word/blanc/#fr", "http://www.lingu
 add_item("wear", "porter", ["http://www.linguee.fr/francais-anglais/traduction/porter.html"]);
 add_item("glasses", "lunettes");
 add_item("my name is...", "je m\'appelle ...");
-add_item(
-    "you're welcome"
-    ,"je vous en prie"
-    ,[
-        "https://app.box.com/s/kl9mgkfafb2ncp26gsc531t98v54nrsw" // @ 0:12
-        ,"http://forvo.com/word/je_vous_en_prie/"
-    ]
-);
-add_item(
-    "what's your name?"
-    ,"comment tu t'appelles?"
-    ,[
-        "https://www.youtube.com/watch?v=_Xx0THT3otw" // @ 0:07
-        ,"http://forvo.com/word/comment_tu_t%C2%B4appelles%3F/#fr"
-    ]
-);
+add_item("you're welcome", "je vous en prie", ["https://app.box.com/s/kl9mgkfafb2ncp26gsc531t98v54nrsw"/* @ 0:12 */,"http://forvo.com/word/je_vous_en_prie/"]);
+add_item("what's your name?", "comment tu t'appelles?", ["https://www.youtube.com/watch?v=_Xx0THT3otw"/* @ 0:07 */,"http://forvo.com/word/comment_tu_t%C2%B4appelles%3F/#fr"]);
 add_item("nice to meet you", "enchant\xe9", ["http://forvo.com/search/enchante/"]);
 add_item("how are you?", "comment \xe7a va ?");
 add_item("whatever", "bof");
@@ -110,75 +96,20 @@ add_item("French", "le fran\xe7ais");
 add_item("English (m)", "l'anglais");
 add_item("history", "l'histoire (f)", ["http://forvo.com/word/l%27histoire/#fr"]);
 add_item("computer science", "l'informatique (f)");
-add_item(
-    "what's your name? (formal)"
-    ,"comment vous appelez-vous?"
-    ,[
-        "http://forvo.com/word/comment_vous_appelez-vous/#fr"
-        ,"https://media.la.utexas.edu/fi/aud/voc/005.mp3" // @ 0:50
-    ]
-);
+add_item("what's your name? (formal)", "comment vous appelez-vous?", ["http://forvo.com/word/comment_vous_appelez-vous/#fr", "https://media.la.utexas.edu/fi/aud/voc/005.mp3"/* @ 0:50 */]);
 add_item("see you tomorrow", "\xe0 demain", ["http://forvo.com/word/%C3%A0_demain/#fr"]);
 add_item("woman", "femme", ["http://www.linguee.fr/francais-anglais/traduction/femme.html"]);
 add_item("man", "homme", ["http://www.linguee.fr/francais-anglais/traduction/homme.html"]);
 add_item("brother", "fr\xe9re", ["http://www.linguee.fr/francais-anglais/traduction/fr%C3%A8re.html"]);
 add_item("table", "table", ["http://www.linguee.fr/francais-anglais/traduction/table.html"]);
 add_item("chair", "chaise", ["http://www.linguee.fr/francais-anglais/traduction/chaise.html"]);
-add_item(
-    // masculine singular indefinite article
-    "a boy"
-    ,"un gar\xe7on"
-    ,[
-        "http://forvo.com/word/un_gar%C3%A7on/#fr"
-        ,"http://www.cliffsnotes.com/~/media/675384c948ce4bd18e51cf4f35bd939c.ashx?la=en"
-    ]
-);
-add_item(
-    // masculine singular definite article
-    "the boy"
-    ,"le gar\xe7on"
-    ,[
-        "http://forvo.com/word/le_gar%C3%A7on_est_jeune/#fr"
-        ,"http://www.cliffsnotes.com/~/media/32b0277c448b4a609a7a0b6ba6b26da4.ashx?la=en"
-    ]
-);
-add_item(
-    // plural indefinite article
-    "friends or some friends"
-    ,"des amis"
-    ,[
-        "http://forvo.com/word/des_amis/#fr"
-        ,"http://www.cliffsnotes.com/~/media/675384c948ce4bd18e51cf4f35bd939c.ashx?la=en"
-    ]
-);
-add_item(
-    // feminine singular indefinite article
-    "a girl"
-    ,"une fille"
-    ,[
-        "http://forvo.com/word/une_fille/#fr"
-        ,"http://www.cliffsnotes.com/~/media/675384c948ce4bd18e51cf4f35bd939c.ashx?la=en"
-    ]
-);
-add_item(
-    // feminine singular definite article
-    "the girl, the actress"
-    ,"la fille, l'actrice"
-    ,[
-        "http://forvo.com/word/la_fille/#fr"
-        ,"http://forvo.com/word/l%27actrice/#fr"
-        ,"http://www.cliffsnotes.com/~/media/32b0277c448b4a609a7a0b6ba6b26da4.ashx?la=en"
-    ]
-);
+add_item("a boy", "un gar\xe7on", ["http://forvo.com/word/un_gar%C3%A7on/#fr", "http://www.cliffsnotes.com/~/media/675384c948ce4bd18e51cf4f35bd939c.ashx?la=en"]);
+add_item("the boy", "le gar\xe7on", ["http://forvo.com/word/le_gar%C3%A7on_est_jeune/#fr", "http://www.cliffsnotes.com/~/media/32b0277c448b4a609a7a0b6ba6b26da4.ashx?la=en"]);
+add_item("friends or some friends", "des amis", ["http://forvo.com/word/des_amis/#fr", "http://www.cliffsnotes.com/~/media/675384c948ce4bd18e51cf4f35bd939c.ashx?la=en"]);
+add_item("a girl", "une fille", ["http://forvo.com/word/une_fille/#fr", "http://www.cliffsnotes.com/~/media/675384c948ce4bd18e51cf4f35bd939c.ashx?la=en"]);
+add_item("the girl, the actress", "la fille, l'actrice", ["http://forvo.com/word/la_fille/#fr", "http://forvo.com/word/l%27actrice/#fr", "http://www.cliffsnotes.com/~/media/32b0277c448b4a609a7a0b6ba6b26da4.ashx?la=en"]);
 add_item("socks", "chaussettes", ["http://forvo.com/word/chaussettes/#fr"]);
-add_item(
-    "hair"
-    ,"cheveux"
-    ,[
-        "http://forvo.com/word/cheveux/#fr"
-        ,"http://www.linguee.fr/francais-anglais/traduction/cheveux.html"
-    ]
-);
+add_item("hair", "cheveux", ["http://forvo.com/word/cheveux/#fr", "http://www.linguee.fr/francais-anglais/traduction/cheveux.html"]);
 add_item("right", "droit", ["http://www.linguee.fr/francais-anglais/traduction/droit.html"]);
 add_item("left", "gauche", ["http://www.linguee.fr/francais-anglais/traduction/gauche.html"]);
 add_item("98", "quatre vingt dix huit", ["http://forvo.com/word/quatre_vingt_dix_huit/#fr"]);
@@ -199,14 +130,7 @@ add_item("jewelry", "bijoux", ["http://forvo.com/word/bijoux/#fr"]);
 add_item("job", "travail", ["http://forvo.com/word/travail/#fr"]);
 add_item("bathing suit", "maillot de bain", ["http://forvo.com/word/maillot_de_bain/#fr"]);
 add_item("butterfly", "papillon", ["http://forvo.com/word/papillon/#fr"]);
-add_item(
-    "sandal"
-    ,"sandale"
-    ,[
-        "http://forvo.com/word/sandale/#fr"
-        ,"http://www.linguee.fr/francais-anglais/traduction/sandale.html"
-    ]
-);
+add_item("sandal", "sandale", ["http://forvo.com/word/sandale/#fr", "http://www.linguee.fr/francais-anglais/traduction/sandale.html"]);
 add_item("cold", "froide", ["http://forvo.com/word/froide/#fr"]);
 add_item("tie (clothing)", "cravate", ["http://www.linguee.fr/francais-anglais/traduction/cravate.html"]);
 add_item("how many", "combien", ["http://www.linguee.fr/francais-anglais/traduction/combien.html"]);
@@ -215,64 +139,37 @@ add_item("in the class", "dans la classe", ["http://forvo.com/word/dans/#fr"]);
 add_item("vest", "gilet", ["http://forvo.com/word/gilet/#fr"]);
 add_item("beard", "barb\xe9", ["http://forvo.com/word/barb%C3%A9/#fr"]);
 add_item("open", "ouverte", ["http://forvo.com/word/ouverte/#fr"]);
-add_item(
-    "closed"
-    ,"ferm\xe9e"
-    ,[
-        "http://forvo.com/word/ferm%C3%A9e/#fr"
-        ,"http://www.linguee.fr/francais-anglais/traduction/ferm%C3%A9.html"
-    ]
-);
+add_item("closed", "ferm\xe9e", ["http://forvo.com/word/ferm%C3%A9e/#fr", "http://www.linguee.fr/francais-anglais/traduction/ferm%C3%A9.html"]);
 add_item("in the class, how many tables are there?", "Dans la classe, combien est-ce que il y a de tables ?");
 add_item("notebook", "cahier", ["http://www.linguee.fr/francais-anglais/traduction/cahier.html"]);
 add_item("desk", "bureau", ["http://www.linguee.fr/francais-anglais/traduction/bureau.html"]);
-add_item(
-    "a black hat"
-    ,"un chapeau noir"
-    ,[
-        "http://forvo.com/word/chapeau/#fr"
-        ,"http://forvo.com/word/noir/#fr"
-    ]
-);
-add_item(
-    "a grey suit"
-    ,"un costume gris"
-    ,[
-        "http://forvo.com/word/costume/#fr"
-        ,"http://forvo.com/word/gris/#fr"
-    ]
-);
+add_item("a black hat", "un chapeau noir", ["http://forvo.com/word/chapeau/#fr", "http://forvo.com/word/noir/#fr"]);
+add_item("a grey suit", "un costume gris", ["http://forvo.com/word/costume/#fr", "http://forvo.com/word/gris/#fr"]);
 add_item("some white basketball shoes", "des baskets blanches");
-add_item(
-    "a brown skirt"
-    ,"une jupe marron"
-    ,[
-        "http://forvo.com/word/marron/#fr"
-        ,"http://forvo.com/word/jupe/#fr"
-    ]
-);
+add_item("a brown skirt", "une jupe marron", ["http://forvo.com/word/jupe/#fr", "http://forvo.com/word/marron/#fr"]);
 add_item("boots", "des bottes", ["http://forvo.com/word/bottes/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
 var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
-add_item("pencil", "un crayon", ["http://forvo.com/word/crayon/#fr", slides2_page3]);
+add_item("a pencil", "un crayon", ["http://forvo.com/word/crayon/#fr", slides2_page3]);
 add_item("a pen", "un stylo", ["http://forvo.com/word/stylo/#fr", slides2_page3]);
 add_item("a book", "un livre", ["http://forvo.com/word/un_livre/#fr", slides2_page3]);
-add_item("wall", "wall", ["http://forvo.com/word/mur/#fr", slides2_page3]);
+add_item("wall", "mur", ["http://forvo.com/word/mur/#fr", slides2_page3]);
 add_item("a computer", "un ordinateur", ["http://forvo.com/word/un_ordinateur/#fr"], slides2_page3);
 add_item("the floor", "le plancher", ["http://forvo.com/word/plancher/#fr", slides2_page3]);
 add_item("cell phone", "portable", ["http://forvo.com/word/portable/#fr", slides2_page3]);
 add_item("(f) a student", "une \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr", slides2_page3]);
 add_item("(m) a student", "un \xe9tudiante", ["http://forvo.com/word/%C3%A9tudiant/#fr", slides2_page3]);
-add_item("professor", "le professeur", ["http://forvo.com/word/le_professeur/#fr", slides2_page3]);
-add_item("clock", "l'horloge (f)", ["http://forvo.com/word/l%27horloge/#fr", slides2_page3]);
-add_item("door", "la porte", ["http://forvo.com/word/la_porte/#fr", slides2_page3]);
-add_item("lights", "les lumi\xe9res (f)", ["http://forvo.com/word/lumi%C3%A8res/#fr", slides2_page3]);
-add_item("window", "une fen\xeatre", ["http://forvo.com/word/fen%C3%AAtre/#fr", slides2_page3]);
-add_item("ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=le+plafond", slides2_page3]);
+add_item("the professor", "le professeur", ["http://forvo.com/word/le_professeur/#fr", slides2_page3]);
+add_item("the clock", "l'horloge (f)", ["http://forvo.com/word/l%27horloge/#fr", slides2_page3]);
+add_item("the door", "la porte", ["http://forvo.com/word/la_porte/#fr", slides2_page3]);
+add_item("the lights", "les lumi\xe9res (f)", ["http://forvo.com/word/lumi%C3%A8res/#fr", slides2_page3]);
+add_item("a window", "une fen\xeatre", ["http://forvo.com/word/fen%C3%AAtre/#fr", slides2_page3]);
+add_item("the ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=le+plafond", slides2_page3]);
 //--------------------------------------------------
 //--------------------------------------------------
 add_item("hidden", "cach\xe9", ["http://www.linguee.fr/francais-anglais/traduction/cach%C3%A9.html", "http://forvo.com/word/cach%C3%A9/#fr"]);
+add_item("in the street", "dans la rue", ["http://forvo.com/word/dans_la_rue/#fr"]);
 
 
 
