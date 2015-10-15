@@ -49,7 +49,11 @@
 	        	display: block;
 				top: 3px;
 			}
-	        .word {
+	        .item {
+	        	cursor: pointer;
+	        }
+	        .clicked {
+	        	color: red;
 	        }
 	        .result {
 	        	margin-top: 50px;
@@ -104,6 +108,10 @@
             <div class="group">
 
                 <div class="h-group" style="text-align: center;">
+                    <input type="button" value="flip" 
+                        onclick="flip()" 
+                        class="button"
+                        />
                     <input type="button" value="shuffle" 
                         onclick="go()" 
                         class="button"

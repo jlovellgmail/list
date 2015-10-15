@@ -194,12 +194,35 @@ function display_with_separate_elements(list){
     var items = 
         containers
         .append("div")
-        .attr("class", "word")
+        .attr("class", "item")
         .text(function(d){ return d.word; })
+        ;
+    items
+        .on("click", function(){
+            var this_sel = d3.select(this);
+            this_sel
+                .classed("clicked", function(){ 
+                    return !this_sel.classed("clicked"); 
+                })
+                ;
+        })
         ;
     result
         .append("div")
         .attr("class", "list-bottom-margin")
+        ;
+}
+function flip(){
+    var items = 
+        d3.selectAll(".item")
+        .text(function(d){ 
+            if(d3.select(this).text() == d.word){
+                return d.definition; 
+            }
+            else {
+                return d.word; 
+            }
+        })
         ;
 }
 function check_keypress(e) {
