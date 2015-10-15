@@ -257,6 +257,11 @@ function setInputValue(){
 	var count = get_shuffled_list().length;
 	document.getElementById("list_length_input").value = count;
 }
+d3.select("body").on("keydown", function(){
+    if(d3.event.keyCode == 70){ // keycode 70 = "f"
+        flip();
+    }
+});
 
 
 
