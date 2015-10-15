@@ -23,6 +23,10 @@ function add_item(word, definition, links){
 }
 /*
 //--------------------------------------------------
+//--------------------------------------------------
+//--------------------------------------------------
+//--------------------------------------------------
+//--------------------------------------------------
 // words
 add_item("derelict");
 add_item("miasma");
@@ -49,11 +53,16 @@ add_item("Plato");
 add_item("Aristotle");
 add_item("Darwin");
 add_item("de Chirico, Giorgio");
+add_item("Dali", "1904"+endash+"1989");
 */
 //--------------------------------------------------
-// french
+//--------------------------------------------------
+//--------------------------------------------------
+//--------------------------------------------------
+//--------------------------------------------------
+/*
 add_item("how do you say ... in French?", "comment est-ce que on dit ... en fran\xe7ais ?");
-add_item("what does ... mean?", "que est-ce que ... signifie ?", ["https://www.youtube.com/watch?v=lFEwiNkaLns"/* @ 0:54 */]);
+add_item("what does ... mean?", "que est-ce que ... signifie ?", ["https://www.youtube.com/watch?v=lFEwiNkaLns"]);
 add_item("how do you write ... ?", "comment est-ce que on \xe9crit ... ?");
 add_item("how do you spell ... ?", "comment est-ce que on \xe9pelle ... ?");
 add_item("can you repeat?", "est-ce que tu peux r\xe9p\xe9ter ?");
@@ -63,7 +72,7 @@ add_item("I don't know", "je ne sais pas");
 add_item("student next to me", "Sheshank");
 add_item("professor's name", "Guillaume");
 add_item("This is "+cache+". He is wearing glasses, a yellow shirt and white shoes.", "Voila "+cache+". il porte des lunettes, une chemise jaune et des chaussures blanches");
-add_item("he wears glasses", "il porte des lunettes"/* Allons-y cd 1-14 @ 1:09, book page 67 */);
+add_item("he wears glasses", "il porte des lunettes");
 add_item("shoes", "chaussures", ["http://www.linguee.fr/francais-anglais/traduction/chaussures.html"]);
 add_item("yellow", "jaune");
 add_item("pink", "rose", ["http://www.linguee.fr/francais-anglais/traduction/rose.html"]);
@@ -71,8 +80,8 @@ add_item("white", "blanc", ["http://forvo.com/word/blanc/#fr", "http://www.lingu
 add_item("wear", "porter", ["http://www.linguee.fr/francais-anglais/traduction/porter.html"]);
 add_item("glasses", "lunettes");
 add_item("my name is...", "je m\'appelle ...");
-add_item("you're welcome", "je vous en prie", ["https://app.box.com/s/kl9mgkfafb2ncp26gsc531t98v54nrsw"/* @ 0:12 */,"http://forvo.com/word/je_vous_en_prie/"]);
-add_item("what's your name?", "comment tu t'appelles?", ["https://www.youtube.com/watch?v=_Xx0THT3otw"/* @ 0:07 */,"http://forvo.com/word/comment_tu_t%C2%B4appelles%3F/#fr"]);
+add_item("you're welcome", "je vous en prie", ["https://app.box.com/s/kl9mgkfafb2ncp26gsc531t98v54nrsw","http://forvo.com/word/je_vous_en_prie/"]);
+add_item("what's your name?", "comment tu t'appelles?", ["https://www.youtube.com/watch?v=_Xx0THT3otw","http://forvo.com/word/comment_tu_t%C2%B4appelles%3F/#fr"]);
 add_item("nice to meet you", "enchant\xe9", ["http://forvo.com/search/enchante/"]);
 add_item("how are you?", "comment \xe7a va ?");
 add_item("whatever", "bof");
@@ -96,7 +105,7 @@ add_item("French", "le fran\xe7ais");
 add_item("English (m)", "l'anglais");
 add_item("history", "l'histoire (f)", ["http://forvo.com/word/l%27histoire/#fr"]);
 add_item("computer science", "l'informatique (f)");
-add_item("what's your name? (formal)", "comment vous appelez-vous?", ["http://forvo.com/word/comment_vous_appelez-vous/#fr", "https://media.la.utexas.edu/fi/aud/voc/005.mp3"/* @ 0:50 */]);
+add_item("what's your name? (formal)", "comment vous appelez-vous?", ["http://forvo.com/word/comment_vous_appelez-vous/#fr", "https://media.la.utexas.edu/fi/aud/voc/005.mp3"]);
 add_item("see you tomorrow", "\xe0 demain", ["http://forvo.com/word/%C3%A0_demain/#fr"]);
 add_item("woman", "femme", ["http://www.linguee.fr/francais-anglais/traduction/femme.html"]);
 add_item("man", "homme", ["http://www.linguee.fr/francais-anglais/traduction/homme.html"]);
@@ -150,6 +159,7 @@ add_item("a brown skirt", "une jupe marron", ["http://forvo.com/word/jupe/#fr", 
 add_item("boots", "des bottes", ["http://forvo.com/word/bottes/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
+// class 2 - slides page 3
 var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
 add_item("a pencil", "un crayon", ["http://forvo.com/word/crayon/#fr", slides2_page3]);
 add_item("a pen", "un stylo", ["http://forvo.com/word/stylo/#fr", slides2_page3]);
@@ -170,27 +180,33 @@ add_item("the ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "
 //--------------------------------------------------
 add_item("hidden", "cach\xe9", ["http://www.linguee.fr/francais-anglais/traduction/cach%C3%A9.html", "http://forvo.com/word/cach%C3%A9/#fr"]);
 add_item("in the street", "dans la rue", ["http://forvo.com/word/dans_la_rue/#fr"]);
-add_item("on the table", "sur la table", ["http://forvo.com/word/sur_la_table/#fr"]);
-add_item("glasses case", "\xe9tui \xe0 lunettes", ["http://forvo.com/word/%C3%A9tui_%C3%A0_lunettes/#fr"]);
-add_item("mouse (for computer)", "souris", ["http://forvo.com/word/souris/#fr"]);
-add_item("the watch", "la montre", ["http://forvo.com/word/la_montre/#fr"]);
-add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);
+//--------------------------------------------------
+*/
+//--------------------------------------------------
+// class 2 - notebook page
+add_item("on the table", "sur la table", ["http://forvo.com/word/sur_la_table/#fr"]);// sur la table
+add_item("glasses case", "\xe9tui \xe0 lunettes", ["http://forvo.com/word/%C3%A9tui_%C3%A0_lunettes/#fr"]);// étui à lunettes
+add_item("mouse (for computer)", "souris", ["http://forvo.com/word/souris/#fr"]);// souris
+add_item("the watch", "la montre", ["http://forvo.com/word/la_montre/#fr"]);// la montre
+add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);// clé
 //--------------------------------------------------
 //--------------------------------------------------
+// class 2 - slides page 5
 var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
-add_item("the following sentences", "les phrases suivantes", ["http://forvo.com/word/suivantes/#fr", slides2_page5]);
+add_item("the following sentences", "les phrases suivantes", ["http://forvo.com/word/phrases/#fr", "http://forvo.com/word/suivantes/#fr", slides2_page5]);
 add_item("We choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
 add_item("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
-add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", "", slides2_page5]);
+add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", slides2_page5]);
 add_item("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
-add_item("I look at the computer produced by Apple", "je regarde l’ordinateur produit par Apple", ["http://forvo.com/word/regarde/#fr", "http://forvo.com/word/produit/#fr", "http://forvo.com/word/par/#fr", slides2_page5]);
+add_item("I look at the computer produced by Apple", "je regarde l'ordinateur produit par Apple", ["http://forvo.com/word/regarde/#fr", "http://forvo.com/word/produit/#fr", "http://forvo.com/word/par/#fr", slides2_page5]);
 add_item("produced", "produit", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=produit", slides2_page5]);
 add_item("look at", "regarder", ["http://www.linguee.fr/francais-anglais/traduction/regarder.html", slides2_page5]);
 add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/word/noires/#fr", slides2_page5]);
+//--------------------------------------------------
+//--------------------------------------------------
 
-
-
-
+//--------------------------------------------------
+//--------------------------------------------------
 /*
 add_item("", "", [""]);
 */
