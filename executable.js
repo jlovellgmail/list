@@ -150,64 +150,6 @@ var definitions = [
     */
 ];
 
-function get_shuffled(array){
-    var currentIndex = array.length, temporaryValue, randomIndex ;
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;        
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-    return array;
-}
-function get_broken_apart(array){
-	if(array.length < 2){
-		// return the array in an array to match below?
-		return [array];
-	}
-	else{
-		var out = [];
-
-		//console.log("get_broken_apart(): original array: " + array);
-
-		while(array.length > 0){
-			var section_length = Math.max(1, Math.floor(Math.random() * (array.length+1)));
-			var section = array.splice(0,section_length);
-			out.push(section);
-
-			//console.log("    ----> array: " + array + ",  section_length: " + section_length + ",  section: " + section);
-		}
-		return out;
-
-		//console.log("");
-	}
-}
-function get_shuffled_list_with_broken_apart_and_shuffled_individuals(array){
-	var out = [];
-	array.forEach(function(d){
-		// d is an individual item in the main list, which is an array itself.
-		// shuffle the individual
-		d = get_shuffled(d);
-		// break the individual into an array of random subsections, each subsection is an array itself
-		var sections_list = get_broken_apart(d);
-		// put them back into a flat main list
-		sections_list.forEach(function(d_section){
-			out.push(d_section);
-		});
-	});
-	// shuffle the main list
-	out = get_shuffled(out);
-	return out;
-}
-function display_count(list){
-    var output = "";
-    output += "count: " + list.length;
-    document.getElementById("next_to_button").innerHTML = output;
-}
 function display_with_separate_elements(list){	
     $("#result").empty();
 	list.forEach(function(d,i){
@@ -234,15 +176,8 @@ function display_with_separate_elements(list){
 		+ newline
 	);
 }
-function get_two_layer_array_copy(array){
-	var out = [];
-	array.forEach(function(d){
-		out.push(d.slice(0));
-	});
-	return out;
-}
 function go(){
-	var shuffled = get_shuffled_list_new();
+	var shuffled = get_shuffled_list();
 	var length = parseFloat(document.getElementById('list_length_input').value) || shuffled.length;
 	var truncated = shuffled.slice(0,length);
 	display_count_new(truncated.length, shuffled.length);
@@ -258,41 +193,33 @@ function display_count_new(displayed, max){
     output += "count: " + displayed + " / " + max;
     document.getElementById("next_to_button").innerHTML = output;
 }
-function rint(n){
-	var random_integer = Math.trunc(Math.random()*n);
-	return random_integer;
+function get_shuffled(array){
+    var currentIndex = array.length, temporaryValue, randomIndex ;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;        
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
 }
-function get_shuffled_list_new(){
-    var combo = [];
-	if(data.items){
-		data.items.forEach(function(item){
-			if(typeof item == "object"){
-                combo.push(item);
-			}
-			else{
-				console.log("item was not an object");
-			}
-		});
-	}
-	else{
-		console.log("data.items did not evaluate to true");
-	}
-    var shuffled = get_shuffled(combo.slice());
+function get_shuffled_list(){
+    var shuffled = get_shuffled(data.items.slice());
     return shuffled;
 }
 function setInputValue(){
-	var count = get_shuffled_list_new().length;
+	var count = get_shuffled_list().length;
 	document.getElementById("list_length_input").value = count;
 }
 
+
+
+//--------------------------------------------------
 console.log("executable.js was loaded");
-
-
-
-
-
-
-
 
 
 
