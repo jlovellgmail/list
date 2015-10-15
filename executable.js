@@ -157,31 +157,50 @@ function go(){
     display_count(truncated.length, shuffled.length);
     display_with_separate_elements(truncated);
 }
-function display_with_separate_elements(list){	
-    $("#result").empty();
-	list.forEach(function(d,i){
-		var $container = $("<div class='list-item-container'></div>");
-		$("#result").append($container);
-		var $item = $("<div class='word'>" + d.word + "</div>");
-		var $number = $("<div class='line-number'>" + (i+1) + "</div>");
-		$container.append($number);
-        if(d.links){
-            var $links_container = $("<div class='links-container'></div>");
-            $container.append($links_container);
-            d.links.forEach(function(link,i){
-                var $current_link = $("<a href='" + link + "' target='_blank'><div class='word-link'>" + (i+1) + "</div></a>");
-                $links_container.append($current_link);
-            });
-        }
-        $container.append($item);
-	});
-    var newline = "<br>";
-	$("#result").append(
-		newline
-		+ newline
-		+ newline
-		+ newline
-	);
+function display_with_separate_elements(list){
+    var result = d3.select("#result");
+    result.selectAll("*").remove();
+    var containers = 
+        result
+        .selectAll(".list-item-container")
+        .data(list)
+        .enter()
+        .append("div")
+        .attr("class", "list-item-container")
+        ;
+    var numbers =
+        containers
+        .append("div")
+        .attr("class", "line-number")
+        .text(function(d,i){ return i+1; })
+        ;
+    var links =
+        containers
+        .append("div")
+        .attr("class", "links-container")
+        .selectAll("a")
+        .data(function(d){ 
+            if(d.links) return d.links;
+            else return [];
+        })
+        .enter()
+        .append("a")
+        .attr("href", function(d){ return d; })
+        .attr("target", "_blank")
+        .append("div")
+        .attr("class", "word-link")
+        .text(function(d,i){ return i+1; })
+        ;
+    var items = 
+        containers
+        .append("div")
+        .attr("class", "word")
+        .text(function(d){ return d.word; })
+        ;
+    result
+        .append("div")
+        .attr("class", "list-bottom-margin")
+        ;
 }
 function check_keypress(e) {
     if (e.keyCode == 13) {
