@@ -150,6 +150,13 @@ var definitions = [
     */
 ];
 
+function go(){
+    var shuffled = get_shuffled_list();
+    var length = parseFloat(document.getElementById('list_length_input').value) || shuffled.length;
+    var truncated = shuffled.slice(0,length);
+    display_count(truncated.length, shuffled.length);
+    display_with_separate_elements(truncated);
+}
 function display_with_separate_elements(list){	
     $("#result").empty();
 	list.forEach(function(d,i){
@@ -176,19 +183,12 @@ function display_with_separate_elements(list){
 		+ newline
 	);
 }
-function go(){
-	var shuffled = get_shuffled_list();
-	var length = parseFloat(document.getElementById('list_length_input').value) || shuffled.length;
-	var truncated = shuffled.slice(0,length);
-	display_count_new(truncated.length, shuffled.length);
-	display_with_separate_elements(truncated);
-}
 function check_keypress(e) {
     if (e.keyCode == 13) {
     	go();
     }
 }
-function display_count_new(displayed, max){
+function display_count(displayed, max){
     var output = "";
     output += "count: " + displayed + " / " + max;
     document.getElementById("next_to_button").innerHTML = output;
