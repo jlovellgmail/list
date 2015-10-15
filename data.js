@@ -170,6 +170,23 @@ add_item("the ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "
 //--------------------------------------------------
 add_item("hidden", "cach\xe9", ["http://www.linguee.fr/francais-anglais/traduction/cach%C3%A9.html", "http://forvo.com/word/cach%C3%A9/#fr"]);
 add_item("in the street", "dans la rue", ["http://forvo.com/word/dans_la_rue/#fr"]);
+add_item("on the table", "sur la table", ["http://forvo.com/word/sur_la_table/#fr"]);
+add_item("glasses case", "\xe9tui \xe0 lunettes", ["http://forvo.com/word/%C3%A9tui_%C3%A0_lunettes/#fr"]);
+add_item("mouse (for computer)", "souris", ["http://forvo.com/word/souris/#fr"]);
+add_item("the watch", "la montre", ["http://forvo.com/word/la_montre/#fr"]);
+add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);
+//--------------------------------------------------
+//--------------------------------------------------
+var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
+add_item("the following sentences", "les phrases suivantes", ["http://forvo.com/word/suivantes/#fr", slides2_page5]);
+add_item("We choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
+add_item("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
+add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", "", slides2_page5]);
+add_item("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
+add_item("I look at the computer produced by Apple", "je regarde l’ordinateur produit par Apple", ["http://forvo.com/word/regarde/#fr", "http://forvo.com/word/produit/#fr", "http://forvo.com/word/par/#fr", slides2_page5]);
+add_item("produced", "produit", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=produit", slides2_page5]);
+add_item("look at", "regarder", ["http://www.linguee.fr/francais-anglais/traduction/regarder.html", slides2_page5]);
+add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/word/noires/#fr", slides2_page5]);
 
 
 
