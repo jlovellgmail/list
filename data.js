@@ -1,9 +1,11 @@
 /*
 html codes:
 http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
-é   \xe9
-ê   \xea
-à   \xe0
+
+    é   \xe9
+    ê   \xea
+    à   \xe0
+
 */
 //--------------------------------------------------
 var cache = "_____"; // caché = hidden
@@ -50,88 +52,25 @@ add_item("de Chirico, Giorgio");
 */
 //--------------------------------------------------
 // french
-add_item(
-    "how do you say ... in French?"
-    ,"comment est-ce que on dit ... en fran\xe7ais ?"
-);
-add_item(
-    "what does ... mean?"
-    ,"que est-ce que ... signifie ?"
-    ,[ 
-        "https://www.youtube.com/watch?v=lFEwiNkaLns" // @ 0:54
-     ]
-);
-add_item(
-    "how do you write ... ?"
-    ,"comment est-ce que on \xe9crit ... ?"
-);
-add_item(
-    "how do you spell ... ?"
-    ,"comment est-ce que on \xe9pelle ... ?"
-);
-add_item(
-    "can you repeat?"
-    ,"est-ce que tu peux r\xe9p\xe9ter ?"
-);
-add_item(
-    "I don't understand (this word / this sentence)"
-    ,"je ne comprends pas (ce mot / cette phrase)"
-);
-add_item(
-    "I have a question"
-    ,"j'ai une question"
-    ,["http://forvo.com/word/j%27ai_une_question/#fr"]
-);
-add_item(
-    "I don't know"
-    ,"je ne sais pas"
-);
+add_item("how do you say ... in French?", "comment est-ce que on dit ... en fran\xe7ais ?");
+add_item("what does ... mean?", "que est-ce que ... signifie ?", ["https://www.youtube.com/watch?v=lFEwiNkaLns"/* @ 0:54 */]);
+add_item("how do you write ... ?", "comment est-ce que on \xe9crit ... ?");
+add_item("how do you spell ... ?", "comment est-ce que on \xe9pelle ... ?");
+add_item("can you repeat?", "est-ce que tu peux r\xe9p\xe9ter ?");
+add_item("I don't understand (this word / this sentence)", "je ne comprends pas (ce mot / cette phrase)");
+add_item("I have a question", "j'ai une question", ["http://forvo.com/word/j%27ai_une_question/#fr"]);
+add_item("I don't know", "je ne sais pas");
 add_item("student next to me");
 add_item("professor's name");
-add_item(
-    "This is "+cache+". He is wearing glasses, a yellow shirt and white shoes."
-    ,"Voila "+cache+". il porte des lunettes, une chemise jaune et des chaussures blanches"
-);
-add_item(
-    "he wears glasses"
-    ,"il porte des lunettes"
-    // Allons-y cd 1-14 @ 1:09, book page 67
-);
-add_item(
-    "shoes"
-    ,"chaussures"
-    ,["http://www.linguee.fr/francais-anglais/traduction/chaussures.html"]
-);
-add_item(
-    "yellow"
-    ,"jaune"
-);
-add_item(
-    "pink"
-    ,"rose"
-    ,["http://www.linguee.fr/francais-anglais/traduction/rose.html"]
-);
-add_item(
-    "white"
-    ,"blanc"
-    ,[
-        "http://forvo.com/word/blanc/#fr"
-        ,"http://www.linguee.fr/francais-anglais/traduction/blanc.html"
-    ]
-);
-add_item(
-    "wear"
-    ,"porter"
-    ,["http://www.linguee.fr/francais-anglais/traduction/porter.html"]
-);
-add_item(
-    "glasses"
-    ,"lunettes"
-);
-add_item(
-    "my name is..."
-    ,"je m\'appelle ..."
-);
+add_item("This is "+cache+". He is wearing glasses, a yellow shirt and white shoes.", "Voila "+cache+". il porte des lunettes, une chemise jaune et des chaussures blanches");
+add_item("he wears glasses", "il porte des lunettes" /* Allons-y cd 1-14 @ 1:09, book page 67 */);
+add_item("shoes", "chaussures", ["http://www.linguee.fr/francais-anglais/traduction/chaussures.html"]);
+add_item("yellow", "jaune");
+add_item("pink", "rose", ["http://www.linguee.fr/francais-anglais/traduction/rose.html"]);
+add_item("white", "blanc", ["http://forvo.com/word/blanc/#fr", "http://www.linguee.fr/francais-anglais/traduction/blanc.html"]);
+add_item("wear", "porter", ["http://www.linguee.fr/francais-anglais/traduction/porter.html"]);
+add_item("glasses", "lunettes");
+add_item("my name is...", "je m\'appelle ...");
 add_item(
     "you're welcome"
     ,"je vous en prie"
@@ -148,57 +87,23 @@ add_item(
         ,"http://forvo.com/word/comment_tu_t%C2%B4appelles%3F/#fr"
     ]
 );
-add_item(
-    "nice to meet you"
-    ,"enchant\xe9"
-    ,["http://forvo.com/search/enchante/"]
-);
-add_item(
-    "how are you?"
-    ,"comment \xe7a va ?"
-);
-add_item(
-    "whatever"
-    ,"bof"
-);
+add_item("nice to meet you", "enchant\xe9", ["http://forvo.com/search/enchante/"]);
+add_item("how are you?", "comment \xe7a va ?");
+add_item("whatever", "bof");
 add_item("and you?", "et toi ?");
 add_item("what's her name?", "comment elle s'appelle ?");
-add_item(
-    "tall"
-    ,"grand"
-    ,["http://www.linguee.fr/francais-anglais/traduction/grand.html"]
-);
-add_item(
-    "small / little"
-    ,"petit"
-    ,["http://www.linguee.fr/francais-anglais/traduction/grand.html"]
-);
-add_item(
-    "young"
-    ,"jeune"
-    ,["http://www.linguee.fr/francais-anglais/traduction/jeune.html"]
-);
-add_item(
-    "old"
-    ,"\xe2g\xe9"
-    ,["http://www.linguee.fr/francais-anglais/traduction/%C3%A2g%C3%A9.html"]
-);
+add_item("tall", "grand", ["http://www.linguee.fr/francais-anglais/traduction/grand.html"]);
+add_item("small / little", "petit", ["http://www.linguee.fr/francais-anglais/traduction/grand.html"]);
+add_item("young", "jeune", ["http://www.linguee.fr/francais-anglais/traduction/jeune.html"]);
+add_item("old", "\xe2g\xe9", ["http://www.linguee.fr/francais-anglais/traduction/%C3%A2g%C3%A9.html"]);
 add_item("beautiful", "belle");
 add_item("handsome", "beau");
 add_item("ugly", "moche");
 add_item("what are you wearing?", "qu'est-ce que tu portes ?");
-add_item(
-    "light (of clothing)"
-    ,"clair"
-    ,["http://www.linguee.fr/francais-anglais/traduction/clair.html"]
-);
+add_item("light (of clothing)", "clair", ["http://www.linguee.fr/francais-anglais/traduction/clair.html"]);
 add_item("dark (of clothing)", "fonc\xe9");
 add_item("I am from ...", "je suis de ...", ["http://forvo.com/word/je_suis_de_floride/#fr"]);
-add_item(
-    "I am a student (male) in french"
-    ,"je suis \xe9tudiant en le fran\xe7ais"
-    ,["http://forvo.com/word/%C3%A9tudiant/#fr"]
-);
+add_item("I am a student (male) in french", "je suis \xe9tudiant en le fran\xe7ais", ["http://forvo.com/word/%C3%A9tudiant/#fr"]);
 add_item("his name is Guillaume", "il s'appelle Guillaume");
 add_item("her name is Laura", "elle s'appelle Laura");
 add_item("French", "le fran\xe7ais");
