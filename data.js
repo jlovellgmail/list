@@ -272,6 +272,8 @@ add_item("window", "une fen\xeatre", ["http://forvo.com/word/fen%C3%AAtre/#fr", 
 add_item("ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=le+plafond", slides2_page3]);
 //--------------------------------------------------
 //--------------------------------------------------
+add_item("hidden", "cach\xe9", ["http://www.linguee.fr/francais-anglais/traduction/cach%C3%A9.html", "http://forvo.com/word/cach%C3%A9/#fr"]);
+
 
 
 
