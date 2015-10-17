@@ -8,9 +8,13 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
 
 */
 //--------------------------------------------------
-var cache = "_____"; // caché = hidden
+var cache = "_____";
 var endash = "\u2013";
 var ref_folder = "references/";
+var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
+var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
+var slides2_page6 = ref_folder+"Extension_French 1_Cours 2 - page 6.jpg";
+var slides2_page7 = ref_folder+"Extension_French 1_Cours 2 - page 7.jpg";
 //--------------------------------------------------
 var data = {};
 data.items = [];
@@ -60,6 +64,8 @@ add_item("Dali", "1904"+endash+"1989");
 //--------------------------------------------------
 //--------------------------------------------------
 //--------------------------------------------------
+// French
+/*
 add_item("how do you say ... in French?", "comment est-ce que on dit ... en fran\xe7ais ?");
 add_item("what does ... mean?", "que est-ce que ... signifie ?", ["https://www.youtube.com/watch?v=lFEwiNkaLns"]);
 add_item("how do you write ... ?", "comment est-ce que on \xe9crit ... ?");
@@ -159,7 +165,6 @@ add_item("boots", "des bottes", ["http://forvo.com/word/bottes/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 3
-var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
 add_item("a pencil", "un crayon", ["http://forvo.com/word/crayon/#fr", slides2_page3]);
 add_item("a pen", "un stylo", ["http://forvo.com/word/stylo/#fr", slides2_page3]);
 add_item("a book", "un livre", ["http://forvo.com/word/un_livre/#fr", slides2_page3]);
@@ -178,21 +183,23 @@ add_item("the ceiling", "le plafond", ["http://forvo.com/word/le_plafond/#fr", "
 //--------------------------------------------------
 //--------------------------------------------------
 add_item("hidden", "cach\xe9", ["http://www.linguee.fr/francais-anglais/traduction/cach%C3%A9.html", "http://forvo.com/word/cach%C3%A9/#fr"]);
-add_item("in the street", "dans la rue", ["http://forvo.com/word/dans_la_rue/#fr"]);
+add_item("in the street", "dans la rue", ["http://forvo.com/word/dans_la_rue/#fr", "http://forvo.com/word/dans_la_rue/#fr"]);
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - notebook page
-add_item("on the table", "sur la table", ["http://forvo.com/word/sur_la_table/#fr"]);// sur la table
-add_item("glasses case", "\xe9tui \xe0 lunettes", ["http://forvo.com/word/%C3%A9tui_%C3%A0_lunettes/#fr"]);// étui à lunettes
-add_item("mouse (for computer)", "souris", ["http://forvo.com/word/souris/#fr"]);// souris
-add_item("the watch", "la montre", ["http://forvo.com/word/la_montre/#fr"]);// la montre
-add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);// clé
+add_item("on the table", "sur la table", ["http://forvo.com/word/sur_la_table/#fr", "http://forvo.com/word/sur/#fr"]);
+add_item("glasses case", "\xe9tui \xe0 lunettes", ["http://forvo.com/word/%C3%A9tui_%C3%A0_lunettes/#fr"]);
+add_item("mouse (for computer)", "souris", ["http://forvo.com/word/souris/#fr"]);
+add_item("the watch", "la montre", ["http://forvo.com/word/la_montre/#fr"]);
+add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 5
-var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
 add_item("the following sentences", "les phrases suivantes", ["http://www.linguee.fr/francais-anglais/traduction/phrases.html", "http://forvo.com/word/phrases/#fr", "http://forvo.com/word/suivantes/#fr", slides2_page5]);
 add_item("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
+add_item("choose", "choisir", ["http://forvo.com/word/choisir/#fr", "http://www.linguee.fr/francais-anglais/traduction/choisir.html"]);
+add_item("we choose", "nous choisissions", ["http://www.french-linguistics.co.uk/verbs/table/choisir.html#.ViKqyJmrTfA"]);
 add_item("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
 add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", slides2_page5]);
 add_item("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://www.linguee.fr/francais-anglais/traduction/pull.html", "http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
@@ -204,12 +211,14 @@ add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 6
-var slides2_page6 = ref_folder+"Extension_French 1_Cours 2 - page 6.jpg";
 add_item("we have", "nous avons", ["http://forvo.com/word/nous_avons/#fr", slides2_page6]);
+add_item("the computer is modern but the notebook is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/moderne/#fr", "http://forvo.com/word/ancien/#fr", slides2_page6]);
+add_item("ancient", "ancien", ["http://forvo.com/word/ancien/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=ancien", slides2_page6]);
+add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://www.linguee.fr/francais-anglais/traduction/quantit%C3%A9.html", "http://forvo.com/word/professeur/#fr", slides2_page6]);
+add_item("u", "u", ["http://forvo.com/word/u/#fr"]);
+add_item("s", "s", ["http://forvo.com/word/s/#fr"]);
+add_item("d", "d", ["http://forvo.com/word/d/#fr"]);
 /*
-add_item("the computer is modern but the book is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/ancien/#fr", slides2_page6]);
-add_item("ancient", "ancien", ["http://forvo.com/word/ancien/#fr", slides2_page6]);
-add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://forvo.com/word/professeur/#fr", slides2_page6]);
 add_item("the quality of teachers is impressive!", "La qualit\xe9 des professeurs est impressionnante!", ["http://forvo.com/word/qualit%C3%A9/#fr", "http://forvo.com/search/impressionnante/", slides2_page6]);
 add_item("our teacher gives a composition or essay", "Notre professeur donne une composition ou une r\xe9daction", ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/word/r%C3%A9daction/#fr", slides2_page6]);
 add_item("the composition has a strict organization", "La composition a une organisation stricte", ["http://forvo.com/word/organisation/#fr", "http://forvo.com/word/stricte/#fr", slides2_page6]);
@@ -217,13 +226,16 @@ add_item("the position of words and the selection of vocabulary are important", 
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 7
-var slides2_page7 = ref_folder+"Extension_French 1_Cours 2 - page 7.jpg";
 add_item("masculine", "masculin", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=Masculin", slides2_page7]);
 add_item("feminine", "féminin", ["http://forvo.com/word/f%C3%A9minin/#fr", "http://www.linguee.fr/francais-anglais/search?query=f%E9minin&source=auto", slides2_page7]);
 add_item("kind / gender", "genre", ["http://forvo.com/word/genre/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=genre", slides2_page7]);
 add_item("le genre des noms", "the gender of nouns", ["http://forvo.com/word/genre/#fr", "http://forvo.com/word/noms/#fr", slides2_page7]);
-add_item("[masculine nouns:] the government, the realism, the journal, the apple tree, the corridor, the garage, the geranium", "le gouvernement, le r\xe9alisme, le journal, le pommier, le couloir, le garage, le g\xe9ranium", ["http://forvo.com/word/gouvernement/#fr", "http://forvo.com/word/r%C3%A9alisme/#fr", "http://forvo.com/word/le_journal/#fr", "http://forvo.com/word/pommier/#fr", "http://forvo.com/word/couloir/#fr", "http://forvo.com/word/garage/#fr", "http://forvo.com/word/g%C3%A9ranium/#fr", slides2_page7]);
-add_item("[feminine nouns:] the car, the beauty, the fly, the philosophy, the tablet, the duration, the competence", "la voiture, la beaut\xe9, la mouche, la philosophie, la tablette, la dur\xe9e, la comp\xe9tence", ["http://forvo.com/word/voiture/#fr", "http://forvo.com/word/beaut%C3%A9/#fr", "http://forvo.com/word/la_mouche/#fr", "http://forvo.com/word/philosophie/#fr", "http://forvo.com/word/tablette/#fr", "http://forvo.com/word/dur%C3%A9e/#fr", "http://forvo.com/word/comp%C3%A9tence/#fr", slides2_page7]);
+add_item("the government, the realism, the journal, the apple tree, the corridor, the garage, the geranium", "le gouvernement, le r\xe9alisme, le journal, le pommier, le couloir, le garage, le g\xe9ranium", ["http://forvo.com/word/gouvernement/#fr", "http://forvo.com/word/r%C3%A9alisme/#fr", "http://forvo.com/word/le_journal/#fr", "http://forvo.com/word/pommier/#fr", "http://forvo.com/word/couloir/#fr", "http://forvo.com/word/garage/#fr", "http://forvo.com/word/g%C3%A9ranium/#fr", slides2_page7]);
+add_item("[the car, the beauty, the fly, the philosophy, the tablet, the duration, the competence", "la voiture, la beaut\xe9, la mouche, la philosophie, la tablette, la dur\xe9e, la comp\xe9tence", ["http://forvo.com/word/voiture/#fr", "http://forvo.com/word/beaut%C3%A9/#fr", "http://forvo.com/word/la_mouche/#fr", "http://forvo.com/word/philosophie/#fr", "http://forvo.com/word/tablette/#fr", "http://forvo.com/word/dur%C3%A9e/#fr", "http://forvo.com/word/comp%C3%A9tence/#fr", slides2_page7]);
+*/
+add_item("[masculine nouns]", "le gouvernement, le r\xe9alisme, le journal, le pommier, le couloir, le garage, le g\xe9ranium", ["http://forvo.com/word/gouvernement/#fr", "http://forvo.com/word/r%C3%A9alisme/#fr", "http://forvo.com/word/le_journal/#fr", "http://forvo.com/word/pommier/#fr", "http://forvo.com/word/couloir/#fr", "http://forvo.com/word/garage/#fr", "http://forvo.com/word/g%C3%A9ranium/#fr", slides2_page7]);
+add_item("[feminine nouns]", "la voiture, la beaut\xe9, la mouche, la philosophie, la tablette, la dur\xe9e, la comp\xe9tence", ["http://forvo.com/word/voiture/#fr", "http://forvo.com/word/beaut%C3%A9/#fr", "http://forvo.com/word/la_mouche/#fr", "http://forvo.com/word/philosophie/#fr", "http://forvo.com/word/tablette/#fr", "http://forvo.com/word/dur%C3%A9e/#fr", "http://forvo.com/word/comp%C3%A9tence/#fr", slides2_page7]);
+/*
 add_item("the job (position), the post office", "le poste, la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
 add_item("the tour, the tower", "le tour, la tour", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=tour", "http://forvo.com/word/le_tour/#fr", "http://forvo.com/word/tour/#fr", "http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]);
 */
