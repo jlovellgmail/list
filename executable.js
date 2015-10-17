@@ -174,10 +174,12 @@ function display_with_separate_elements(list){
         .attr("class", "line-number")
         .text(function(d,i){ return i+1; })
         ;
-    var links =
+    var links_containers =
         containers
         .append("div")
         .attr("class", "links-container")
+        ;
+    links_containers
         .selectAll("a")
         .data(function(d){ 
             if(d.links) return d.links;
@@ -205,6 +207,20 @@ function display_with_separate_elements(list){
                     return !this_sel.classed("clicked"); 
                 })
                 ;
+        })
+        ;
+    // add button that opens all links
+    links_containers
+        .append("a")
+        .attr("href", "#")
+        .append("div")
+        .attr("class", "word-link")
+        .text("ALL")
+        .on("click", function(d){
+            d.links.forEach(function(link){
+                window.open(link);
+            });
+            d3.event.stopPropagation();
         })
         ;
     result
