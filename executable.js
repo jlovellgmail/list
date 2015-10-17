@@ -212,13 +212,12 @@ function display_with_separate_elements(list){
     // add button that opens all links
     links_containers
         .append("a")
-        .attr("href", "#")
         .append("div")
         .attr("class", "word-link")
         .text("ALL")
         .on("click", function(d){
             d.links.forEach(function(link){
-                window.open(link);
+                window.open(link, "_blank");
             });
             d3.event.stopPropagation();
         })
