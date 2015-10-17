@@ -257,8 +257,11 @@ function setInputValue(){
 	var count = get_shuffled_list().length;
 	document.getElementById("list_length_input").value = count;
 }
-d3.select("body").on("keydown", function(){
-    if(d3.event.keyCode == 70){ // keycode 70 = "f"
+d3.select("body").on("keydown", function(){    
+    // http://jsfiddle.net/qAHC2/292/
+    // f = 70
+    // ` = 192
+    if(d3.event.keyCode == 192){
         flip();
     }
 });

@@ -149,7 +149,7 @@ add_item("beard", "barb\xe9", ["http://forvo.com/word/barb%C3%A9/#fr"]);
 add_item("open", "ouverte", ["http://forvo.com/word/ouverte/#fr"]);
 add_item("closed", "ferm\xe9e", ["http://forvo.com/word/ferm%C3%A9e/#fr", "http://www.linguee.fr/francais-anglais/traduction/ferm%C3%A9.html"]);
 add_item("in the class, how many tables are there?", "Dans la classe, combien est-ce que il y a de tables ?");
-add_item("notebook", "cahier", ["http://www.linguee.fr/francais-anglais/traduction/cahier.html"]);
+add_item("notebook", "cahier", ["http://www.linguee.fr/francais-anglais/traduction/cahier.html", "http://forvo.com/word/cahier/#fr"]);
 add_item("desk", "bureau", ["http://www.linguee.fr/francais-anglais/traduction/bureau.html"]);
 add_item("a black hat", "un chapeau noir", ["http://forvo.com/word/chapeau/#fr", "http://forvo.com/word/noir/#fr"]);
 add_item("a grey suit", "un costume gris", ["http://forvo.com/word/costume/#fr", "http://forvo.com/word/gris/#fr"]);
@@ -192,10 +192,11 @@ add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);// clé
 // class 2 - slides page 5
 var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
 add_item("the following sentences", "les phrases suivantes", ["http://www.linguee.fr/francais-anglais/traduction/phrases.html", "http://forvo.com/word/phrases/#fr", "http://forvo.com/word/suivantes/#fr", slides2_page5]);
-add_item("We choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
+add_item("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
 add_item("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
 add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", slides2_page5]);
 add_item("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://www.linguee.fr/francais-anglais/traduction/pull.html", "http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
+add_item("your", "ton", ["http://forvo.com/word/ton/#fr"]);
 add_item("I look at the computer produced by Apple", "je regarde l'ordinateur produit par Apple", ["http://forvo.com/word/regarde/#fr", "http://forvo.com/word/produit/#fr", "http://forvo.com/word/par/#fr", slides2_page5]);
 add_item("produced", "produit", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=produit", slides2_page5]);
 add_item("look at", "regarder", ["http://www.linguee.fr/francais-anglais/traduction/regarder.html", slides2_page5]);
@@ -205,6 +206,7 @@ add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/
 // class 2 - slides page 6
 var slides2_page6 = ref_folder+"Extension_French 1_Cours 2 - page 6.jpg";
 add_item("we have", "nous avons", ["http://forvo.com/word/nous_avons/#fr", slides2_page6]);
+/*
 add_item("the computer is modern but the book is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/ancien/#fr", slides2_page6]);
 add_item("ancient", "ancien", ["http://forvo.com/word/ancien/#fr", slides2_page6]);
 add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://forvo.com/word/professeur/#fr", slides2_page6]);
@@ -224,6 +226,7 @@ add_item("[masculine nouns:] the government, the realism, the journal, the apple
 add_item("[feminine nouns:] the car, the beauty, the fly, the philosophy, the tablet, the duration, the competence", "la voiture, la beaut\xe9, la mouche, la philosophie, la tablette, la dur\xe9e, la comp\xe9tence", ["http://forvo.com/word/voiture/#fr", "http://forvo.com/word/beaut%C3%A9/#fr", "http://forvo.com/word/la_mouche/#fr", "http://forvo.com/word/philosophie/#fr", "http://forvo.com/word/tablette/#fr", "http://forvo.com/word/dur%C3%A9e/#fr", "http://forvo.com/word/comp%C3%A9tence/#fr", slides2_page7]);
 add_item("the job (position), the post office", "le poste, la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
 add_item("the tour, the tower", "le tour, la tour", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=tour", "http://forvo.com/word/le_tour/#fr", "http://forvo.com/word/tour/#fr", "http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]);
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 /*
