@@ -10,9 +10,17 @@
 	        	margin: 0;
 	        }
 	        .main {
-	            margin-top: 40px;
-	            margin-left: 10px;
-	            margin-right: 18px;
+	        }
+	        #top-controls {
+	        	padding-top: 40px;
+	        	padding-bottom: 40px;
+	        	background-color: rgba(0,0,0, .05);
+	        	margin: 0;
+	        }
+	        #list-container {
+	        	margin-left: 10px;
+	        	margin-right: 18px;
+	        	margin-top: 20px;
 	        }
 	        .group {
 	            margin-top: 10px;
@@ -56,7 +64,6 @@
 	        	color: red;
 	        }
 	        .result {
-	        	margin-top: 100px;
 	        }
 	        .links-container {
 	        	font-size: 11px;
@@ -105,8 +112,9 @@
         ----------------------------------------------------------------------------------
         -->
         <div class="main">
-            <div class="group">
 
+
+            <div id="top-controls" class="group">
                 <div class="h-group" style="text-align: center;">
                     <input type="button" value="flip" 
                         onclick="flip()" 
@@ -121,20 +129,20 @@
                         autofocus
                         />
                     <script>setInputValue();</script>
-                </div>
-            
+                </div>            
                 <div class="h-group on-both-sides-of-button" style="text-align: left;">
                     <div id="next_to_button"></div>
                 </div>
-            
             </div>
-            <div class="group">
-            
+
+
+            <div id="list-container" class="group">
                 <div class="result">
                     <p id="result" name="r1">
                 </div>
-            
             </div>
+
+
         </div>
         <div class="bottom-mark"></div>
         <!--
