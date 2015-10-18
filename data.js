@@ -5,6 +5,7 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
     é   \xe9
     ê   \xea
     à   \xe0
+    â   \xe2
 
 */
 //--------------------------------------------------
@@ -15,6 +16,8 @@ var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
 var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
 var slides2_page6 = ref_folder+"Extension_French 1_Cours 2 - page 6.jpg";
 var slides2_page7 = ref_folder+"Extension_French 1_Cours 2 - page 7.jpg";
+var slides2_page9 = ref_folder+"Extension_French 1_Cours 2 - page 9.jpg";
+var slides2_page11 = ref_folder+"Extension_French 1_Cours 2 - page 11.jpg";
 //--------------------------------------------------
 var data = {};
 data.items = [];
@@ -199,7 +202,7 @@ add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);
 add_item("the following sentences", "les phrases suivantes", ["http://www.linguee.fr/francais-anglais/traduction/phrases.html", "http://forvo.com/word/phrases/#fr", "http://forvo.com/word/suivantes/#fr", slides2_page5]);
 add_item("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
 add_item("choose", "choisir", ["http://forvo.com/word/choisir/#fr", "http://www.linguee.fr/francais-anglais/traduction/choisir.html"]);
-add_item("we choose", "nous choisissions", ["http://www.french-linguistics.co.uk/verbs/table/choisir.html#.ViKqyJmrTfA"]);
+add_item("we choose", "nous choisissons", ["http://forvo.com/word/choisissons/#fr"]);
 add_item("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
 add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", slides2_page5]);
 add_item("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://www.linguee.fr/francais-anglais/traduction/pull.html", "http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
@@ -213,7 +216,7 @@ add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/
 // class 2 - slides page 6
 add_item("we have", "nous avons", ["http://forvo.com/word/nous_avons/#fr", slides2_page6]);
 add_item("the computer is modern but the notebook is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/moderne/#fr", "http://forvo.com/word/ancien/#fr", slides2_page6]);
-add_item("ancient", "ancien", ["http://forvo.com/word/ancien/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=ancien", slides2_page6]);
+add_item("an ancient man", "un homme ancien", ["http://forvo.com/word/ancien/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=ancien", slides2_page6]);
 add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://www.linguee.fr/francais-anglais/traduction/quantit%C3%A9.html", "http://forvo.com/word/professeur/#fr", slides2_page6]);
 add_item("u", "u", ["http://forvo.com/word/u/#fr"]);
 add_item("s", "s", ["http://forvo.com/word/s/#fr"]);
@@ -236,7 +239,7 @@ add_item("[masculine nouns]", "le gouvernement, le r\xe9alisme, le journal, le p
 add_item("the government", "le gouvernement", ["http://forvo.com/word/gouvernement/#fr"]);
 add_item("the realism", "le r\xe9alisme", ["http://forvo.com/word/r%C3%A9alisme/#fr"]);
 add_item("the journal", "le journal", ["http://forvo.com/word/le_journal/#fr"]);
-add_item("the apple tree", "le pommier", ["http://forvo.com/word/pommier/#fr"]);
+add_item("the apple tree", "le pommier", ["http://forvo.com/word/pommier/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=pommier"]);
 add_item("the corridor", "le couloir", ["http://forvo.com/word/couloir/#fr"]);
 add_item("the garage", "le garage", ["http://forvo.com/word/garage/#fr"]);
 add_item("the geranium", "le g\xe9ranium", ["http://forvo.com/word/g%C3%A9ranium/#fr"]);
@@ -252,8 +255,51 @@ add_item("the competence", "la comp\xe9tence", ["http://forvo.com/word/comp%C3%A
 //
 add_item("park the car", "garer la voiture", ["http://forvo.com/word/garer_la_voiture/#fr"]);
 /*
-add_item("the job (position), the post office", "le poste, la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
+add_item("the job, the post office", "le poste, la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
 add_item("the tour, the tower", "le tour, la tour", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=tour", "http://forvo.com/word/le_tour/#fr", "http://forvo.com/word/tour/#fr", "http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]);
+*/
+//--------------------------------------------------
+//--------------------------------------------------
+// class 2 - slides page 9
+add_item("the cake", "g\xe2teau", ["http://forvo.com/word/g%C3%A2teau/#fr", slides2_page9]);
+add_item("chemistry", "la chimie", ["http://forvo.com/word/la_chimie/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=chimie", slides2_page9]);
+add_item("the society", "la soci\xe9t\xe9", ["http://forvo.com/word/la_soci%C3%A9t%C3%A9/", "http://www.linguee.fr/francais-anglais/traduction/soci%C3%A9t%C3%A9.html", slides2_page9]);
+add_item("economy", "l’\xe9conomie", ["http://forvo.com/word/l%27%C3%A9conomie/#fr", "http://www.linguee.fr/francais-anglais/traduction/%C3%A9conomie.html", slides2_page9]);
+add_item("estimate", "l’estimation", ["http://forvo.com/word/estimation/#fr", slides2_page9]);
+add_item("the cleanilness", "la propret\xe9", ["http://www.linguee.fr/francais-anglais/traduction/propret%C3%A9.html", "http://forvo.com/word/propret%C3%A9/#fr", slides2_page9]);
+//--------------------------------------------------
+//--------------------------------------------------
+// class 2 - slices page 10
+/*
+add_item("an ancient man", "un homme ancien", ["http://forvo.com/word/ancien/#fr", slides2_page11]);
+add_item("an ancient woman", "une femme ancienne", ["http://forvo.com/word/ancienne/#fr", slides2_page11]);
+add_item("ancient men", "des hommes anciens", ["http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
+add_item("ancient women", "des femmes anciennes", ["http://forvo.com/word/anciennes/#fr"], slides2_page11);
+//
+add_item("a modern man", "un homme moderne", ["http://forvo.com/word/moderne/#fr", slides2_page11]);
+add_item("a modern woman", "une femme moderne", ["http://forvo.com/word/moderne/#fr", slides2_page11]);
+add_item("modern men", "des hommes modernes", ["http://forvo.com/word/modernes/#fr", slides2_page11]);
+add_item("modern women", "des femmes modernes", ["http://forvo.com/word/modernes/#fr", slides2_page11]);
+//
+add_item("an impressive man", "un homme impressionnant", ["http://forvo.com/word/impressionnant/#fr", slides2_page11]);
+add_item("an impressive woman", "une femme impressionnante", ["http://forvo.com/word/impressionnante/#fr", slides2_page11]);
+add_item("impressive men", "des hommes impressionnants", [slides2_page11]);
+add_item("impressive women", "des femmes impressionnantes", [slides2_page11]);
+//
+add_item("a strict man", "un homme strict", ["http://forvo.com/word/strict/#fr", slides2_page11]);
+add_item("a strict woman", "une femme stricte", ["http://forvo.com/word/stricte/#fr", slides2_page11]);
+add_item("strict men", "des hommes stricts", [slides2_page11]);
+add_item("strict women", "des femmes strictes", ["http://forvo.com/word/strictes/#fr", slides2_page11]);
+//
+add_item("an important man", "un homme important", ["http://forvo.com/word/important/#fr", slides2_page11]);
+add_item("an important woman", "une femme importante", ["http://forvo.com/word/importante/#fr", slides2_page11]);
+add_item("important men", "des hommes importants", ["http://forvo.com/word/importants/#fr", slides2_page11]);
+add_item("important women", "des femmes importantes", ["http://forvo.com/word/importantes/#fr", slides2_page11]);
+//
+add_item("an old man", "un homme vieux", ["http://forvo.com/word/vieux/#fr", slides2_page11]);
+add_item("an old woman", "une femme vieille", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vieille", slides2_page11]);
+add_item("old men", "des hommes vieux", ["http://forvo.com/word/vieux/#fr", slides2_page11]);
+add_item("old women", "des femmes vieilles", ["http://forvo.com/word/vieilles/#fr", slides2_page11]);
 */
 //--------------------------------------------------
 //--------------------------------------------------
