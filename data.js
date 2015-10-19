@@ -216,7 +216,6 @@ add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/
 // class 2 - slides page 6
 add_item("we have", "nous avons", ["http://forvo.com/word/nous_avons/#fr", slides2_page6]);
 add_item("the computer is modern but the notebook is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/moderne/#fr", "http://forvo.com/word/ancien/#fr", slides2_page6]);
-add_item("an ancient man", "un homme ancien", ["http://forvo.com/word/ancien/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=ancien", slides2_page6]);
 add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://www.linguee.fr/francais-anglais/traduction/quantit%C3%A9.html", "http://forvo.com/word/professeur/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", slides2_page6]);
 add_item("u", "u", ["http://forvo.com/word/u/#fr"]);
 add_item("s", "s", ["http://forvo.com/word/s/#fr"]);
@@ -254,10 +253,10 @@ add_item("the duration", "la dur\xe9e", ["http://forvo.com/word/dur%C3%A9e/#fr"]
 add_item("the competence", "la comp\xe9tence", ["http://forvo.com/word/comp%C3%A9tence/#fr"]);
 //
 add_item("park the car", "garer la voiture", ["http://forvo.com/word/garer_la_voiture/#fr"]);
-/*
-add_item("the job, the post office", "le poste, la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
-add_item("the tour, the tower", "le tour, la tour", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=tour", "http://forvo.com/word/le_tour/#fr", "http://forvo.com/word/tour/#fr", "http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]);
-*/
+add_item("the job", "le poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
+add_item("the post office", "la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", slides2_page7]);
+add_item("the tour", "le tour", ["http://forvo.com/search/le%20tour%20de%20france/", "http://forvo.com/word/le_tour/#fr", slides2_page7]);
+add_item("the tower", "la tour", ["http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 9
@@ -272,12 +271,12 @@ add_item("the cleanilness", "la propret\xe9", ["http://www.linguee.fr/francais-a
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slices page 10
-/*
-add_item("an ancient man", "un homme ancien", ["http://forvo.com/word/ancien/#fr", slides2_page11]);
-add_item("an ancient woman", "une femme ancienne", ["http://forvo.com/word/ancienne/#fr", slides2_page11]);
-add_item("ancient men", "des hommes anciens", ["http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
-add_item("ancient women", "des femmes anciennes", ["http://forvo.com/word/anciennes/#fr"], slides2_page11);
+add_item("an ancient man", "un homme ancien", ["http://forvo.com/search/un%20homme/fr/", "http://forvo.com/word/ancien/#fr", slides2_page11]);
+add_item("an ancient woman", "une femme ancienne", ["http://forvo.com/search/une%20femme/", "http://forvo.com/word/ancienne/#fr", slides2_page11]);
+add_item("ancient men", "des hommes anciens", ["http://forvo.com/search/des%20hommes/", "http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
+add_item("ancient women", "des femmes anciennes", ["http://forvo.com/search/des%20femmes/", "http://forvo.com/word/anciennes/#fr", slides2_page11]);
 //
+/*
 add_item("a modern man", "un homme moderne", ["http://forvo.com/word/moderne/#fr", slides2_page11]);
 add_item("a modern woman", "une femme moderne", ["http://forvo.com/word/moderne/#fr", slides2_page11]);
 add_item("modern men", "des hommes modernes", ["http://forvo.com/word/modernes/#fr", slides2_page11]);
