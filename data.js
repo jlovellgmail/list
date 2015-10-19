@@ -217,13 +217,13 @@ add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/
 add_item("we have", "nous avons", ["http://forvo.com/word/nous_avons/#fr", slides2_page6]);
 add_item("the computer is modern but the notebook is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/moderne/#fr", "http://forvo.com/word/ancien/#fr", slides2_page6]);
 add_item("an ancient man", "un homme ancien", ["http://forvo.com/word/ancien/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=ancien", slides2_page6]);
-add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://www.linguee.fr/francais-anglais/traduction/quantit%C3%A9.html", "http://forvo.com/word/professeur/#fr", slides2_page6]);
+add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://www.linguee.fr/francais-anglais/traduction/quantit%C3%A9.html", "http://forvo.com/word/professeur/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", slides2_page6]);
 add_item("u", "u", ["http://forvo.com/word/u/#fr"]);
 add_item("s", "s", ["http://forvo.com/word/s/#fr"]);
 add_item("d", "d", ["http://forvo.com/word/d/#fr"]);
+add_item("the quality of teachers is impressive!", "La qualit\xe9 des professeurs est impressionnante!", ["http://forvo.com/word/qualit%C3%A9/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", "http://forvo.com/search/impressionnante/", slides2_page6]);
+add_item("our teacher gives a composition or essay", "notre professeur donne une composition ou une r\xe9daction", ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/search/ou/fr/", "http://forvo.com/search/r%C3%A9daction/fr/", slides2_page6]);
 /*
-add_item("the quality of teachers is impressive!", "La qualit\xe9 des professeurs est impressionnante!", ["http://forvo.com/word/qualit%C3%A9/#fr", "http://forvo.com/search/impressionnante/", slides2_page6]);
-add_item("our teacher gives a composition or essay", "Notre professeur donne une composition ou une r\xe9daction", ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/word/r%C3%A9daction/#fr", slides2_page6]);
 add_item("the composition has a strict organization", "La composition a une organisation stricte", ["http://forvo.com/word/organisation/#fr", "http://forvo.com/word/stricte/#fr", slides2_page6]);
 add_item("the position of words and the selection of vocabulary are important", "La position des mots et la s\xe9lection du vocabulaire sont importantes", ["http://forvo.com/word/mots/#fr", "http://forvo.com/word/s%C3%A9lection/#fr", "http://forvo.com/word/sont/#fr", "http://forvo.com/word/importantes/#fr", slides2_page6]);
 //--------------------------------------------------
@@ -261,12 +261,14 @@ add_item("the tour, the tower", "le tour, la tour", ["http://www.linguee.fr/fran
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 9
+/*
 add_item("the cake", "g\xe2teau", ["http://forvo.com/word/g%C3%A2teau/#fr", slides2_page9]);
 add_item("chemistry", "la chimie", ["http://forvo.com/word/la_chimie/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=chimie", slides2_page9]);
 add_item("the society", "la soci\xe9t\xe9", ["http://forvo.com/word/la_soci%C3%A9t%C3%A9/", "http://www.linguee.fr/francais-anglais/traduction/soci%C3%A9t%C3%A9.html", slides2_page9]);
 add_item("economy", "l’\xe9conomie", ["http://forvo.com/word/l%27%C3%A9conomie/#fr", "http://www.linguee.fr/francais-anglais/traduction/%C3%A9conomie.html", slides2_page9]);
 add_item("estimate", "l’estimation", ["http://forvo.com/word/estimation/#fr", slides2_page9]);
 add_item("the cleanilness", "la propret\xe9", ["http://www.linguee.fr/francais-anglais/traduction/propret%C3%A9.html", "http://forvo.com/word/propret%C3%A9/#fr", slides2_page9]);
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slices page 10
