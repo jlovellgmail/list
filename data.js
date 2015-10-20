@@ -6,18 +6,26 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
     ê   \xea
     à   \xe0
     â   \xe2
+    ç   \xe7
 
 */
 //--------------------------------------------------
 var cache = "_____";
 var endash = "\u2013";
+//--------------------------------------------------
 var ref_folder = "references/";
+var audio_folder = ref_folder + "audio/";
+//--------------------------------------------------
 var slides2_page3 = ref_folder+"Extension_French 1_Cours 2 - page 3.jpg";
 var slides2_page5 = ref_folder+"Extension_French 1_Cours 2 - page 5.jpg";
 var slides2_page6 = ref_folder+"Extension_French 1_Cours 2 - page 6.jpg";
 var slides2_page7 = ref_folder+"Extension_French 1_Cours 2 - page 7.jpg";
 var slides2_page9 = ref_folder+"Extension_French 1_Cours 2 - page 9.jpg";
 var slides2_page11 = ref_folder+"Extension_French 1_Cours 2 - page 11.jpg";
+var slides2_page12 = ref_folder+"Extension_French 1_Cours 2 - page 12.jpg";
+var slides2_page13 = ref_folder+"Extension_French 1_Cours 2 - page 13.jpg";
+var slides2_page14 = ref_folder+"Extension_French 1_Cours 2 - page 14.jpg";
+//--------------------------------------------------
 //--------------------------------------------------
 var data = {};
 data.items = [];
@@ -270,7 +278,7 @@ add_item("the cleanilness", "la propret\xe9", ["http://www.linguee.fr/francais-a
 */
 //--------------------------------------------------
 //--------------------------------------------------
-// class 2 - slices page 10
+// class 2 - slides page 11
 add_item("an ancient man", "un homme ancien", ["http://forvo.com/search/un%20homme/fr/", "http://forvo.com/word/ancien/#fr", slides2_page11]);
 add_item("an ancient woman", "une femme ancienne", ["http://forvo.com/search/une%20femme/", "http://forvo.com/word/ancienne/#fr", slides2_page11]);
 add_item("ancient men", "des hommes anciens", ["http://forvo.com/search/des%20hommes/", "http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
@@ -302,6 +310,76 @@ add_item("an old woman", "une femme vieille", ["http://www.linguee.fr/francais-a
 add_item("old men", "des hommes vieux", ["http://forvo.com/word/vieux/#fr", slides2_page11]);
 add_item("old women", "des femmes vieilles", ["http://forvo.com/word/vieilles/#fr", slides2_page11]);
 */
+//--------------------------------------------------
+//--------------------------------------------------
+// class 2 - slides page 12
+/*
+add_item("young students", "les \xe9tudiants jeunes", ["http://forvo.com/search/Les%20e%CC%81tudiants/", "http://forvo.com/search/jeunes/", slides2_page12]);
+add_item("handsome professors", "des professeurs beaux", ["http://forvo.com/search/professeurs/", "http://forvo.com/search/beaux/", slides2_page12]);
+add_item("clean places", "des lieux propres", ["http://www.linguee.fr/francais-anglais/traduction/des+lieux+propres.html", "http://forvo.com/word/lieux/#fr", "http://forvo.com/search/propres/", slides2_page12]);
+add_item("newspapers are clear", "les journaux sont clairs", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=Les+journaux+sont+clairs", slides2_page12]);
+add_item("French classes are interesting", "les classes de fran\xe7ais sont int\xe9ressantes", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=Les+classes+de+fran%C3%A7ais+sont+int%C3%A9ressantes", "http://forvo.com/search/Les%20classes/", "http://forvo.com/search/sont/", slides2_page12]);
+*/
+//--------------------------------------------------
+//--------------------------------------------------
+// class 2 - slides page 13
+add_item("0", "z\xe9ro", ["http://forvo.com/word/z%C3%A9ro/#fr", slides2_page13]);
+add_item("1", "un", ["http://forvo.com/word/un/#fr", slides2_page13]);
+add_item("2", "deux", ["http://forvo.com/word/deux/#fr", slides2_page13]);
+add_item("3", "trois", ["http://forvo.com/word/trois/#fr", slides2_page13]);
+add_item("4", "quatre", ["http://forvo.com/word/quatre/#fr", slides2_page13]);
+add_item("5", "cinq", ["http://forvo.com/word/cinq/#fr", slides2_page13]);
+add_item("6", "six", ["http://forvo.com/word/six/#fr", slides2_page13]);
+add_item("7", "sept", ["http://forvo.com/search/sept/", slides2_page13]);
+add_item("8", "huit", ["http://forvo.com/word/huit/#fr", slides2_page13]);
+add_item("9", "neuf", ["http://forvo.com/search/neuf/", slides2_page13]);
+add_item("10", "dix", ["http://forvo.com/search/dix/", slides2_page13]);
+add_item("11", "onze", ["http://forvo.com/search/onze/", slides2_page13]);
+add_item("12", "douze", ["http://forvo.com/search/douze/", slides2_page13]);
+add_item("13", "treize", ["http://forvo.com/search/treize/", slides2_page13]);
+add_item("14", "quatorze", ["http://forvo.com/search/quatorze/", slides2_page13]);
+add_item("15", "quinze", ["http://forvo.com/search/quinze/", slides2_page13]);
+add_item("16", "seize", ["http://forvo.com/search/seize/", slides2_page13]);
+add_item("17", "dix-sept", ["http://forvo.com/word/dix-sept/#fr", slides2_page13]);
+add_item("18", "dix-huit", ["http://forvo.com/word/dix-huit/#fr", slides2_page13]);
+add_item("19", "dix-neuf", ["http://forvo.com/word/dix-neuf/#fr", slides2_page13]);
+add_item("20", "vingt", ["http://forvo.com/search/vingt/", slides2_page13]);
+//--------------------------------------------------
+//--------------------------------------------------
+// class 2 - slides page 14
+add_item("30", "trente", ["http://forvo.com/word/trente/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=trente", slides2_page14]);
+add_item("40", "quarante", ["http://forvo.com/search/quarante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quarante", slides2_page14]);
+add_item("50", "cinquante", ["http://forvo.com/search/cinquante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=cinquante", slides2_page14]);
+add_item("60", "soixante", ["http://forvo.com/search/soixante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=soixante", slides2_page14]);
+add_item("70", "soixante-dix", ["http://forvo.com/search/soixante-dix/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=soixante-dix", slides2_page14]);
+add_item("80", "quatre-vingts", ["http://forvo.com/search/quatre-vingts/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quatre-vingts", slides2_page14]);
+add_item("90", "quatre-vingt-dix", ["http://forvo.com/search/quatre-vingts-dix/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quatre-vingts-dix", slides2_page14]);
+add_item("100", "cent", ["http://forvo.com/search/cent/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=cent", slides2_page14]);
+add_item("1,000", "mille", ["http://forvo.com/search/mille/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=mille", slides2_page14]);
+//--------------------------------------------------
+//--------------------------------------------------
+add_item("78", "soixante-dix-huit", ["http://forvo.com/word/soixante-dix-huit/#fr"]);
+add_item("79", "soixante-dix-neuf", ["http://forvo.com/word/soixante-dix-neuf/#fr"]);
+add_item("97", "quatre-vingt-dix-sept", ["http://forvo.com/word/quatre-vingt-dix-sept/?#fr"]);
+add_item("110", "cent dix", ["http://forvo.com/word/cent_dix/#fr"]);
+add_item("170", "cent soixante-dix", ["http://forvo.com/word/cent_soixante-dix/#fr"]);
+add_item("790", "sept cent quatre-vingt-dix", ["http://forvo.com/word/sept_cent_quatre-vingt-dix/#fr"]);
+add_item("678", "six cent soixante-dix-huit", ["http://forvo.com/word/six_cent_soixante-dix-huit/#fr"]);
+add_item("99", "quatre-vingts-dix-neuf", ["http://forvo.com/word/quatre-vingts-dix-neuf/#fr"]);
+add_item("77", "soixante-dix-sept", ["http://forvo.com/word/soixante-dix-sept/#fr"]);
+add_item("ten million", "dix millions", ["http://forvo.com/word/dix_millions/#fr"]);
+add_item("1099", "mille quatre-vingt-dix-neuf", ["http://forvo.com/word/mille_quatre-vingt-dix-neuf/#fr"]);
+add_item("1863", "dix-huit cent soixante-trois", [audio_folder+"pronunciation_fr_dix-huit_cent_soixante-trois.mp3", "http://forvo.com/word/dix-huit_cent_soixante-trois/#fr"]);
+add_item("31", "trente et un", ["http://forvo.com/word/trente_et_un/#fr"]);
+add_item("32", "trente-deux", ["http://forvo.com/word/trente-deux/#fr"]);
+add_item("33", "trente-trois", ["http://forvo.com/word/trente-trois/#fr"]);
+add_item("34", "trente-quatre", ["http://forvo.com/word/trente-quatre/#fr"]);
+add_item("35", "trente-cinq", ["http://forvo.com/word/trente-cinq/#fr"]);
+add_item("36", "trente-six", ["http://forvo.com/word/trente-six/#fr"]);
+add_item("37", "trente-sept", ["http://forvo.com/word/trente-sept/#fr"]);
+add_item("38", "trente-huit", ["http://forvo.com/word/trente-huit/#fr"]);
+add_item("39", "trente-neuf", ["http://forvo.com/word/trente-neuf/#fr"]);
+add_item("I am 31 years", "j'ai trente-et-un ans", ["http://forvo.com/word/j%27ai_trente-et-un_ans/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
 /*

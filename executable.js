@@ -157,6 +157,9 @@ function go(){
     display_count(truncated.length, shuffled.length);
     display_with_separate_elements(truncated);
 }
+function is_mp3(url){
+    return url.substr(url.length - 4) == ".mp3";
+}
 function display_with_separate_elements(list){
     var result = d3.select("#result");
     result.selectAll("*").remove();
@@ -187,10 +190,9 @@ function display_with_separate_elements(list){
         })
         .enter()
         .append("a")
-        .attr("href", function(d){ return d; })
-        .attr("target", "_blank")
         .append("div")
         .attr("class", "word-link")
+        .classed("audio", function(d){ return is_mp3(d); })
         .text(function(d,i){ return i+1; })
         ;
     var items = 
@@ -209,6 +211,17 @@ function display_with_separate_elements(list){
                 ;
         })
         ;
+    // play audio or open the link
+    links_containers
+        .selectAll("a")
+        .on("click", function(url){
+            if(is_mp3(url)){
+                new Audio(url).play();
+            }
+            else{
+                window.open(url, "_blank");
+            }
+        });
     // add button that opens all links
     links_containers
         .append("a")
