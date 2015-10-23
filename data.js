@@ -26,6 +26,71 @@ var slides2_page12 = ref_folder+"Extension_French 1_Cours 2 - page 12.jpg";
 var slides2_page13 = ref_folder+"Extension_French 1_Cours 2 - page 13.jpg";
 var slides2_page14 = ref_folder+"Extension_French 1_Cours 2 - page 14.jpg";
 //--------------------------------------------------
+var audiosets = {};
+audiosets.notre = ["pronunciation_fr_notre.mp3", "pronunciation_fr_notre (1).mp3", "pronunciation_fr_notre (2).mp3", "pronunciation_fr_notre (3).mp3"];
+audiosets.professeur = ["pronunciation_fr_professeur.mp3", "pronunciation_fr_professeur (1).mp3"];
+audiosets.donne = ["pronunciation_fr_donne.mp3"];
+audiosets.composition = ["pronunciation_fr_composition.mp3"];
+audiosets.ou = ["pronunciation_fr_ou.mp3"];
+audiosets.redaction = ["pronunciation_fr_redaction.mp3", "pronunciation_fr_redaction (1).mp3", "pronunciation_fr_redaction (2).mp3"];
+audiosets.nous = ["pronunciation_fr_nous.mp3", "pronunciation_fr_nous (1).mp3", "pronunciation_fr_nous (2).mp3", "pronunciation_fr_nous (3).mp3"];
+audiosets.choisissons = ["pronunciation_fr_choisissons.mp3"];
+audiosets.un_telephone = ["pronunciation_fr_un_telephone_fixe.mp3"];
+audiosets.pommier = ["pronunciation_fr_pommier.mp3"];
+audiosets.ancienne = ["pronunciation_fr_ancienne.mp3", "pronunciation_fr_ancienne (1).mp3"];
+audiosets.un_femme = ["pronunciation_fr_une_femme_mariee.mp3"];
+audiosets.dix_sept = ["pronunciation_fr_dix-sept.mp3", "pronunciation_fr_dix-sept (1).mp3", "pronunciation_fr_dix-sept (2).mp3"];
+audiosets.trente_neuf = ["pronunciation_fr_trente-neuf.mp3"];
+audiosets.trente_huit = ["pronunciation_fr_trente-huit.mp3"];
+audiosets.trente_quatre = ["pronunciation_fr_trente-quatre.mp3", "pronunciation_fr_trente-quatre (1).mp3"];
+audiosets.un_chiffre = ["pronunciation_fr_un_chiffre.mp3"];
+audiosets.identique = ["pronunciation_fr_identique.mp3"];
+audiosets.ceinture = ["pronunciation_fr_ceinture.mp3", "pronunciation_fr_ceinture (1).mp3"];
+audiosets.haut_couture = ["pronunciation_fr_haute_couture.mp3", "pronunciation_fr_haute_couture (1).mp3", "pronunciation_fr_haute_couture (2).mp3", "pronunciation_fr_haute_couture (3).mp3", "pronunciation_fr_haute_couture (4).mp3"];
+audiosets.bouteille = ["pronunciation_fr_bouteille.mp3"];
+audiosets.plage = ["pronunciation_fr_plage.mp3", "pronunciation_fr_plage (1).mp3", "pronunciation_fr_plage (2).mp3"];
+audiosets.milliard = ["pronunciation_fr_milliard.mp3", "pronunciation_fr_milliard (1).mp3"];
+audiosets.euro = ["pronunciation_fr_euro.mp3", "pronunciation_fr_euro (1).mp3", "pronunciation_fr_euro (2).mp3"];
+audiosets.maintenant = ["pronunciation_fr_maintenant.mp3", "pronunciation_fr_maintenant (1).mp3", "pronunciation_fr_maintenant (2).mp3", "pronunciation_fr_maintenant (3).mp3", "pronunciation_fr_maintenant (4).mp3", "pronunciation_fr_maintenant (5).mp3", "pronunciation_fr_maintenant (6).mp3"];
+audiosets.pluriel = ["pronunciation_fr_pluriel.mp3", "pronunciation_fr_le_pluriel.mp3"];
+audiosets.ce = ["pronunciation_fr_ce.mp3", "pronunciation_fr_ce (1).mp3", "pronunciation_fr_ce (2).mp3"];
+audiosets.marie = ["pronunciation_fr_marie.mp3", "pronunciation_fr_marie (1).mp3", "pronunciation_fr_marie (2).mp3"];
+audiosets.juin = ["pronunciation_fr_juin.mp3", "pronunciation_fr_juin (1).mp3", "pronunciation_fr_juin (2).mp3", "pronunciation_fr_juin (3).mp3"];
+audiosets.hiver = ["pronunciation_fr_hiver.mp3", "pronunciation_fr_hiver (1).mp3", "pronunciation_fr_hiver (2).mp3", "pronunciation_fr_hiver (3).mp3"];
+audiosets.printemps = ["pronunciation_fr_printemps.mp3", "pronunciation_fr_printemps (1).mp3", "pronunciation_fr_printemps (2).mp3", "pronunciation_fr_printemps (3).mp3", "pronunciation_fr_printemps (4).mp3"];
+audiosets.ete = ["pronunciation_fr_ete.mp3", "pronunciation_fr_ete (1).mp3", "pronunciation_fr_ete (2).mp3"];
+audiosets.automne = ["pronunciation_fr_automne.mp3"];
+audiosets.aujourd_hui = ["pronunciation_fr_aujourd'hui.mp3", "pronunciation_fr_aujourd'hui (1).mp3", "pronunciation_fr_aujourd'hui (2).mp3", "pronunciation_fr_aujourd'hui (3).mp3", "pronunciation_fr_aujourd'hui (4).mp3"];
+audiosets.demain = ["pronunciation_fr_demain.mp3", "pronunciation_fr_demain (1).mp3"];
+audiosets.hier = ["pronunciation_fr_hier.mp3", "pronunciation_fr_hier (1).mp3", "pronunciation_fr_hier (2).mp3"];
+audiosets.le_poste = ["pronunciation_fr_le_poste.mp3"];
+audiosets.la_tour_dargent = ["pronunciation_fr_la_tour_d'argent.mp3"];
+audiosets.le_tour_de_france = ["pronunciation_fr_le_tour_de_france.mp3", "pronunciation_fr_le_tour_de_france (1).mp3"];
+audiosets.la_poste = ["pronunciation_fr_la_poste.mp3", "pronunciation_fr_la_poste (1).mp3"];
+audiosets.garer_la_voiture = ["pronunciation_fr_garer_la_voiture.mp3"];
+audiosets.parfait = ["pronunciation_fr_parfait.mp3", "pronunciation_fr_parfait (1).mp3"];
+//
+audiosets.a_jeudi = ["pronunciation_fr_a_jeudi.mp3"];
+audiosets.tournez = ["pronunciation_fr_tournez.mp3", "pronunciation_fr_tournez (1).mp3"];
+audiosets.la_page = ["pronunciation_fr_la_page.mp3"];
+audiosets.ouvrez = ["pronunciation_fr_ouvrez.mp3"];
+audiosets.le_livre = ["pronunciation_fr_le_livre.mp3", "pronunciation_fr_le_livre (1).mp3"];
+audiosets.fermez = ["pronunciation_fr_fermez.mp3"];
+audiosets.regardez = ["pronunciation_fr_regardez.mp3"];
+audiosets.tableau = ["pronunciation_fr_tableau.mp3", "pronunciation_fr_tableau (1).mp3", "pronunciation_fr_tableau (2).mp3"];
+audiosets.ecrivez = ["pronunciation_fr_ecrivez.mp3"];
+audiosets.votre_nom_ici = ["pronunciation_fr_votre_nom_ici.mp3"];
+//--------------------------------------------------
+/*
+audiosets. = [""];
+*/
+//--------------------------------------------------
+// prepend audio folder name
+for(var set in audiosets){
+    audiosets[set].forEach(function(filename,i){
+        audiosets[set][i] = audio_folder+filename;
+    });
+}
 //--------------------------------------------------
 var data = {};
 data.items = [];
@@ -199,37 +264,39 @@ add_item("in the street", "dans la rue", ["http://forvo.com/word/dans_la_rue/#fr
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - notebook page
+/*
 add_item("on the table", "sur la table", ["http://forvo.com/word/sur_la_table/#fr", "http://forvo.com/word/sur/#fr"]);
 add_item("glasses case", "\xe9tui \xe0 lunettes", ["http://forvo.com/word/%C3%A9tui_%C3%A0_lunettes/#fr"]);
 add_item("mouse (for computer)", "souris", ["http://forvo.com/word/souris/#fr"]);
 add_item("the watch", "la montre", ["http://forvo.com/word/la_montre/#fr"]);
-add_item("key", "cl\xe9", ["http://forvo.com/word/cl%C3%A9/#fr"]);
+add_item("key", "cl\xe9", [audio_folder+"pronunciation_fr_cle.mp3", "http://forvo.com/word/cl%C3%A9/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 5
 add_item("the following sentences", "les phrases suivantes", ["http://www.linguee.fr/francais-anglais/traduction/phrases.html", "http://forvo.com/word/phrases/#fr", "http://forvo.com/word/suivantes/#fr", slides2_page5]);
-add_item("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]);
-add_item("choose", "choisir", ["http://forvo.com/word/choisir/#fr", "http://www.linguee.fr/francais-anglais/traduction/choisir.html"]);
-add_item("we choose", "nous choisissons", ["http://forvo.com/word/choisissons/#fr"]);
+add_item("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", [].concat(audiosets.nous, audiosets.choisissons, audiosets.un_telephone, ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]) );
+add_item("choose", "choisir", [audio_folder+"pronunciation_fr_choisir.mp3", audio_folder+"pronunciation_fr_choisir (1).mp3", "http://forvo.com/word/choisir/#fr", "http://www.linguee.fr/francais-anglais/traduction/choisir.html"]);
+add_item("we choose", "nous choisissons", [].concat(audiosets.nous, audiosets.choisissons, ["http://forvo.com/word/choisissons/#fr"]) );
 add_item("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
 add_item("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", slides2_page5]);
 add_item("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://www.linguee.fr/francais-anglais/traduction/pull.html", "http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
 add_item("your", "ton", ["http://forvo.com/word/ton/#fr"]);
-add_item("I look at the computer produced by Apple", "je regarde l'ordinateur produit par Apple", ["http://forvo.com/word/regarde/#fr", "http://forvo.com/word/produit/#fr", "http://forvo.com/word/par/#fr", slides2_page5]);
+add_item("I look at the computer produced by Apple", "je regarde l'ordinateur produit par Apple", [audio_folder+"pronunciation_fr_regarde.mp3", audio_folder+"pronunciation_fr_produit.mp3", audio_folder+"pronunciation_fr_produit (1).mp3", audio_folder+"pronunciation_fr_produit (2).mp3", audio_folder+"pronunciation_fr_par.mp3", audio_folder+"pronunciation_fr_par (1).mp3", "http://forvo.com/word/regarde/#fr", "http://forvo.com/word/produit/#fr", "http://forvo.com/word/par/#fr", slides2_page5]);
 add_item("produced", "produit", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=produit", slides2_page5]);
 add_item("look at", "regarder", ["http://www.linguee.fr/francais-anglais/traduction/regarder.html", slides2_page5]);
 add_item("he has black shoes", "il a des chaussures noires", ["http://forvo.com/word/noires/#fr", slides2_page5]);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 6
-add_item("we have", "nous avons", ["http://forvo.com/word/nous_avons/#fr", slides2_page6]);
+add_item("we have", "nous avons", [audio_folder+"pronunciation_fr_nous_avons.mp3", audio_folder+"pronunciation_fr_nous_avons (1).mp3", audio_folder+"pronunciation_fr_nous_avons (2).mp3", audio_folder+"pronunciation_fr_nous_avons (3).mp3", "http://forvo.com/word/nous_avons/#fr", slides2_page6]);
 add_item("the computer is modern but the notebook is ancient", "l'ordinateur est moderne mais le cahier est ancien", ["http://forvo.com/word/moderne/#fr", "http://forvo.com/word/ancien/#fr", slides2_page6]);
 add_item("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 de professeurs", ["http://forvo.com/word/quantit%C3%A9/#fr", "http://www.linguee.fr/francais-anglais/traduction/quantit%C3%A9.html", "http://forvo.com/word/professeur/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", slides2_page6]);
 add_item("u", "u", ["http://forvo.com/word/u/#fr"]);
 add_item("s", "s", ["http://forvo.com/word/s/#fr"]);
 add_item("d", "d", ["http://forvo.com/word/d/#fr"]);
-add_item("the quality of teachers is impressive!", "La qualit\xe9 des professeurs est impressionnante!", ["http://forvo.com/word/qualit%C3%A9/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", "http://forvo.com/search/impressionnante/", slides2_page6]);
-add_item("our teacher gives a composition or essay", "notre professeur donne une composition ou une r\xe9daction", ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/search/ou/fr/", "http://forvo.com/search/r%C3%A9daction/fr/", slides2_page6]);
+add_item("the quality of teachers is impressive!", "La qualit\xe9 des professeurs est impressionnante!", [audio_folder+"pronunciation_fr_professeur.mp3", audio_folder+"pronunciation_fr_professeur (1).mp3", audio_folder+"pronunciation_fr_la_reunion_parents-professeurs.mp3", audio_folder+"pronunciation_fr_impressionnante.mp3", "http://forvo.com/word/qualit%C3%A9/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", "http://forvo.com/search/impressionnante/", slides2_page6]);
+add_item("our teacher gives a composition or essay", "notre professeur donne une composition ou une r\xe9daction", [].concat(audiosets.notre, audiosets.professeur, audiosets.donne, audiosets.composition, audiosets.ou, audiosets.redaction, ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/search/ou/fr/", "http://forvo.com/search/r%C3%A9daction/fr/", slides2_page6]) );
+*/
 /*
 add_item("the composition has a strict organization", "La composition a une organisation stricte", ["http://forvo.com/word/organisation/#fr", "http://forvo.com/word/stricte/#fr", slides2_page6]);
 add_item("the position of words and the selection of vocabulary are important", "La position des mots et la s\xe9lection du vocabulaire sont importantes", ["http://forvo.com/word/mots/#fr", "http://forvo.com/word/s%C3%A9lection/#fr", "http://forvo.com/word/sont/#fr", "http://forvo.com/word/importantes/#fr", slides2_page6]);
@@ -241,12 +308,13 @@ add_item("feminine", "féminin", ["http://forvo.com/word/f%C3%A9minin/#fr", "htt
 add_item("kind / gender", "genre", ["http://forvo.com/word/genre/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=genre", slides2_page7]);
 add_item("le genre des noms", "the gender of nouns", ["http://forvo.com/word/genre/#fr", "http://forvo.com/word/noms/#fr", slides2_page7]);
 */
+/*
 // masculine nouns
 add_item("[masculine nouns]", "le gouvernement, le r\xe9alisme, le journal, le pommier, le couloir, le garage, le g\xe9ranium", ["http://forvo.com/word/gouvernement/#fr", "http://forvo.com/word/r%C3%A9alisme/#fr", "http://forvo.com/word/le_journal/#fr", "http://forvo.com/word/pommier/#fr", "http://forvo.com/word/couloir/#fr", "http://forvo.com/word/garage/#fr", "http://forvo.com/word/g%C3%A9ranium/#fr", slides2_page7]);
 add_item("the government", "le gouvernement", ["http://forvo.com/word/gouvernement/#fr"]);
 add_item("the realism", "le r\xe9alisme", ["http://forvo.com/word/r%C3%A9alisme/#fr"]);
 add_item("the journal", "le journal", ["http://forvo.com/word/le_journal/#fr"]);
-add_item("the apple tree", "le pommier", ["http://forvo.com/word/pommier/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=pommier"]);
+add_item("the apple tree", "le pommier", [].concat(audiosets.pommier, ["http://forvo.com/word/pommier/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=pommier"]) );
 add_item("the corridor", "le couloir", ["http://forvo.com/word/couloir/#fr"]);
 add_item("the garage", "le garage", ["http://forvo.com/word/garage/#fr"]);
 add_item("the geranium", "le g\xe9ranium", ["http://forvo.com/word/g%C3%A9ranium/#fr"]);
@@ -259,12 +327,13 @@ add_item("the philosophy", "la philosophie", ["http://forvo.com/word/philosophie
 add_item("the tablet", "la tablette", ["http://forvo.com/word/tablette/#fr"]);
 add_item("the duration", "la dur\xe9e", ["http://forvo.com/word/dur%C3%A9e/#fr"]);
 add_item("the competence", "la comp\xe9tence", ["http://forvo.com/word/comp%C3%A9tence/#fr"]);
+*/
 //
-add_item("park the car", "garer la voiture", ["http://forvo.com/word/garer_la_voiture/#fr"]);
-add_item("the job", "le poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", "http://forvo.com/word/le_poste/#fr", slides2_page7]);
-add_item("the post office", "la poste", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", slides2_page7]);
-add_item("the tour", "le tour", ["http://forvo.com/search/le%20tour%20de%20france/", "http://forvo.com/word/le_tour/#fr", slides2_page7]);
-add_item("the tower", "la tour", ["http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]);
+add_item("park the car", "garer la voiture", [].concat(audiosets.garer_la_voiture, ["http://forvo.com/word/garer_la_voiture/#fr"]) );
+add_item("the job", "le poste", [].concat(audiosets.le_poste, [slides2_page7]) );
+add_item("the post office", "la poste", [].concat(audiosets.la_poste, ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", slides2_page7]) );
+add_item("the tour", "le tour", [].concat(audiosets.le_tour_de_france, ["http://forvo.com/search/le%20tour%20de%20france/", "http://forvo.com/word/le_tour/#fr", slides2_page7]) );
+add_item("the tower", "la tour", [].concat(audiosets.la_tour_dargent, ["http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]) );
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 9
@@ -279,10 +348,10 @@ add_item("the cleanilness", "la propret\xe9", ["http://www.linguee.fr/francais-a
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 11
-add_item("an ancient man", "un homme ancien", ["http://forvo.com/search/un%20homme/fr/", "http://forvo.com/word/ancien/#fr", slides2_page11]);
-add_item("an ancient woman", "une femme ancienne", ["http://forvo.com/search/une%20femme/", "http://forvo.com/word/ancienne/#fr", slides2_page11]);
-add_item("ancient men", "des hommes anciens", ["http://forvo.com/search/des%20hommes/", "http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
-add_item("ancient women", "des femmes anciennes", ["http://forvo.com/search/des%20femmes/", "http://forvo.com/word/anciennes/#fr", slides2_page11]);
+add_item("an ancient man", "un homme ancien", [audio_folder+"pronunciation_fr_un_homme.mp3", audio_folder+"pronunciation_fr_ancien.mp3", "http://forvo.com/search/un%20homme/fr/", "http://forvo.com/word/ancien/#fr", slides2_page11]);
+add_item("an ancient woman", "une femme ancienne", [].concat(audiosets.un_femme, audiosets.ancienne, ["http://forvo.com/search/une%20femme/", "http://forvo.com/word/ancienne/#fr", slides2_page11]) );
+add_item("ancient men", "des hommes anciens", [audio_folder+"pronunciation_fr_des_hommes.mp3", audio_folder+"pronunciation_fr_anciens.mp3", "http://forvo.com/search/des%20hommes/", "http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
+add_item("ancient women", "des femmes anciennes", [audio_folder+"pronunciation_fr_droits_des_femmes.mp3", audio_folder+"pronunciation_fr_droits_des_femmes (1).mp3", audio_folder+"pronunciation_fr_anciennes.mp3", audio_folder+"pronunciation_fr_anciennes (1).mp3", "http://forvo.com/search/des%20femmes/", "http://forvo.com/word/anciennes/#fr", slides2_page11]);
 //
 /*
 add_item("a modern man", "un homme moderne", ["http://forvo.com/word/moderne/#fr", slides2_page11]);
@@ -323,65 +392,108 @@ add_item("French classes are interesting", "les classes de fran\xe7ais sont int\
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 13
+/*
 add_item("0", "z\xe9ro", ["http://forvo.com/word/z%C3%A9ro/#fr", slides2_page13]);
-add_item("1", "un", ["http://forvo.com/word/un/#fr", slides2_page13]);
-add_item("2", "deux", ["http://forvo.com/word/deux/#fr", slides2_page13]);
-add_item("3", "trois", ["http://forvo.com/word/trois/#fr", slides2_page13]);
-add_item("4", "quatre", ["http://forvo.com/word/quatre/#fr", slides2_page13]);
-add_item("5", "cinq", ["http://forvo.com/word/cinq/#fr", slides2_page13]);
-add_item("6", "six", ["http://forvo.com/word/six/#fr", slides2_page13]);
+add_item("1", "un", [audio_folder+"pronunciation_fr_un.mp3", audio_folder+"pronunciation_fr_un (1).mp3", audio_folder+"pronunciation_fr_un (2).mp3", audio_folder+"pronunciation_fr_un (3).mp3", audio_folder+"pronunciation_fr_un (4).mp3", audio_folder+"pronunciation_fr_un (5).mp3", audio_folder+"pronunciation_fr_un (6).mp3", "http://forvo.com/word/un/#fr", slides2_page13]);
+add_item("2", "deux", [audio_folder+"pronunciation_fr_deux.mp3", audio_folder+"pronunciation_fr_deux (1).mp3", audio_folder+"pronunciation_fr_deux (2).mp3", audio_folder+"pronunciation_fr_deux (3).mp3", audio_folder+"pronunciation_fr_deux (4).mp3", "http://forvo.com/word/deux/#fr", slides2_page13]);
+add_item("3", "trois", [audio_folder+"pronunciation_fr_trois.mp3", audio_folder+"pronunciation_fr_trois (1).mp3", audio_folder+"pronunciation_fr_trois (2).mp3", audio_folder+"pronunciation_fr_trois (3).mp3", "http://forvo.com/word/trois/#fr", slides2_page13]);
+add_item("4", "quatre", [audio_folder+"pronunciation_fr_quatre.mp3", audio_folder+"pronunciation_fr_quatre (1).mp3", audio_folder+"pronunciation_fr_quatre (2).mp3", "http://forvo.com/word/quatre/#fr", slides2_page13]);
+add_item("5", "cinq", [audio_folder+"pronunciation_fr_cinq.mp3", audio_folder+"pronunciation_fr_cinq (1).mp3", audio_folder+"pronunciation_fr_cinq (2).mp3", audio_folder+"pronunciation_fr_cinq (3).mp3", audio_folder+"pronunciation_fr_cinq (4).mp3", "http://forvo.com/word/cinq/#fr", slides2_page13]);
+add_item("6", "six", [audio_folder+"pronunciation_fr_six.mp3", audio_folder+"pronunciation_fr_six (1).mp3", audio_folder+"pronunciation_fr_six (2).mp3", "http://forvo.com/word/six/#fr", slides2_page13]);
 add_item("7", "sept", ["http://forvo.com/search/sept/", slides2_page13]);
 add_item("8", "huit", ["http://forvo.com/word/huit/#fr", slides2_page13]);
 add_item("9", "neuf", ["http://forvo.com/search/neuf/", slides2_page13]);
-add_item("10", "dix", ["http://forvo.com/search/dix/", slides2_page13]);
+add_item("10", "dix", [audio_folder+"pronunciation_fr_dix.mp3", audio_folder+"pronunciation_fr_dix (1).mp3", audio_folder+"pronunciation_fr_dix (2).mp3", "http://forvo.com/search/dix/", slides2_page13]);
 add_item("11", "onze", ["http://forvo.com/search/onze/", slides2_page13]);
-add_item("12", "douze", ["http://forvo.com/search/douze/", slides2_page13]);
-add_item("13", "treize", ["http://forvo.com/search/treize/", slides2_page13]);
-add_item("14", "quatorze", ["http://forvo.com/search/quatorze/", slides2_page13]);
-add_item("15", "quinze", ["http://forvo.com/search/quinze/", slides2_page13]);
-add_item("16", "seize", ["http://forvo.com/search/seize/", slides2_page13]);
-add_item("17", "dix-sept", ["http://forvo.com/word/dix-sept/#fr", slides2_page13]);
+add_item("12", "douze", [audio_folder+"pronunciation_fr_douze.mp3", audio_folder+"pronunciation_fr_douze (1).mp3", audio_folder+"pronunciation_fr_douze (2).mp3", "http://forvo.com/search/douze/", slides2_page13]);
+add_item("13", "treize", [audio_folder+"pronunciation_fr_treize.mp3", audio_folder+"pronunciation_fr_treize (1).mp3", audio_folder+"pronunciation_fr_treize (2).mp3", "http://forvo.com/search/treize/", slides2_page13]);
+add_item("14", "quatorze", [audio_folder+"pronunciation_fr_quatorze.mp3", audio_folder+"pronunciation_fr_quatorze (1).mp3", audio_folder+"pronunciation_fr_quatorze (2).mp3", "http://forvo.com/search/quatorze/", slides2_page13]);
+add_item("15", "quinze", [audio_folder+"pronunciation_fr_quinze.mp3", audio_folder+"pronunciation_fr_quinze (1).mp3", audio_folder+"pronunciation_fr_quinze (2).mp3", audio_folder+"pronunciation_fr_quinze (3).mp3", audio_folder+"pronunciation_fr_quinze (4).mp3", "http://forvo.com/search/quinze/", slides2_page13]);
+add_item("16", "seize", [audio_folder+"pronunciation_fr_seize.mp3", audio_folder+"pronunciation_fr_seize (1).mp3", audio_folder+"pronunciation_fr_seize (2).mp3", audio_folder+"pronunciation_fr_seize (3).mp3", "http://forvo.com/search/seize/", slides2_page13]);
+add_item("17", "dix-sept", [].concat(audiosets.dix_sept, ["http://forvo.com/word/dix-sept/#fr", slides2_page13]) );
 add_item("18", "dix-huit", ["http://forvo.com/word/dix-huit/#fr", slides2_page13]);
 add_item("19", "dix-neuf", ["http://forvo.com/word/dix-neuf/#fr", slides2_page13]);
-add_item("20", "vingt", ["http://forvo.com/search/vingt/", slides2_page13]);
+add_item("20", "vingt", [audio_folder+"pronunciation_fr_vingt.mp3", audio_folder+"pronunciation_fr_vingt (1).mp3", audio_folder+"pronunciation_fr_vingt (2).mp3", audio_folder+"pronunciation_fr_vingt (3).mp3", audio_folder+"pronunciation_fr_vingt (4).mp3", audio_folder+"pronunciation_fr_vingt (5).mp3", audio_folder+"pronunciation_fr_vingt (6).mp3", "http://forvo.com/search/vingt/", slides2_page13]);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 2 - slides page 14
-add_item("30", "trente", ["http://forvo.com/word/trente/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=trente", slides2_page14]);
-add_item("40", "quarante", ["http://forvo.com/search/quarante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quarante", slides2_page14]);
-add_item("50", "cinquante", ["http://forvo.com/search/cinquante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=cinquante", slides2_page14]);
-add_item("60", "soixante", ["http://forvo.com/search/soixante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=soixante", slides2_page14]);
-add_item("70", "soixante-dix", ["http://forvo.com/search/soixante-dix/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=soixante-dix", slides2_page14]);
-add_item("80", "quatre-vingts", ["http://forvo.com/search/quatre-vingts/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quatre-vingts", slides2_page14]);
-add_item("90", "quatre-vingt-dix", ["http://forvo.com/search/quatre-vingts-dix/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quatre-vingts-dix", slides2_page14]);
-add_item("100", "cent", ["http://forvo.com/search/cent/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=cent", slides2_page14]);
-add_item("1,000", "mille", ["http://forvo.com/search/mille/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=mille", slides2_page14]);
+add_item("30", "trente", [audio_folder+"pronunciation_fr_trente.mp3", audio_folder+"pronunciation_fr_trente (1).mp3", audio_folder+"pronunciation_fr_trente (2).mp3", "http://forvo.com/word/trente/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=trente", slides2_page14]);
+add_item("40", "quarante", [audio_folder+"pronunciation_fr_quarante.mp3", "http://forvo.com/search/quarante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quarante", slides2_page14]);
+add_item("50", "cinquante", [audio_folder+"pronunciation_fr_cinquante.mp3", audio_folder+"pronunciation_fr_cinquante (1).mp3", audio_folder+"pronunciation_fr_cinquante (2).mp3", "http://forvo.com/search/cinquante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=cinquante", slides2_page14]);
+add_item("60", "soixante", [audio_folder+"pronunciation_fr_soixante.mp3", audio_folder+"pronunciation_fr_soixante (1).mp3", audio_folder+"pronunciation_fr_soixante (2).mp3", "http://forvo.com/search/soixante/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=soixante", slides2_page14]);
+add_item("70", "soixante-dix", [audio_folder+"pronunciation_fr_soixante-dix.mp3", "http://forvo.com/search/soixante-dix/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=soixante-dix", slides2_page14]);
+add_item("80", "quatre-vingts", [audio_folder+"pronunciation_fr_quatre-vingts.mp3", audio_folder+"pronunciation_fr_quatre-vingts (1).mp3", "http://forvo.com/search/quatre-vingts/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quatre-vingts", slides2_page14]);
+add_item("90", "quatre-vingt-dix", [audio_folder+"pronunciation_fr_quatre-vingts-dix.mp3", "http://forvo.com/search/quatre-vingts-dix/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=quatre-vingts-dix", slides2_page14]);
+add_item("100", "cent", [audio_folder+"pronunciation_fr_cent.mp3", audio_folder+"pronunciation_fr_cent (1).mp3", audio_folder+"pronunciation_fr_cent (2).mp3", audio_folder+"pronunciation_fr_cent (3).mp3", "http://forvo.com/search/cent/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=cent", slides2_page14]);
+add_item("1,000", "mille", [audio_folder+"pronunciation_fr_mille.mp3", audio_folder+"pronunciation_fr_mille (1).mp3", audio_folder+"pronunciation_fr_mille (2).mp3", "http://forvo.com/search/mille/", "http://www.linguee.fr/francais-anglais/search?source=auto&query=mille", slides2_page14]);
+*/
 //--------------------------------------------------
 //--------------------------------------------------
-add_item("78", "soixante-dix-huit", ["http://forvo.com/word/soixante-dix-huit/#fr"]);
-add_item("79", "soixante-dix-neuf", ["http://forvo.com/word/soixante-dix-neuf/#fr"]);
-add_item("97", "quatre-vingt-dix-sept", ["http://forvo.com/word/quatre-vingt-dix-sept/?#fr"]);
-add_item("110", "cent dix", ["http://forvo.com/word/cent_dix/#fr"]);
-add_item("170", "cent soixante-dix", ["http://forvo.com/word/cent_soixante-dix/#fr"]);
-add_item("790", "sept cent quatre-vingt-dix", ["http://forvo.com/word/sept_cent_quatre-vingt-dix/#fr"]);
-add_item("678", "six cent soixante-dix-huit", ["http://forvo.com/word/six_cent_soixante-dix-huit/#fr"]);
-add_item("99", "quatre-vingts-dix-neuf", ["http://forvo.com/word/quatre-vingts-dix-neuf/#fr"]);
-add_item("77", "soixante-dix-sept", ["http://forvo.com/word/soixante-dix-sept/#fr"]);
-add_item("ten million", "dix millions", ["http://forvo.com/word/dix_millions/#fr"]);
-add_item("1099", "mille quatre-vingt-dix-neuf", ["http://forvo.com/word/mille_quatre-vingt-dix-neuf/#fr"]);
-add_item("1863", "dix-huit cent soixante-trois", [audio_folder+"pronunciation_fr_dix-huit_cent_soixante-trois.mp3", "http://forvo.com/word/dix-huit_cent_soixante-trois/#fr"]);
-add_item("31", "trente et un", ["http://forvo.com/word/trente_et_un/#fr"]);
-add_item("32", "trente-deux", ["http://forvo.com/word/trente-deux/#fr"]);
-add_item("33", "trente-trois", ["http://forvo.com/word/trente-trois/#fr"]);
-add_item("34", "trente-quatre", ["http://forvo.com/word/trente-quatre/#fr"]);
+add_item("31", "trente et un", [audio_folder+"pronunciation_fr_trente_et_un.mp3", audio_folder+"pronunciation_fr_trente_et_un (1).mp3", "http://forvo.com/word/trente_et_un/#fr"]);
+/*
+add_item("32", "trente-deux", [audio_folder+"pronunciation_fr_trente-deux.mp3", audio_folder+"pronunciation_fr_trente-deux (1).mp3", audio_folder+"pronunciation_fr_trente-deux (2).mp3", "http://forvo.com/word/trente-deux/#fr"]);
+add_item("33", "trente-trois", [audio_folder+"pronunciation_fr_trente-trois.mp3", audio_folder+"pronunciation_fr_trente-trois (1).mp3", "http://forvo.com/word/trente-trois/#fr"]);
+add_item("34", "trente-quatre", audiosets.trente_quatre);
 add_item("35", "trente-cinq", ["http://forvo.com/word/trente-cinq/#fr"]);
-add_item("36", "trente-six", ["http://forvo.com/word/trente-six/#fr"]);
-add_item("37", "trente-sept", ["http://forvo.com/word/trente-sept/#fr"]);
-add_item("38", "trente-huit", ["http://forvo.com/word/trente-huit/#fr"]);
-add_item("39", "trente-neuf", ["http://forvo.com/word/trente-neuf/#fr"]);
-add_item("I am 31 years", "j'ai trente-et-un ans", ["http://forvo.com/word/j%27ai_trente-et-un_ans/#fr"]);
+add_item("36", "trente-six", [audio_folder+"pronunciation_fr_trente-six.mp3", "http://forvo.com/word/trente-six/#fr"]);
+add_item("37", "trente-sept", [audio_folder+"pronunciation_fr_trente-sept.mp3", "http://forvo.com/word/trente-sept/#fr"]);
+add_item("38", "trente-huit", [].concat(audiosets.trente_huit, ["http://forvo.com/word/trente-huit/#fr"]) );
+*/
+add_item("39", "trente-neuf", [].concat(audiosets.trente_neuf, ["http://forvo.com/word/trente-neuf/#fr"]) );
+add_item("77", "soixante-dix-sept", [audio_folder+"pronunciation_fr_soixante-dix-sept.mp3", "http://forvo.com/word/soixante-dix-sept/#fr"]);
+/*
+add_item("78", "soixante-dix-huit", [audio_folder+"pronunciation_fr_soixante-dix-huit.mp3", "http://forvo.com/word/soixante-dix-huit/#fr"]);
+add_item("79", "soixante-dix-neuf", ["http://forvo.com/word/soixante-dix-neuf/#fr"]);
+*/
+add_item("97", "quatre-vingt-dix-sept", [audio_folder+"pronunciation_fr_quatre-vingt-dix-sept.mp3", "http://forvo.com/word/quatre-vingt-dix-sept/?#fr"]);
+/*
+add_item("99", "quatre-vingts-dix-neuf", ["http://forvo.com/word/quatre-vingts-dix-neuf/#fr"]);
+add_item("110", "cent dix", [audio_folder+"pronunciation_fr_cent_dix.mp3", "http://forvo.com/word/cent_dix/#fr"]);
+add_item("170", "cent soixante-dix", [audio_folder+"pronunciation_fr_cent_soixante-dix.mp3", "http://forvo.com/word/cent_soixante-dix/#fr"]);
+add_item("790", "sept cent quatre-vingt-dix", [audio_folder+"pronunciation_fr_sept_cent_quatre-vingt-dix.mp3", "http://forvo.com/word/sept_cent_quatre-vingt-dix/#fr"]);
+*/
+add_item("678", "six cent soixante-dix-huit", [audio_folder+"pronunciation_fr_six_cent_soixante-dix-huit.mp3", "http://forvo.com/word/six_cent_soixante-dix-huit/#fr"]);
+add_item("ten million", "dix millions", [audio_folder+"pronunciation_fr_dix_millions.mp3", audio_folder+"pronunciation_fr_dix_millions (1).mp3", "http://forvo.com/word/dix_millions/#fr"]);
+add_item("1099", "mille quatre-vingt-dix-neuf", [audio_folder+"pronunciation_fr_mille_quatre-vingt-dix-neuf.mp3", audio_folder+"pronunciation_fr_mille_quatre-vingt-dix-neuf (1).mp3", "http://forvo.com/word/mille_quatre-vingt-dix-neuf/#fr"]);
+add_item("1863", "dix-huit cent soixante-trois", [audio_folder+"pronunciation_fr_dix-huit_cent_soixante-trois.mp3", "http://forvo.com/word/dix-huit_cent_soixante-trois/#fr"]);
+add_item("I am 31 years old", "j'ai trente-et-un ans", [audio_folder+"pronunciation_fr_j'ai_trente-et-un_ans.mp3", audio_folder+"pronunciation_fr_j'ai_trente-et-un_ans (1).mp3", "http://forvo.com/word/j%27ai_trente-et-un_ans/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
+add_item("perfect", "parfait", audiosets.parfait);
+add_item("something", "quelque chose", [audio_folder+"pronunciation_fr_quelque_chose.mp3", audio_folder+"pronunciation_fr_quelque_chose (1).mp3", audio_folder+"pronunciation_fr_quelque_chose (2).mp3", audio_folder+"pronunciation_fr_quelque_chose (3).mp3", audio_folder+"pronunciation_fr_quelque_chose (4).mp3", "http://forvo.com/word/quelque_chose/#fr"]);
+add_item("this", "ce", audiosets.ce);
+//--------------------------------------------------
+//--------------------------------------------------
+// class 3 notes
+add_item("a number", "un chiffre", audiosets.un_chiffre);
+add_item("identical", "identique", audiosets.identique);
+add_item("belt", "ceinture", audiosets.ceinture);
+add_item("high fashion", "haute couture", audiosets.haut_couture);
+add_item("bottle", "bouteille", audiosets.bouteille);
+add_item("beach", "plage", audiosets.plage);
+add_item("billion", "milliard", audiosets.milliard);
+add_item("euro", "euro", audiosets.euro);
+add_item("now", "maintenant", audiosets.maintenant);
+add_item("plural", "pluriel", audiosets.pluriel);
+add_item("married", "mari\xe9", audiosets.marie);
+add_item("June", "Juin", audiosets.juin);
+add_item("winter", "hiver", audiosets.hiver);
+add_item("spring", "printemps", audiosets.printemps);
+add_item("summer", "\xe9t\xe9", audiosets.ete);
+add_item("autumn", "automne", audiosets.automne);
+add_item("today", "aujourd'hui", audiosets.aujourd_hui);
+add_item("tomorrow", "demain", audiosets.demain);
+add_item("yesterday", "hier", audiosets.hier);
+//--------------------------------------------------
+//--------------------------------------------------
+// class 3 slides
+// page 2
+add_item("see you Thursday", "\xe0 jeudi", audiosets.a_jeudi);
+add_item("turn the page", "tournez la page", [].concat(audiosets.tournez, audiosets.la_page));
+add_item("open the book", "ouvrez le livre", [].concat(audiosets.ouvrez, audiosets.le_livre));
+add_item("close the book", "fermez le livre", [].concat(audiosets.fermez, audiosets.le_livre));
+add_item("look at the whiteboard", "regardez le tableau", [].concat(audiosets.regardez, audiosets.tableau));
+add_item("write your name", "\xe9crivez votre nom", [].concat(audiosets.ecrivez, audiosets.votre_nom_ici));
 /*
 add_item("", "", [""]);
 */
