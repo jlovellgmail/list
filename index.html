@@ -19,7 +19,7 @@
 	        }
 	        #list-container {
 	        	margin-left: 10px;
-	        	margin-right: 18px;
+	        	margin-right: 10px;
 	        	margin-top: 20px;
 	        }
 	        .group {
@@ -45,16 +45,20 @@
 	        	background-color: red;
 	        }
 	        .list-item-container {
-	        	margin-bottom: 25px;
 	        	position: relative;
+	        	padding: 10px;
+	        }
+	        .list-item-container:hover {
+	           background-color: rgba(255,0,0, .012);
 	        }
 	        .line-number {
 	        	color: rgba(0,0,0, .3);
 	        	font-size: 11px;
 	        	font-family: arial;
 	        	text-align: right;
-	        	position: absolute;
 	        	display: block;
+	        	float: left;
+	        	position: relative;
 				top: 3px;
 			}
 	        .item {
@@ -71,7 +75,7 @@
 	        	text-decoration: none;
 			    position: absolute;
 			    display: block;
-			    right: 0;
+			    right: 12px;
 	        }
 	        .word-link{
 			    font-size: 9px;
