@@ -230,6 +230,7 @@ audio.la_main = getlist("pronunciation_fr_la_main.mp3", 1);
 audio.prenez = ["pronunciation_fr_prenez.mp3"];
 audio.un_stylo = ["pronunciation_fr_un_stylo.mp3"];
 //
+audio.prendre = getlist("pronunciation_fr_prendre.mp3", 3);
 audio.je_prends = getlist("pronunciation_fr_je_prends.mp3", 1);
 audio.tu_prends = getlist("pronunciation_fr_tu_prends.mp3", 1);
 audio.elle_prend = getlist("pronunciation_fr_elle_prend.mp3", 1);
@@ -267,6 +268,10 @@ audio.y = getlist("pronunciation_fr_y.mp3", 1);
 audio.z = ["pronunciation_fr_z.mp3"];
 audio.daccord = getlist("pronunciation_fr_d'accord.mp3", 4);
 audio.donc = ["pronunciation_fr_donc.mp3"];
+audio.mois = ["pronunciation_fr_mois.mp3"];
+audio.preferee = ["pronunciation_fr_pr\xe9f\xe9re\xe9.mp3"];
+audio.couleur = getlist("pronunciation_fr_couleur.mp3", 2);
+audio.piece_de_resistance = getlist("pronunciation_fr_pi\xe8ce_de_r\xe9sistance.mp3", 1);
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -768,15 +773,15 @@ add_item("you(pl) practice", "pratiquez", [].concat(audio.pratiquez, slides4_pag
 add_item("they practice", "pratiquent", [].concat(audio.pratiquent, slides4_page6));
 //
 add_item("you(pl) look at", "regardez", [].concat(audio.regardez, slides4_page6));
+*/
 // class 4 - slides page 7
 add_item("to prefer", "pr\xe9f\xe9rer", [].concat(audio.preferer, slides4_page7));
 add_item("I prefer", "pr\xe9f\xe8re", [].concat(audio.prefere, slides4_page7));
 add_item("you prefer", "pr\xe9f\xe8res", [].concat(audio.preferes, slides4_page7));
 add_item("he/she/it prefers", "pr\xe9f\xe8re", [].concat(audio.prefere, slides4_page7));
-add_item("we prefer", "pr\xe9f\xe9rons", slides4_page7);
+add_item("we prefer", "nous pr\xe9f\xe9rons", [].concat(audio.preferons, slides4_page7));
 add_item("you(pl) prefer", "pr\xe9f\xe9rez", [].concat(audio.preferez, slides4_page7));
 add_item("they prefer", "pr\xe9f\xe8rent", [].concat(audio.preferent, slides4_page7));
-*/
 /*
 // class 4 - page 10
 add_item("my (m,s)", "mon", [].concat(audio.mon, slides4_page10));
@@ -839,11 +844,10 @@ add_item("our homework", "nos devoirs", audio.nos_devoirs);
 add_item("our luggage", "nos bagages", audio.nos_bagages);
 add_item("open your books", "ouvrez vos livres", audio.ouvrez_vos_livres);
 add_item("their eyes", "leurs yeux", audio.leurs_yeux);
-//
-add_item("we prefer", "nous pr\xe9f\xe9rons", audio.preferons);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 5
+add_item("to take", "prendre", audio.prendre);
 add_item("I take", "je prends", audio.je_prends);
 add_item("you take", "tu prends", audio.tu_prends);
 add_item("she takes", "elle prend", audio.elle_prend);
@@ -853,6 +857,9 @@ add_item("they take", "elles prennent", audio.elles_prennent);
 //
 add_item("why", "pourquoi", audio.pourquoi);
 add_item("grifter/swindler", "escroc", audio.escroc);
+add_item("month", "mois", audio.mois);
+add_item("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
+add_item("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
 //--------------------------------------------------
 //--------------------------------------------------
 /*
