@@ -183,6 +183,28 @@ audio.aout = ["pronunciation_fr_aout.mp3", "pronunciation_fr_aout (1).mp3", "pro
 audio.septembre = ["pronunciation_fr_septembre.mp3", "pronunciation_fr_septembre (1).mp3", "pronunciation_fr_septembre (2).mp3", "pronunciation_fr_septembre (3).mp3"];
 audio.octobre = ["pronunciation_fr_octobre.mp3", "pronunciation_fr_octobre (1).mp3", "pronunciation_fr_octobre (2).mp3", "pronunciation_fr_octobre (3).mp3"];
 audio.novembre = ["pronunciation_fr_novembre.mp3", "pronunciation_fr_novembre (1).mp3", "pronunciation_fr_novembre (2).mp3"];
+audio.squelette = ["pronunciation_fr_squelette.mp3"];
+audio.vouloir = getlist("pronunciation_fr_vouloir.mp3", 2);
+audio.veux = getlist("pronunciation_fr_veux.mp3", 2);
+audio.je_veux = getlist("pronunciation_fr_je_veux.mp3", 2);
+audio.tu_veux = getlist("pronunciation_fr_tu_veux.mp3", 2);
+audio.veut = getlist("pronunciation_fr_veut.mp3", 2);
+audio.elle_veut = getlist("pronunciation_fr_elle_veut.mp3", 1);
+audio.voulons = getlist("pronunciation_fr_voulons.mp3", 4);
+audio.nous_voulons = getlist("pronunciation_fr_nous_voulons.mp3", 3);
+audio.voulez = getlist("pronunciation_fr_voulez.mp3", 1);
+audio.vous_voulez = getlist("pronunciation_fr_vous_voulez.mp3", 3);
+audio.veulent = getlist("pronunciation_fr_veulent.mp3", 1);
+audio.elles_veulent = getlist("pronunciation_fr_elles_veulent.mp3", 1);
+//
+audio.aller = getlist("pronunciation_fr_aller.mp3", 1);
+audio.je_vais = getlist("pronunciation_fr_je_vais.mp3", 2);
+audio.vais = getlist("pronunciation_fr_vais.mp3", 3);
+audio.tu_vas = getlist("pronunciation_fr_tu_vas.mp3", 2);
+audio.il_va = getlist("pronunciation_fr_il_va.mp3", 2);
+audio.nous_allons = getlist("pronunciation_fr_nous_allons.mp3", 1);
+audio.vous_allez = getlist("pronunciation_fr_vous_allez.mp3", 1);
+audio.elles_vont = getlist("pronunciation_fr_elles_vont.mp3", 1);
 //--------------------------------------------------
 //--------------------------------------------------
 //--------------------------------------------------
@@ -704,6 +726,7 @@ add_item("yesterday", "hier", audio.hier);
 //--------------------------------------------------
 // class 3
 // slides page 2
+/*
 add_item("see you Thursday", "\xe0 jeudi", audio.a_jeudi);
 add_item("turn the page", "tournez la page", [].concat(audio.tournez, audio.la_page));
 add_item("open the book", "ouvrez le livre", [].concat(audio.ouvrez, audio.le_livre));
@@ -712,6 +735,7 @@ add_item("look at the whiteboard", "regardez le tableau", [].concat(audio.regard
 add_item("write your name", "\xe9crivez votre nom", [].concat(audio.ecrivez, audio.votre_nom_ici));
 add_item("raise your hand", "levez la main", [].concat(audio.levez, audio.la_main));
 add_item("take a pen", "prenez un stylo", [].concat(audio.prenez, audio.un_stylo));
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 // class 4
@@ -745,6 +769,7 @@ add_item("parents", "parents", audio.parents);
 add_item("build 5 sentences that make sense using the verb 'to be' or 'having'", "construisez 5 phrases qui ont du sens en utilisant les verbes '\xeatre' ou 'avoir'", [].concat(audio.construisez, audio.phrases, audio.qui, audio.ont, audio.du, audio.sens, audio.en_utilisant, audio.verbes));
 */
 // class 4 - slides page 6
+/*
 add_item("to be called", "s'appeler", [].concat(audio.sappeler, slides4_page6));
 add_item("I am called / my name is", "je m'appelle", [].concat(audio.je_mappelle, slides4_page6));
 add_item("you are called", "tu t'appelles", [].concat(audio.tappelles, slides4_page6));
@@ -760,6 +785,7 @@ add_item("he/she/it loves", "aime", [].concat(audio.aime, slides4_page6));
 add_item("we love", "aimons", [].concat(audio.aimons, slides4_page6));
 add_item("you(pl) love", "aimez", [].concat(audio.aimez, slides4_page6));
 add_item("they love", "aiment", [].concat(audio.aiment, slides4_page6));
+*/
 /*
 //
 add_item("to practice", "pratiquer", [].concat(audio.pratiquer, slides4_page6));
@@ -767,13 +793,12 @@ add_item("I practice", "pratique", [].concat(audio.pratique, slides4_page6));
 add_item("you practice", "pratiques", [].concat(audio.pratiques, slides4_page6));
 add_item("he/she/it practices", "pratique", [].concat(audio.pratique, slides4_page6));
 add_item("we practice", "pratiquons", [].concat(audio.pratiquons, slides4_page6));
-*/
 add_item("you(pl) practice", "pratiquez", [].concat(audio.pratiquez, slides4_page6));
-/*
 add_item("they practice", "pratiquent", [].concat(audio.pratiquent, slides4_page6));
 //
 add_item("you(pl) look at", "regardez", [].concat(audio.regardez, slides4_page6));
 */
+/*
 // class 4 - slides page 7
 add_item("to prefer", "pr\xe9f\xe9rer", [].concat(audio.preferer, slides4_page7));
 add_item("I prefer", "pr\xe9f\xe8re", [].concat(audio.prefere, slides4_page7));
@@ -782,6 +807,7 @@ add_item("he/she/it prefers", "pr\xe9f\xe8re", [].concat(audio.prefere, slides4_
 add_item("we prefer", "nous pr\xe9f\xe9rons", [].concat(audio.preferons, slides4_page7));
 add_item("you(pl) prefer", "pr\xe9f\xe9rez", [].concat(audio.preferez, slides4_page7));
 add_item("they prefer", "pr\xe9f\xe8rent", [].concat(audio.preferent, slides4_page7));
+*/
 /*
 // class 4 - page 10
 add_item("my (m,s)", "mon", [].concat(audio.mon, slides4_page10));
@@ -802,6 +828,7 @@ add_item("your(pl) (pl)", "vos", [].concat(audio.vos, slides4_page10));
 add_item("their (pl)", "leurs", [].concat(audio.leurs, slides4_page10));
 */
 // class 4 - page 11
+/*
 add_item("January", "Janvier", audio.janvier);
 add_item("February", "F\xe9vrier", audio.fevrier);
 add_item("March", "Mars", audio.mars);
@@ -844,9 +871,12 @@ add_item("our homework", "nos devoirs", audio.nos_devoirs);
 add_item("our luggage", "nos bagages", audio.nos_bagages);
 add_item("open your books", "ouvrez vos livres", audio.ouvrez_vos_livres);
 add_item("their eyes", "leurs yeux", audio.leurs_yeux);
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 // class 5
+add_item("month", "mois", audio.mois);
+//
 add_item("to take", "prendre", audio.prendre);
 add_item("I take", "je prends", audio.je_prends);
 add_item("you take", "tu prends", audio.tu_prends);
@@ -855,11 +885,28 @@ add_item("we take", "nous prenons", audio.nous_prenons);
 add_item("you(pl) take", "vous prenez", audio.vous_prenez);
 add_item("they take", "elles prennent", audio.elles_prennent);
 //
+add_item("to want", "vouloir", audio.vouloir);
+add_item("I want", "je veux", [].concat(audio.je_veux, audio.veux));
+add_item("you want", "tu veux", [].concat(audio.tu_veux, audio.veux));
+add_item("she wants", "elle veut", [].concat(audio.elle_veut, audio.veut));
+add_item("we want", "nous voulons", [].concat(audio.nous_voulons, audio.voulons));
+add_item("you(pl) want", "vous voulez", [].concat(audio.vous_voulez, audio.voulez));
+add_item("they want", "elles veulent", [].concat(audio.elles_veulent, audio.veulent));
+//
+add_item("to go", "aller", audio.aller);
+add_item("I go", "je vais", [].concat(audio.je_vais, audio.vais));
+add_item("you go", "tu vas", audio.tu_vas);
+add_item("he goes", "il va", audio.il_va);
+add_item("we go", "nous allons", audio.nous_allons);
+add_item("you(pl) go", "vous allez", audio.vous_allez);
+add_item("they go", "elles vont", audio.elles_vont);
+//--------------------------------------------------
+//--------------------------------------------------
 add_item("why", "pourquoi", audio.pourquoi);
 add_item("grifter/swindler", "escroc", audio.escroc);
-add_item("month", "mois", audio.mois);
 add_item("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
 add_item("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
+add_item("skeleton", "squelette", audio.squelette);
 //--------------------------------------------------
 //--------------------------------------------------
 /*
