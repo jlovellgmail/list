@@ -9,6 +9,7 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
     â   \xe2
     ç   \xe7
     û   \xfb
+    î   \xee
 
 */
 //--------------------------------------------------
@@ -294,6 +295,32 @@ audio.mois = ["pronunciation_fr_mois.mp3"];
 audio.preferee = ["pronunciation_fr_pr\xe9f\xe9re\xe9.mp3"];
 audio.couleur = getlist("pronunciation_fr_couleur.mp3", 2);
 audio.piece_de_resistance = getlist("pronunciation_fr_pi\xe8ce_de_r\xe9sistance.mp3", 1);
+//
+audio.faire = getlist("pronunciation_fr_faire.mp3", 2);
+audio.je_fais = getlist("pronunciation_fr_je_fais.mp3", 2);
+audio.tu_fais = getlist("pronunciation_fr_tu_fais.mp3", 2);
+audio.elle_fait = getlist("pronunciation_fr_elle_fait.mp3", 1);
+audio.nous_faisons = getlist("pronunciation_fr_nous_faisons.mp3", 6);
+audio.vous_faites = getlist("pronunciation_fr_vous_faites.mp3", 2);
+audio.elles_font = getlist("pronunciation_fr_elles_font.mp3", 1);
+//
+audio.savoir = getlist("pronunciation_fr_savoir.mp3", 1);
+audio.je_sais = getlist("pronunciation_fr_je_sais.mp3", 1);
+audio.tu_sais = getlist("pronunciation_fr_tu_sais.mp3", 1);
+audio.elle_sait = getlist("pronunciation_fr_elle_sait.mp3", 1);
+audio.il_sait = getlist("pronunciation_fr_il_sait.mp3", 1);
+audio.nous_savons = getlist("pronunciation_fr_nous_savons.mp3", 1);
+audio.vous_savez = getlist("pronunciation_fr_vous_savez.mp3", 1);
+audio.elles_savent = ["pronunciation_fr_elles_savent.mp3"];
+audio.ils_savent = ["pronunciation_fr_ils_savent.mp3"];
+//
+audio.pouvoir = getlist("pronunciation_fr_pouvoir.mp3", 1);
+audio.je_peux = getlist("pronunciation_fr_je_peux.mp3", 3);
+audio.tu_peux = getlist("pronunciation_fr_tu_peux.mp3", 1);
+audio.elle_peut = getlist("pronunciation_fr_elle_peut.mp3", 1);
+audio.nous_pouvons = getlist("pronunciation_fr_nous_pouvons.mp3", 1);
+audio.vous_pouvez = getlist("pronunciation_fr_vous_pouvez.mp3", 2);
+audio.elles_peuvent = ["pronunciation_fr_elles_peuvent.mp3"];
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -441,7 +468,7 @@ add_item("u", "u", audio.u);
 add_item("v", "v", audio.v);
 add_item("w", "w", audio.w);
 add_item("x", "x", audio.x);
-add_item("y", "y", audio.y);
+add_item("y", "y", [].concat(audio.y, "https://www.youtube.com/watch?v=fVBDTb_nNgE"));
 add_item("z", "z", audio.z);
 add_item("ok", "d'accord", audio.daccord);
 add_item("so", "donc", audio.donc);
@@ -900,6 +927,31 @@ add_item("he goes", "il va", audio.il_va);
 add_item("we go", "nous allons", audio.nous_allons);
 add_item("you(pl) go", "vous allez", audio.vous_allez);
 add_item("they go", "elles vont", audio.elles_vont);
+//
+add_item("to do", "faire", audio.faire);
+add_item("I do", "je fais", audio.je_fais);
+add_item("you do", "tu fais", audio.tu_fais);
+add_item("she does", "elle fait", audio.elle_fait);
+add_item("we do", "nous faisons", audio.nous_faisons);
+add_item("you(pl) do", "vous fa\xeetes", audio.vous_faites);
+add_item("they do", "elles font", audio.elles_font);
+//
+add_item("to know", "savoir", audio.savoir);
+add_item("I know", "je sais", audio.je_sais);
+add_item("you know", "tu sais", audio.tu_sais);
+add_item("she knows", "elle sait", audio.elle_sait);
+add_item("he knows", "il sait", audio.il_sait);
+add_item("we know", "nous savons", audio.nous_savons);
+add_item("you(pl) know", "vous savez", audio.vous_savez);
+add_item("they know", "elles savent", [].concat(audio.elles_savent, audio.ils_savent));
+//
+add_item("to be able", "pouvoir", audio.pouvoir);
+add_item("I can", "je peux", audio.je_peux);
+add_item("you can", "tu peux", audio.tu_peux);
+add_item("she can", "elle peut", audio.elle_peut);
+add_item("we can", "nous pouvons", audio.nous_pouvons);
+add_item("you(pl) can", "vous pouvez", audio.vous_pouvez);
+add_item("they can", "elles peuvent", audio.elles_peuvent);
 //--------------------------------------------------
 //--------------------------------------------------
 add_item("why", "pourquoi", audio.pourquoi);
