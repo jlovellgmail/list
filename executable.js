@@ -222,6 +222,7 @@ function display_with_separate_elements(list){
                 window.open(url, "_blank");
             }
         });
+    /*
     // add button that opens all links
     links_containers
         .append("a")
@@ -235,6 +236,7 @@ function display_with_separate_elements(list){
             d3.event.stopPropagation();
         })
         ;
+    */
     result
         .append("div")
         .attr("class", "list-bottom-margin")

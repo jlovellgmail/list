@@ -185,6 +185,7 @@ audio.septembre = ["pronunciation_fr_septembre.mp3", "pronunciation_fr_septembre
 audio.octobre = ["pronunciation_fr_octobre.mp3", "pronunciation_fr_octobre (1).mp3", "pronunciation_fr_octobre (2).mp3", "pronunciation_fr_octobre (3).mp3"];
 audio.novembre = ["pronunciation_fr_novembre.mp3", "pronunciation_fr_novembre (1).mp3", "pronunciation_fr_novembre (2).mp3"];
 audio.squelette = ["pronunciation_fr_squelette.mp3"];
+//
 audio.vouloir = getlist("pronunciation_fr_vouloir.mp3", 2);
 audio.veux = getlist("pronunciation_fr_veux.mp3", 2);
 audio.je_veux = getlist("pronunciation_fr_je_veux.mp3", 2);
@@ -320,7 +321,33 @@ audio.tu_peux = getlist("pronunciation_fr_tu_peux.mp3", 1);
 audio.elle_peut = getlist("pronunciation_fr_elle_peut.mp3", 1);
 audio.nous_pouvons = getlist("pronunciation_fr_nous_pouvons.mp3", 1);
 audio.vous_pouvez = getlist("pronunciation_fr_vous_pouvez.mp3", 2);
-audio.elles_peuvent = ["pronunciation_fr_elles_peuvent.mp3"];
+audio.elles_peuvent = getlist("pronunciation_fr_elles_peuvent.mp3", 1);
+//
+audio.lire = getlist("pronunciation_fr_lire.mp3", 2);
+audio.apres = getlist("pronunciation_fr_apr\xe8s.mp3", 1);
+audio.mari = getlist("pronunciation_fr_mari.mp3", 3);
+audio.beau_fils = getlist("pronunciation_fr_beau-fils.mp3", 1);
+audio.belle_mere = ["pronunciation_fr_belle-m\xe8re.mp3"];
+audio.la_belle_mere = ["pronunciation_fr_la_belle-m\xe8re.mp3"];
+audio.ma_belle_mere = ["pronunciation_fr_ma_belle-m\xe8re.mp3"];
+audio.niece = getlist("pronunciation_fr_ni\xe8ce.mp3", 2);
+audio.neveu = getlist("pronunciation_fr_neveu.mp3", 1);
+audio.tante = ["pronunciation_fr_tante.mp3"];
+audio.beau_frere = getlist("pronunciation_fr_beau-fr\xe8re.mp3", 2);
+audio.cousin = getlist("pronunciation_fr_cousin.mp3", 2);
+audio.cousine = ["pronunciation_fr_cousine.mp3"];
+audio.un_cheval = ["pronunciation_fr_un_cheval.mp3"];
+audio.les_chevaux = ["pronunciation_fr_les_chevaux.mp3"];
+audio.la_ville = getlist("pronunciation_fr_la_ville.mp3", 2);
+audio.campagne = ["pronunciation_fr_campagne.mp3"];
+audio.bruit = getlist("pronunciation_fr_bruit.mp3", 3);
+audio.silence = ["pronunciation_fr_silence.mp3"];
+audio.peindre = getlist("pronunciation_fr_peindre.mp3", 2);
+audio.faire_du_velo = ["pronunciation_fr_faire_du_v\xe9lo.mp3"];
+audio.faire_du_surf = ["pronunciation_fr_faire_du_surf.mp3"];
+audio.nager = getlist("pronunciation_fr_nager.mp3", 1);
+audio.le_samedi = ["pronunciation_fr_le_samedi.mp3"];
+audio.le_dimanche = ["pronunciation_fr_le_dimanche.mp3"];
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -448,6 +475,7 @@ add_item("21", "vingt et un", ["http://forvo.com/word/vingt_et_un/#fr"]);
 add_item("26", "vingt-six", ["http://forvo.com/word/vingt-six/#fr"]);
 add_item("91", "quatre-vingt-onze", ["http://forvo.com/word/quatre-vingt-onze/#fr"]);
 */
+/*
 add_item("a", "a", audio.a);
 add_item("b", "b", audio.b);
 add_item("c", "c", audio.c);
@@ -472,6 +500,7 @@ add_item("y", "y", [].concat(audio.y, "https://www.youtube.com/watch?v=fVBDTb_nN
 add_item("z", "z", audio.z);
 add_item("ok", "d'accord", audio.daccord);
 add_item("so", "donc", audio.donc);
+*/
 /*
 add_item("flip flops", "tongs", ["http://forvo.com/word/tongs/#fr"]);
 add_item("dress", "robe", ["http://forvo.com/word/robe/#fr"]);
@@ -766,7 +795,6 @@ add_item("take a pen", "prenez un stylo", [].concat(audio.prenez, audio.un_stylo
 //--------------------------------------------------
 //--------------------------------------------------
 // class 4
-/*
 add_item("to have", "avoir", audio.avoir);
 add_item("I have", "j'ai", audio.jai);
 add_item("you have", "tu as", audio.tu_as);
@@ -774,6 +802,7 @@ add_item("he/she/it has", "il a", audio.il_a);
 add_item("we have", "nous avons", [].concat(audio.nous_avons, [slides2_page6]) );
 add_item("you(pl) have", "vous avez", audio.vous_avez);
 add_item("they have", "ils ont", audio.ils_ont);
+//
 add_item("to be", "\xeatre", audio.etre);
 add_item("I am", "je suis", audio.je_suis);
 add_item("you are", "tu es", audio.tu_es);
@@ -781,6 +810,7 @@ add_item("he/she/it is", "il est", audio.il_est);
 add_item("we are", "nous sommes", audio.nous_sommes);
 add_item("you(pl) are", "vous \xeates", audio.vous_etes);
 add_item("they are", "ils sont", audio.ils_sont);
+/*
 // class 4 - slides page 2
 add_item("grand parents", "les grands-parents", audio.les_grands_parents);
 add_item("grandfather", "grand-p\xe8re", audio.grand_pere);
@@ -959,6 +989,30 @@ add_item("grifter/swindler", "escroc", audio.escroc);
 add_item("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
 add_item("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
 add_item("skeleton", "squelette", audio.squelette);
+add_item("psychoanalysis", "psychanalyse", [].concat("https://www.youtube.com/watch?v=6mwpkc5mXL4"));
+add_item("to read", "lire", audio.lire);
+add_item("after", "apr\xe8s", audio.apres);
+add_item("husband", "mari", audio.mari);
+add_item("son in law", "beau-fils", audio.beau_fils);
+add_item("mother in law", "belle-m\xe8re", [].concat(audio.belle_mere, audio.la_belle_mere, audio.ma_belle_mere));
+add_item("niece", "ni\xe8ce", audio.niece);
+add_item("nephew", "neveu", audio.neveu);
+add_item("aunt", "tante", audio.tante);
+add_item("brother in law", "beau-fr\xe8re", audio.beau_frere);
+add_item("cousin (m)", "cousin", audio.cousin);
+add_item("cousin (f)", "cousine", audio.cousine);
+add_item("a horse", "un cheval", audio.un_cheval);
+add_item("the horses", "les chevaux", audio.les_chevaux);
+add_item("the city", "la ville", audio.la_ville);
+add_item("countryside", "campagne", audio.campagne);
+add_item("noise", "bruit", audio.bruit);
+add_item("silence", "silence", audio.silence);
+add_item("to paint", "peindre", audio.peindre);
+add_item("to bike", "faire du v\xe9lo", audio.faire_du_velo);
+add_item("to surf", "faire du surf", audio.faire_du_surf);
+add_item("to swim", "nager", audio.nager);
+add_item("saturday", "le samedi", audio.le_samedi);
+add_item("sunday", "le dimanche", audio.le_dimanche);
 //--------------------------------------------------
 //--------------------------------------------------
 /*
