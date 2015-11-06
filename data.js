@@ -348,6 +348,17 @@ audio.faire_du_surf = ["pronunciation_fr_faire_du_surf.mp3"];
 audio.nager = getlist("pronunciation_fr_nager.mp3", 1);
 audio.le_samedi = ["pronunciation_fr_le_samedi.mp3"];
 audio.le_dimanche = ["pronunciation_fr_le_dimanche.mp3"];
+audio.sortir = getlist("pronunciation_fr_sortir.mp3");
+audio.avec = ["pronunciation_fr_avec.mp3"];
+audio.copains = ["pronunciation_fr_copains.mp3"];
+audio.leve = ["pronunciation_fr_l\xe8ve.mp3"];
+audio.pour = getlist("pronunciation_fr_pour.mp3", 2);
+audio.dire = ["pronunciation_fr_dire.mp3"];
+audio.bonjour = getlist("pronunciation_fr_bonjour.mp3", 14);
+audio.du_cafe = getlist("pronunciation_fr_du_caf\xe9.mp3", 1);
+audio.ca_va = getlist("pronunciation_fr_\xe7a_va_-.mp3", 3);
+//
+
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -1013,6 +1024,13 @@ i("to surf", "faire du surf", audio.faire_du_surf);
 i("to swim", "nager", audio.nager);
 i("saturday", "le samedi", audio.le_samedi);
 i("sunday", "le dimanche", audio.le_dimanche);
+i("go out with his friends", "sortir avec ses copains", [].concat(audio.sortir, audio.avec, audio.ses, audio.copains));
+i("I stand up to say hello", "je me l\xe8ve pour dire bonjour", [].concat(audio.leve, audio.pour, audio.dire, audio.bonjour));
+i("coffee", "du caf\xe9", audio.du_cafe);
+i("how are you?", "\xe7a va?", audio.ca_va);
+//--------------------------------------------------
+// class 6, 11.5.15
+
 //--------------------------------------------------
 //--------------------------------------------------
 /*
