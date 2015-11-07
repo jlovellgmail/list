@@ -10,6 +10,7 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
     ç   \xe7
     û   \xfb
     î   \xee
+    ô   \xf4
 
 */
 //--------------------------------------------------
@@ -35,6 +36,16 @@ var slides4_page10 = [ref_folder+"Extension_French 1_Cours 4_page 10.pptx.jpg"];
 //--------------------------------------------------
 //--------------------------------------------------
 //--------------------------------------------------
+function getlist(filename, topindex){
+    var list = [];
+    list.push(filename);
+    var name = filename.substr(0, filename.length-4);
+    var extension = filename.substr(filename.length-4);
+    for(var i=1; i<=topindex; i++){
+        list.push(name+" ("+i+")"+extension);
+    }
+    return list;
+}
 var audio = {};
 audio.notre = ["pronunciation_fr_notre.mp3", "pronunciation_fr_notre (1).mp3", "pronunciation_fr_notre (2).mp3", "pronunciation_fr_notre (3).mp3"];
 audio.professeur = ["pronunciation_fr_professeur.mp3", "pronunciation_fr_professeur (1).mp3"];
@@ -207,19 +218,6 @@ audio.il_va = getlist("pronunciation_fr_il_va.mp3", 2);
 audio.nous_allons = getlist("pronunciation_fr_nous_allons.mp3", 1);
 audio.vous_allez = getlist("pronunciation_fr_vous_allez.mp3", 1);
 audio.elles_vont = getlist("pronunciation_fr_elles_vont.mp3", 1);
-//--------------------------------------------------
-//--------------------------------------------------
-//--------------------------------------------------
-function getlist(filename, topindex){
-    var list = [];
-    list.push(filename);
-    var name = filename.substr(0, filename.length-4);
-    var extension = filename.substr(filename.length-4);
-    for(var i=1; i<=topindex; i++){
-        list.push(name+" ("+i+")"+extension);
-    }
-    return list;
-}
 audio.decembre = getlist("pronunciation_fr_decembre.mp3", 1);
 //
 audio.mon_amour = getlist("pronunciation_fr_mon_amour.mp3", 1);
@@ -358,7 +356,46 @@ audio.bonjour = getlist("pronunciation_fr_bonjour.mp3", 14);
 audio.du_cafe = getlist("pronunciation_fr_du_caf\xe9.mp3", 1);
 audio.ca_va = getlist("pronunciation_fr_\xe7a_va_-.mp3", 3);
 //
-
+audio.tous_les_jours = getlist("pronunciation_fr_tous_les_jours.mp3", 2);
+audio.de_bonne_heure = getlist("pronunciation_fr_de_bonne_heure.mp3", 1);
+audio.bonne_heure = ["pronunciation_fr_bonne_heure.mp3"];
+audio.reveille = getlist("pronunciation_fr_r\xe9veille.mp3", 2);
+audio.tres = getlist("pronunciation_fr_tr\xe8s.mp3", 4);
+audio.lentement = getlist("pronunciation_fr_lentement.mp3", 1);
+audio.douche = ["pronunciation_fr_douche.mp3"];
+audio.toujours = getlist("pronunciation_fr_toujours.mp3", 4);
+audio.matin = getlist("pronunciation_fr_matin.mp3", 3);
+audio.le_matin = getlist("pronunciation_fr_le_matin.mp3", 1);
+audio.ensuite = ["pronunciation_fr_ensuite.mp3"];
+audio.rase = ["pronunciation_fr_rase.mp3"];
+audio.devant = getlist("pronunciation_fr_devant.mp3", 2);
+audio.miroir = getlist("pronunciation_fr_miroir.mp3", 1);
+audio.depeche = ["pronunciation_fr_d\xe9p\xeache.mp3"];
+audio.habille = getlist("pronunciation_fr_habille.mp3", 1);
+audio.je_mhabille = ["pronunciation_fr_je_m'habille.mp3"];
+audio.vite = getlist("pronunciation_fr_vite.mp3", 1);
+audio.parce = ["pronunciation_fr_parce.mp3"];
+audio.naime_pas = ["pronunciation_fr_n'aime_pas.mp3"];
+audio.etre_en_retard = ["pronunciation_fr_\xeatre_en_retard.mp3"];
+audio.lecole = ["pronunciation_fr_l'\xe9cole.mp3"];
+//
+audio.sentrainer = ["pronunciation_fr_s'entra\xeener.mp3"];
+audio.au = ["pronunciation_fr_au.mp3"];
+audio.gymnase = ["pronunciation_fr_gymnase.mp3"];
+audio.fois = ["pronunciation_fr_fois.mp3"];
+audio.par_semaine = ["pronunciation_fr_par_semaine.mp3"];
+//
+audio.brosse = getlist("pronunciation_fr_brosse.mp3", 1);
+audio.les_dents = getlist("pronunciation_fr_les_dents.mp3", 1);
+audio.avant = getlist("pronunciation_fr_avant.mp3", 3);
+audio.lheure_daller_au_lit = getlist("pronunciation_fr_l'heure_d'aller_au_lit.mp3", 1);
+audio.lit = getlist("pronunciation_fr_lit.mp3", 2);
+//
+audio.se_couchent = ["pronunciation_fr_se_couchent.mp3"];
+audio.tot = ["pronunciation_fr_t\xf4t.mp3"];
+audio.salle_de_classe = ["pronunciation_fr_salle_de_classe.mp3"];
+//
+audio.tous_mes_amis = ["pronunciation_fr_tous_mes_amis.mp3"];
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -806,6 +843,7 @@ i("take a pen", "prenez un stylo", [].concat(audio.prenez, audio.un_stylo));
 //--------------------------------------------------
 //--------------------------------------------------
 // class 4
+/*
 i("to have", "avoir", audio.avoir);
 i("I have", "j'ai", audio.jai);
 i("you have", "tu as", audio.tu_as);
@@ -821,6 +859,7 @@ i("he/she/it is", "il est", audio.il_est);
 i("we are", "nous sommes", audio.nous_sommes);
 i("you(pl) are", "vous \xeates", audio.vous_etes);
 i("they are", "ils sont", audio.ils_sont);
+*/
 /*
 // class 4 - slides page 2
 i("grand parents", "les grands-parents", audio.les_grands_parents);
@@ -942,6 +981,7 @@ i("their eyes", "leurs yeux", audio.leurs_yeux);
 */
 //--------------------------------------------------
 //--------------------------------------------------
+/*
 // class 5
 i("month", "mois", audio.mois);
 //
@@ -993,14 +1033,6 @@ i("she can", "elle peut", audio.elle_peut);
 i("we can", "nous pouvons", audio.nous_pouvons);
 i("you(pl) can", "vous pouvez", audio.vous_pouvez);
 i("they can", "elles peuvent", audio.elles_peuvent);
-//--------------------------------------------------
-//--------------------------------------------------
-i("why", "pourquoi", audio.pourquoi);
-i("grifter/swindler", "escroc", audio.escroc);
-i("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
-i("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
-i("skeleton", "squelette", audio.squelette);
-i("psychoanalysis", "psychanalyse", [].concat("https://www.youtube.com/watch?v=6mwpkc5mXL4"));
 i("to read", "lire", audio.lire);
 i("after", "apr\xe8s", audio.apres);
 i("husband", "mari", audio.mari);
@@ -1022,6 +1054,15 @@ i("to paint", "peindre", audio.peindre);
 i("to bike", "faire du v\xe9lo", audio.faire_du_velo);
 i("to surf", "faire du surf", audio.faire_du_surf);
 i("to swim", "nager", audio.nager);
+//--------------------------------------------------
+//--------------------------------------------------
+i("why", "pourquoi", audio.pourquoi);
+i("grifter/swindler", "escroc", audio.escroc);
+i("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
+i("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
+i("skeleton", "squelette", audio.squelette);
+i("psychoanalysis", "psychanalyse", [].concat("https://www.youtube.com/watch?v=6mwpkc5mXL4"));
+*/
 i("saturday", "le samedi", audio.le_samedi);
 i("sunday", "le dimanche", audio.le_dimanche);
 i("go out with his friends", "sortir avec ses copains", [].concat(audio.sortir, audio.avec, audio.ses, audio.copains));
@@ -1029,8 +1070,60 @@ i("I stand up to say hello", "je me l\xe8ve pour dire bonjour", [].concat(audio.
 i("coffee", "du caf\xe9", audio.du_cafe);
 i("how are you?", "\xe7a va?", audio.ca_va);
 //--------------------------------------------------
-// class 6, 11.5.15
-
+//--------------------------------------------------
+// class 6 - 11.5.15
+i("Christine gets up early every day", "Christine se l\xe8ve tous les jours de bonne heure", [].concat(audio.leve, audio.tous_les_jours, audio.de_bonne_heure, audio.bonne_heure));
+i("early", "de bonne heure", audio.de_bonne_heure);
+i("every day", "tous les jours", audio.tous_les_jours);
+//
+i("she wakes up very slowly", "elle se r\xe9veille tr\xe8s lentement", [].concat(audio.reveille, audio.tres, audio.lentement));
+i("wake up", "r\xe9veille", audio.reveille);
+i("very", "tr\xe8s", audio.tres);
+i("slowly", "lentement", audio.lentement);
+//
+i("Bernard always showers in the morning", "Bernard se douche toujours le matin", [].concat(audio.douche, audio.toujours, audio.le_matin, audio.matin));
+i("shower", "douche", audio.douche);
+i("always", "toujours", audio.toujours);
+i("morning", "matin", [].concat(audio.le_matin, audio.matin));
+//
+i("then he shaves in front of the mirror", "ensuite, il se rase devant le miroir", [].concat(audio.ensuite, audio.rase, audio.devant, audio.miroir));
+i("then", "ensuite", audio.ensuite);
+i("he is shaving", "il se rase", audio.rase);
+i("in front of", "devant", audio.devant);
+i("mirror", "miroir", audio.miroir);
+//
+i("Camille hurries in the morning", "camille se d\xe9p\xeache le matin", [].concat(audio.depeche, audio.le_matin, audio.matin));
+i("she hurries", "elle se d\xe9p\xeache", audio.depeche);
+//
+i("She always dresses very quickly because she does not like to be late for school", "elle s'habille toujours tr\xe8s vite parce qu'elle n'aime pas \xeatre en retard pour l'\xe9cole", [].concat(audio.habille, audio.je_mhabille, audio.toujours, audio.vite, audio.naime_pas, audio.etre_en_retard, audio.pour, audio.lecole));
+i("dresses", "habille", audio.habille);
+i("I dress", "je m'habille", audio.je_mhabille);
+i("quick", "vite", audio.vite);
+i("because", "parce", audio.parce);
+i("does not like", "n'aime pas", audio.naime_pas);
+i("to be late", "\xeatre en retard", audio.etre_en_retard);
+i("school", "l'\xe9cole", audio.lecole);
+//
+i("Bernard trains at the gym three times a week", "Bernard s'entra\xeene au gymnase trois fois par semaine", [].concat(audio.sentrainer, audio.au, audio.gymnase, audio.fois, audio.par_semaine));
+i("train / work out", "s'entra\xeener", audio.sentrainer);
+i("the", "au", audio.au);
+i("gym", "gymnase", audio.gymnase);
+i("times", "fois", audio.fois);
+i("per week", "par semaine", audio.par_semaine);
+//
+i("Marie brushes her teeth before going to bed", "Marie se brosse les dents avant d'aller au lit", [].concat(audio.brosse, audio.les_dents, audio.avant, audio.lheure_daller_au_lit));
+i("brush", "brosse", audio.brosse);
+i("teeth", "les dents", audio.les_dents);
+i("before", "avant", audio.avant);
+i("bedtime", "l'heure d'aller au lit", audio.lheure_daller_au_lit);
+i("bed", "lit", audio.lit);
+//
+i("Marie and Nathalie go to bed early on school days", "Marie et Nathalie se couchent t\xf4t les jours de classe", [].concat(audio.se_couchent, audio.tot, audio.salle_de_classe));
+i("they go to bed", "se couchent", audio.se_couchent);
+i("early", "t\xf4t", audio.tot);
+i("classroom", "salle de classe", audio.salle_de_classe);
+//
+i("all my friends", "tous mes amis", audio.tous_mes_amis);
 //--------------------------------------------------
 //--------------------------------------------------
 /*
