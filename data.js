@@ -1254,6 +1254,23 @@ i("in one week", "dans une semaine", ["http://forvo.com/word/dans_une_semaine/#f
 i("", "", audio.);
 */
 //--------------------------------------------------
+//--------------------------------------------------
+convertspecialcharacters();
+function convertspecialcharacters(){
+    data.items.forEach(function(item){
+        item.definition = item.definition.replace(/è/g, "\xe8");
+        item.definition = item.definition.replace(/é/g, "\xe9");
+        item.definition = item.definition.replace(/ê/g, "\xea");
+        item.definition = item.definition.replace(/à/g, "\xe0");
+        item.definition = item.definition.replace(/â/g, "\xe2");
+        item.definition = item.definition.replace(/ç/g, "\xe7");
+        item.definition = item.definition.replace(/û/g, "\xfb");
+        item.definition = item.definition.replace(/î/g, "\xee");
+        item.definition = item.definition.replace(/ô/g, "\xf4");
+        item.definition = item.definition.replace(/€/g, "\x80");
+    });
+}
+//--------------------------------------------------
 console.log("data.js was loaded");
 
 
