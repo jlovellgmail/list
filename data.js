@@ -11,6 +11,7 @@ http://webdesign.about.com/od/localization/l/blhtmlcodes-fr.htm
     û   \xfb
     î   \xee
     ô   \xf4
+    €   \x80
 
 */
 //--------------------------------------------------
@@ -248,6 +249,7 @@ audio.leurs_yeux = ["pronunciation_fr_leurs_yeux.mp3"];
 //
 audio.preferons = ["pronunciation_fr_pr\xe9f\xe9rons.mp3"];
 audio.levez = ["pronunciation_fr_levez.mp3"];
+audio.je_me_leve = getlist("pronunciation_fr_je_me_l\xe8ve.mp3", 1);
 audio.la_main = getlist("pronunciation_fr_la_main.mp3", 1);
 audio.prenez = ["pronunciation_fr_prenez.mp3"];
 audio.un_stylo = ["pronunciation_fr_un_stylo.mp3"];
@@ -359,6 +361,7 @@ audio.ca_va = getlist("pronunciation_fr_\xe7a_va_-.mp3", 3);
 audio.tous_les_jours = getlist("pronunciation_fr_tous_les_jours.mp3", 2);
 audio.de_bonne_heure = getlist("pronunciation_fr_de_bonne_heure.mp3", 1);
 audio.bonne_heure = ["pronunciation_fr_bonne_heure.mp3"];
+audio.elle_se_reveille_tres_lentement = ["pronunciation_fr_elle_se_r\xe9veille_tr\xe8s_lentement.mp3"];
 audio.reveille = getlist("pronunciation_fr_r\xe9veille.mp3", 2);
 audio.tres = getlist("pronunciation_fr_tr\xe8s.mp3", 4);
 audio.lentement = getlist("pronunciation_fr_lentement.mp3", 1);
@@ -367,6 +370,7 @@ audio.toujours = getlist("pronunciation_fr_toujours.mp3", 4);
 audio.matin = getlist("pronunciation_fr_matin.mp3", 3);
 audio.le_matin = getlist("pronunciation_fr_le_matin.mp3", 1);
 audio.ensuite = ["pronunciation_fr_ensuite.mp3"];
+audio.il_se_rase = ["pronunciation_fr_il_se_rase.mp3"];
 audio.rase = ["pronunciation_fr_rase.mp3"];
 audio.devant = getlist("pronunciation_fr_devant.mp3", 2);
 audio.miroir = getlist("pronunciation_fr_miroir.mp3", 1);
@@ -375,9 +379,13 @@ audio.habille = getlist("pronunciation_fr_habille.mp3", 1);
 audio.je_mhabille = ["pronunciation_fr_je_m'habille.mp3"];
 audio.vite = getlist("pronunciation_fr_vite.mp3", 1);
 audio.parce = ["pronunciation_fr_parce.mp3"];
+audio.quelle = ["pronunciation_fr_qu'elle.mp3"];
+audio.parce_que = getlist("pronunciation_fr_parce_que.mp3", 3);
 audio.naime_pas = ["pronunciation_fr_n'aime_pas.mp3"];
 audio.etre_en_retard = ["pronunciation_fr_\xeatre_en_retard.mp3"];
 audio.lecole = ["pronunciation_fr_l'\xe9cole.mp3"];
+audio.elle_se_depeche = ["pronunciation_fr_elle_se_d\xe9p\xeache.mp3"];
+audio.elle_se_depeche_le_matin = ["pronunciation_fr_elle_se_d\xe9p\xeache_le_matin.mp3"];
 //
 audio.sentrainer = ["pronunciation_fr_s'entra\xeener.mp3"];
 audio.au = ["pronunciation_fr_au.mp3"];
@@ -393,9 +401,14 @@ audio.lit = getlist("pronunciation_fr_lit.mp3", 2);
 //
 audio.se_couchent = ["pronunciation_fr_se_couchent.mp3"];
 audio.tot = ["pronunciation_fr_t\xf4t.mp3"];
+audio.se_lever_plus_tot = getlist("pronunciation_fr_se_lever_plus_t\xf4t.mp3", 1);
 audio.salle_de_classe = ["pronunciation_fr_salle_de_classe.mp3"];
 //
 audio.tous_mes_amis = ["pronunciation_fr_tous_mes_amis.mp3"];
+audio.bibliotheque = getlist("pronunciation_fr_biblioth\xe8que.mp3", 2);
+audio.psychanalyse = ["pronunciation_fr_psychanalyse.mp3"];
+audio.toi_non_plus = ["pronunciation_fr_toi_non_plus.mp3"];
+audio.est_cequils_aiment_faire_du_volleyball = ["pronunciation_fr_est-ce_qu'ils_aiment_faire_du_volleyball.mp3"];
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -1068,12 +1081,16 @@ i("grifter/swindler", "escroc", audio.escroc);
 i("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
 i("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
 i("skeleton", "squelette", audio.squelette);
-i("psychoanalysis", "psychanalyse", [].concat("https://www.youtube.com/watch?v=6mwpkc5mXL4"));
 */
+i("psychoanalysis", "psychanalyse", audio.psychanalyse);
+/*
 i("saturday", "le samedi", audio.le_samedi);
 i("sunday", "le dimanche", audio.le_dimanche);
 i("go out with his friends", "sortir avec ses copains", [].concat(audio.sortir, audio.avec, audio.ses, audio.copains));
-i("I stand up to say hello", "je me l\xe8ve pour dire bonjour", [].concat(audio.leve, audio.pour, audio.dire, audio.bonjour));
+i("I stand up to say hello", "je me l\xe8ve pour dire bonjour", [].concat(audio.je_me_leve, audio.leve, audio.pour, audio.dire, audio.bonjour));
+*/
+i("I stand up", "je me l\xe8ve", audio.je_me_leve);
+/*
 i("coffee", "du caf\xe9", audio.du_cafe);
 i("how are you?", "\xe7a va?", audio.ca_va);
 //--------------------------------------------------
@@ -1083,34 +1100,36 @@ i("Christine gets up early every day", "Christine se l\xe8ve tous les jours de b
 i("early", "de bonne heure", audio.de_bonne_heure);
 i("every day", "tous les jours", audio.tous_les_jours);
 //
-i("she wakes up very slowly", "elle se r\xe9veille tr\xe8s lentement", [].concat(audio.reveille, audio.tres, audio.lentement));
+i("she wakes up very slowly", "elle se r\xe9veille tr\xe8s lentement", [].concat(audio.elle_se_reveille_tres_lentement, audio.reveille, audio.tres, audio.lentement));
 i("wake up", "r\xe9veille", audio.reveille);
 i("very", "tr\xe8s", audio.tres);
 i("slowly", "lentement", audio.lentement);
 //
-i("Bernard always showers in the morning", "Bernard se douche toujours le matin", [].concat(audio.douche, audio.toujours, audio.le_matin, audio.matin));
+i("Bernard always showers in the morning", "Bernard se douche toujours le matin", [].concat("http://forvo.com/word/il_se_douche_toujours_le_matin/", audio.douche, audio.toujours, audio.le_matin, audio.matin));
 i("shower", "douche", audio.douche);
 i("always", "toujours", audio.toujours);
 i("morning", "matin", [].concat(audio.le_matin, audio.matin));
 //
 i("then he shaves in front of the mirror", "ensuite, il se rase devant le miroir", [].concat(audio.ensuite, audio.rase, audio.devant, audio.miroir));
 i("then", "ensuite", audio.ensuite);
-i("he is shaving", "il se rase", audio.rase);
+i("he is shaving", "il se rase", [].concat(audio.il_se_rase, audio.rase));
 i("in front of", "devant", audio.devant);
 i("mirror", "miroir", audio.miroir);
 //
-i("Camille hurries in the morning", "camille se d\xe9p\xeache le matin", [].concat(audio.depeche, audio.le_matin, audio.matin));
-i("she hurries", "elle se d\xe9p\xeache", audio.depeche);
+i("Camille hurries in the morning", "Camille se d\xe9p\xeache le matin", [].concat(audio.depeche, audio.le_matin, audio.matin));
+i("she hurries", "elle se d\xe9p\xeache", [].concat(audio.elle_se_depeche, audio.depeche));
 //
-i("She always dresses very quickly because she does not like to be late for school", "elle s'habille toujours tr\xe8s vite parce qu'elle n'aime pas \xeatre en retard pour l'\xe9cole", [].concat(audio.habille, audio.je_mhabille, audio.toujours, audio.vite, audio.naime_pas, audio.etre_en_retard, audio.pour, audio.lecole));
+// i("She always dresses very quickly because she does not like to be late for school", "elle s'habille toujours tr\xe8s vite parce qu'elle n'aime pas \xeatre en retard pour l'\xe9cole", [].concat("http://forvo.com/word/elle_s%27habille/", audio.habille, audio.je_mhabille, audio.toujours, audio.vite, audio.parce, audio.quelle, audio.naime_pas, audio.etre_en_retard, audio.pour, audio.lecole));
 i("dresses", "habille", audio.habille);
 i("I dress", "je m'habille", audio.je_mhabille);
 i("quick", "vite", audio.vite);
-i("because", "parce", audio.parce);
+i("because", "parce / parce que", [].concat(audio.parce, audio.parce_que));
 i("does not like", "n'aime pas", audio.naime_pas);
 i("to be late", "\xeatre en retard", audio.etre_en_retard);
 i("school", "l'\xe9cole", audio.lecole);
+*/
 //
+/*
 i("Bernard trains at the gym three times a week", "Bernard s'entra\xeene au gymnase trois fois par semaine", [].concat(audio.sentrainer, audio.au, audio.gymnase, audio.fois, audio.par_semaine));
 i("train / work out", "s'entra\xeener", audio.sentrainer);
 i("the", "au", audio.au);
@@ -1128,9 +1147,107 @@ i("bed", "lit", audio.lit);
 i("Marie and Nathalie go to bed early on school days", "Marie et Nathalie se couchent t\xf4t les jours de classe", [].concat(audio.se_couchent, audio.tot, audio.salle_de_classe));
 i("they go to bed", "se couchent", audio.se_couchent);
 i("early", "t\xf4t", audio.tot);
+i("earlier", "plus t\xf4t", audio.se_lever_plus_tot);
 i("classroom", "salle de classe", audio.salle_de_classe);
 //
 i("all my friends", "tous mes amis", audio.tous_mes_amis);
+i("library", "biblioth\xe8que", audio.bibliotheque);
+*/
+//--------------------------------------------------
+//--------------------------------------------------
+// class 7 (missed) - 11.12.15
+/*
+i("useful vocabulary", "vocabulaire utile", ["http://forvo.com/word/vocabulaire/#fr", "http://forvo.com/word/utile/#fr"]);
+i("take the bus", "prendre l'autobus", [].concat(audio.prendre, "http://forvo.com/word/l%27autobus/#fr"));
+i("at the bookstore", "\xe0 la librairie", ["http://forvo.com/word/librairie/#fr"]);
+i("at the theater", "au th\xe9\xe2tre", ["http://forvo.com/word/aller_au_th%C3%A9%C3%A2tre/#fr"]);
+i("pay", "payer", ["http://forvo.com/word/payer/#fr"]);
+*/
+i("do they love to play volleyball? Yes, they love to play volleyball", "Est-ce qu'ils aiment faire du volleyball? Oui, ils aiment faire du volleyball", audio.est_cequils_aiment_faire_du_volleyball);
+/*
+i("what do you say? I say \"it's nice out today!\"", "Qu'est-ce que tu dis? Je dis: \"il fait beau aujourd'hui!\"", ["http://forvo.com/word/qu%27est-ce_que/#fr", "http://forvo.com/word/il_fait_beau_aujourd%27hui/#fr"]);
+i("it's nice out", "il fait beau", ["http://forvo.com/word/il_fait_beau/#fr"]);
+i("do you eat Nutella? No, I do not eat Nutella", "Manges-tu du Nutella? Non, je ne mange pas de Nutella.");
+i("Who wins the Oscar for Best Actress ? Julianne Moore wins the Oscar for Best Actress.", "Qui gagne l'Oscar de la meilleure actrice? Julianne Moore gagne l'Oscar de la meilleure actrice.", ["http://forvo.com/word/gagn%C3%A9/#fr", "http://forvo.com/word/meilleure/#fr", "http://forvo.com/word/actrice/#fr"]);
+i("She speaks French fluently? Yes, she speaks French fluently.", "Elle parle fran\xe7ais couramment? Oui, elle parle fran\xe7ais couramment.", ["http://forvo.com/word/elle_parle/#fr", "http://forvo.com/word/couramment/#fr"]);
+i("Put the following activities in the correct order", "Mettre les activit\xe9s suivantes dans le bon ordre", ["http://forvo.com/word/mettre/#fr", "http://forvo.com/word/activit%C3%A9s/#fr", "http://forvo.com/word/dans/#fr", "http://forvo.com/word/ordre/#fr"]);
+i("get undressed", "se d\xe9shabiller", ["http://forvo.com/word/se_d%C3%A9shabiller/#fr"]);
+i("go to bed", "se coucher", ["http://forvo.com/word/se_coucher/#fr"]);
+i("dress", "s'habiller", ["http://forvo.com/word/s%27habiller/#fr"]);
+i("to brush hair", "se brosser les cheveux", ["http://forvo.com/word/brosser/#fr", "http://forvo.com/word/les_cheveux/#fr"]);
+i("to shave", "se raser", ["http://forvo.com/word/se_raser/#fr"]);
+i("I shave", "je me rase");
+i("you shave", "tu te rases", ["http://forvo.com/word/rases/#fr"]);
+i("he shaves", "il se rase");
+i("we shave", "nous rasons");
+i("you(pl) shave", "vous rasez");
+i("they shave", "ils se rasent");
+i("I dress", "je m'habille", ["http://forvo.com/word/je_m%27habille/#fr"]);
+i("you dress", "tu t'habilles", ["http://forvo.com/word/tu_t%27habilles/#fr"]);
+i("he dresses", "il s'habille", ["http://forvo.com/word/il_s%27habille/"]);
+i("we dress", "nous habillons");
+i("you(pl) dress", "vous habillez", ["http://forvo.com/word/habillez/#fr"]);
+i("they dress", "ils s'habillent", ["http://forvo.com/word/ils_s%27habillent/"]);
+*/
+/*
+i("to come", "venir", ["http://forvo.com/word/venir/#fr"]);
+i("I come", "je viens", ["http://forvo.com/word/je_viens_de_france/#fr"]);
+i("you come", "tu viens", ["http://forvo.com/word/tu_viens/#fr"]);
+i("she comes", "elle vient", ["http://forvo.com/word/elle_vient/#fr", "http://forvo.com/word/il_vient/#fr"]);
+i("we come", "nous venons");
+i("you(pl) come", "vous venez", ["http://forvo.com/word/vous_venez/#fr"]);
+i("they come", "ils/elles viennent", ["http://forvo.com/word/viennent/#fr"]);
+i("from Canada", "du Canada");
+i("holiday in Italy", "en vacances en Italie", ["http://forvo.com/word/en_vacances/#fr", "http://forvo.com/word/luttes_en_italie/#fr"]);
+i("their exercises", "leurs exercices", ["http://forvo.com/word/tous_les_exercices/#fr"]);
+i("a croissant", "un croissant", ["http://forvo.com/word/un_croissant/#fr"]);
+i("an actress", "une actrice");
+i("to speak French", "parler fran\xe7ais");
+i("want to eat", "envie de manger");
+i("you're going on vacation in Italy", "Tu vas en vacances en Italie");
+i("Justin Bieber is from Canada", "Jusin Bieber vient du Canada");
+i("I can speak French", "Je peux parler fran\xe7ais");
+i("students do their exercises", "Les \xe9tudiantes font leurs exercices");
+i("you(pl) want a croissant", "vous voulez un croissant");
+i("we want to eat", " Nous avons envie de manger");
+i("Jessica Chastain is an actress", "Jessica Chastain est une actrice");
+i("this (masculine)", "ce / cet", [].concat(audio.ce, "http://forvo.com/word/cet/#fr"));
+i("this (feminine)", "cette", ["http://forvo.com/word/cette/#fr"]);
+i("these", "ces", ["http://forvo.com/word/ces/#fr"]);
+i("this store is beautiful", "Ce magasin est tr\xe8s beau", ["http://forvo.com/word/magasin/#fr"]);
+*/
+i("these books are very interesting", "Ces livres sont tr\xe8s int\xe9ressants");
+i("this computer is pretty, is it not?", "Cet ordinateur est joli, n'est-ce pas ?");
+i("These clothes are too expensive! This robe costs 250\x80", "Ces v\xeatements sont trop chers! Cette robe co\xfbte 250\x80", ["http://forvo.com/word/v%C3%AAtements/#fr", "http://forvo.com/word/trop/#fr", "http://forvo.com/word/chers/#fr", "http://forvo.com/word/co%C3%BBte/#fr"]);
+i("These shirts are so beautiful and also these ties", "Ces chemises sont si belles et ces cravates aussi");
+i("for each sentence, use the right article", "Pour chaque phrase, utiliser le bon article", ["http://forvo.com/word/chaque/#fr", "http://forvo.com/word/article/#fr"]);
+i("At the supermarket, I bought tomatoes", "Au supermarch\xe9, j'ai achet\xe9 des tomates");
+i("I drink water throughout the day", "Je bois de l'eau toute la journ\xe9e", ["http://forvo.com/word/l%27eau/#fr"]);
+i("When I was little, I hated broccoli", "Quand j'\xe9tais petit, je d\xe9testais les brocolis");
+i("Chocolate is good with banana", "Le chocolat, c'est bon avec la banane");
+i("You still want some cake?", "Veux tu encore du g\xe2teau?");
+i("Take salad. Take salami.", "Prends de la salade. Prends du salami.", [].concat(audio.du));
+i("look for the logical places", "cherchez les endroits logiques", ["http://forvo.com/word/cherchez/#fr", "http://forvo.com/word/endroits/#fr", "http://forvo.com/word/logiques/#fr"]);
+i("We went skiing in winter in the mountains", "On fait du ski en hiver \xe0 la montagne");
+i("We do the shopping at the mall", "Nous faisons les courses au centre commercial.");
+i("We take long walks in the countryside", "On fait des longues promenades \xe0 la campagne.", [].concat("http://forvo.com/word/fait/#fr", "http://forvo.com/word/longues/#fr", "http://forvo.com/word/promenades/#fr", audio.campagne));
+i("We go fishing very often in the river", "On p\xeache tr\xe8s souvent dans une rivi\xe8re.");
+i("We sometimes picnic under a tree", "Nous pique-niquons parfois sous un arbre.");
+i("Many students are partying in the club", "Beaucoup d'\xe9tudiants font la f\xeate \xe0 la discoth\xe8que.", ["http://forvo.com/word/faire_la_f%C3%AAte/#fr", "http://forvo.com/word/discoth%C3%A8que/#fr"]);
+i("We light a fire in the fireplace when it's cold", "On allume un feu quand il fait froid dans le chemin\xe9e.");
+i("We study and watch TV at home.", "Nous \xe9tudions et regardons la t\xe9l\xe9 \xe0 la maison.");
+i("We like to go to see films at the cinema.", "On aime aller pour voir des films au cin\xe9ma.", ["http://forvo.com/word/on/#fr", "http://forvo.com/word/voir/#fr", "http://forvo.com/word/des/#fr", "http://forvo.com/word/films/#fr", "http://forvo.com/word/au_cin%C3%A9ma/#fr"]);
+i("Many people go to the gym", "Beaucoup de gens font de la gym au gymnase.", ["http://forvo.com/word/beaucoup_de_gens/", "http://forvo.com/word/gens/#fr", "http://forvo.com/word/gym/#fr", "http://forvo.com/word/gymnase/#fr"]);
+//--------------------------------------------------
+//--------------------------------------------------
+i("me neither", "moi non plus", ["http://forvo.com/word/moi_non_plus/#fr"]);
+i("you neither", "toi non plus", audio.toi_non_plus);
+i("see stars", "voir des étoiles", "http://forvo.com/word/voir_des_%C3%A9toiles/#fr");
+//--------------------------------------------------
+//--------------------------------------------------
+// class 8 - 11.19.15
+i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", ["http://forvo.com/word/semaines/#fr", "http://forvo.com/word/joyeux/#fr"]);
+i("in one week", "dans une semaine", ["http://forvo.com/word/dans_une_semaine/#fr"]);
 //--------------------------------------------------
 //--------------------------------------------------
 /*
