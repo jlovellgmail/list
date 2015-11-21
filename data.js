@@ -1242,12 +1242,29 @@ i("Many people go to the gym", "Beaucoup de gens font de la gym au gymnase.", ["
 //--------------------------------------------------
 i("me neither", "moi non plus", ["http://forvo.com/word/moi_non_plus/#fr"]);
 i("you neither", "toi non plus", audio.toi_non_plus);
-i("see stars", "voir des étoiles", "http://forvo.com/word/voir_des_%C3%A9toiles/#fr");
+i("see stars", "voir des \xe9toiles", "http://forvo.com/word/voir_des_%C3%A9toiles/#fr");
 //--------------------------------------------------
 //--------------------------------------------------
 // class 8 - 11.19.15
 i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", ["http://forvo.com/word/semaines/#fr", "http://forvo.com/word/joyeux/#fr"]);
 i("in one week", "dans une semaine", ["http://forvo.com/word/dans_une_semaine/#fr"]);
+i("see sculptures", "Voir des sculptures");
+i("cut their long hair", "se couper les cheveux longs", ["http://forvo.com/word/se_couper/#fr", "http://forvo.com/word/les_cheveux_longs/#fr"]);
+i("eat a good burger", "manger un bon hamburger", "http://forvo.com/word/hamburger/#fr");
+i("to drink a coffee", "Boire un caf\xe9");
+i("to work", "travailler", "http://forvo.com/word/travailler/#fr");
+i("shopping", "faire les courses", "http://forvo.com/word/faire_les_courses/#fr");
+i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", audio.lire);
+i("to relax", "se reposer", "http://forvo.com/word/se_reposer/#fr");
+i("fix my car", "r\xe9parer ma voiture", "http://forvo.com/word/r%C3%A9parer/");
+i("if these descriptions are true or false", "si ces descriptions sont vraies ou fausses", ["http://forvo.com/word/descriptions/#fr", "http://forvo.com/word/vraies/#fr", "http://forvo.com/word/fausses/#fr"]);
+i("it is in the street", "il est dans la rue");
+i("post office", "bureau de poste");
+i("the town hall", "la mairie", "http://forvo.com/word/mairie/#fr");
+i("beside / next to", "\xe0 c\xf4t\xe9", "http://forvo.com/word/%C3%A0_c%C3%B4t%C3%A9/#fr");
+i("next to a high school", "\xe0 c\xf4t\xe9 d'un lyc\xe9e", ["http://forvo.com/word/%C3%A0_c%C3%B4t%C3%A9/#fr", "http://forvo.com/word/d%27un/#fr", "http://forvo.com/word/lyc%C3%A9e/#fr"]);
+i("there is a church facing the public garden", "il y a une église en face du jardin public", ["http://forvo.com/word/%C3%A9glise/#fr", "http://forvo.com/word/en_face/#fr", "http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
+i("the theater is far from the bank", "le théatre est loin de la banque");
 //--------------------------------------------------
 //--------------------------------------------------
 /*
