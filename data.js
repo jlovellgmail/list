@@ -414,7 +414,14 @@ function i(word, definition, links){
     var item ={};
     if(word) item.word = word;
     if(definition) item.definition = definition;
-    if(links) item.links = links;
+    if(links){
+        if( Object.prototype.toString.call( links ) === '[object Array]' ) {
+            item.links = links;
+        }
+        else {
+            item.links = [].concat(links);
+        }
+    }    
     data.items.push(item);
 }
 /*
