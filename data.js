@@ -409,6 +409,9 @@ audio.bibliotheque = getlist("pronunciation_fr_biblioth\xe8que.mp3", 2);
 audio.psychanalyse = ["pronunciation_fr_psychanalyse.mp3"];
 audio.toi_non_plus = ["pronunciation_fr_toi_non_plus.mp3"];
 audio.est_cequils_aiment_faire_du_volleyball = ["pronunciation_fr_est-ce_qu'ils_aiment_faire_du_volleyball.mp3"];
+audio.mairie = ["pronunciation_fr_mairie.mp3"];
+audio.faire_les_courses = getlist("pronunciation_fr_faire_les_courses.mp3", 2);
+audio.lire_un_livre_a_lexterieur = ["pronunciation_fr_lire_un_livre_à_l’extérieur.mp3"];
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -1216,9 +1219,10 @@ i("this (feminine)", "cette", ["http://forvo.com/word/cette/#fr"]);
 i("these", "ces", ["http://forvo.com/word/ces/#fr"]);
 i("this store is beautiful", "Ce magasin est tr\xe8s beau", ["http://forvo.com/word/magasin/#fr"]);
 */
+/*
 i("these books are very interesting", "Ces livres sont tr\xe8s int\xe9ressants");
 i("this computer is pretty, is it not?", "Cet ordinateur est joli, n'est-ce pas ?");
-i("These clothes are too expensive! This robe costs 250\x80", "Ces v\xeatements sont trop chers! Cette robe co\xfbte 250\x80", ["http://forvo.com/word/v%C3%AAtements/#fr", "http://forvo.com/word/trop/#fr", "http://forvo.com/word/chers/#fr", "http://forvo.com/word/co%C3%BBte/#fr"]);
+i("These clothes are too expensive! This robe costs 250 euro", "Ces v\xeatements sont trop chers! Cette robe co\xfbte 250 euro", ["http://forvo.com/word/v%C3%AAtements/#fr", "http://forvo.com/word/trop/#fr", "http://forvo.com/word/chers/#fr", "http://forvo.com/word/co%C3%BBte/#fr"]);
 i("These shirts are so beautiful and also these ties", "Ces chemises sont si belles et ces cravates aussi");
 i("for each sentence, use the right article", "Pour chaque phrase, utiliser le bon article", ["http://forvo.com/word/chaque/#fr", "http://forvo.com/word/article/#fr"]);
 i("At the supermarket, I bought tomatoes", "Au supermarch\xe9, j'ai achet\xe9 des tomates");
@@ -1238,38 +1242,69 @@ i("We light a fire in the fireplace when it's cold", "On allume un feu quand il 
 i("We study and watch TV at home.", "Nous \xe9tudions et regardons la t\xe9l\xe9 \xe0 la maison.");
 i("We like to go to see films at the cinema.", "On aime aller pour voir des films au cin\xe9ma.", ["http://forvo.com/word/on/#fr", "http://forvo.com/word/voir/#fr", "http://forvo.com/word/des/#fr", "http://forvo.com/word/films/#fr", "http://forvo.com/word/au_cin%C3%A9ma/#fr"]);
 i("Many people go to the gym", "Beaucoup de gens font de la gym au gymnase.", ["http://forvo.com/word/beaucoup_de_gens/", "http://forvo.com/word/gens/#fr", "http://forvo.com/word/gym/#fr", "http://forvo.com/word/gymnase/#fr"]);
-//--------------------------------------------------
-//--------------------------------------------------
-i("me neither", "moi non plus", ["http://forvo.com/word/moi_non_plus/#fr"]);
-i("you neither", "toi non plus", audio.toi_non_plus);
-i("see stars", "voir des \xe9toiles", "http://forvo.com/word/voir_des_%C3%A9toiles/#fr");
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 // class 8 - 11.19.15
 i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", ["http://forvo.com/word/semaines/#fr", "http://forvo.com/word/joyeux/#fr"]);
 i("in one week", "dans une semaine", ["http://forvo.com/word/dans_une_semaine/#fr"]);
-i("see sculptures", "Voir des sculptures");
+// slide 2
+i("see sculptures", "voir des sculptures");
 i("cut their long hair", "se couper les cheveux longs", ["http://forvo.com/word/se_couper/#fr", "http://forvo.com/word/les_cheveux_longs/#fr"]);
 i("eat a good burger", "manger un bon hamburger", "http://forvo.com/word/hamburger/#fr");
 i("to drink a coffee", "Boire un caf\xe9");
 i("to work", "travailler", "http://forvo.com/word/travailler/#fr");
-i("shopping", "faire les courses", "http://forvo.com/word/faire_les_courses/#fr");
-i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", audio.lire);
+i("shopping", "faire les courses", audio.faire_les_courses);
+i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", audio.lire_un_livre_a_lexterieur);
 i("to relax", "se reposer", "http://forvo.com/word/se_reposer/#fr");
 i("fix my car", "r\xe9parer ma voiture", "http://forvo.com/word/r%C3%A9parer/");
+// slide 3
 i("if these descriptions are true or false", "si ces descriptions sont vraies ou fausses", ["http://forvo.com/word/descriptions/#fr", "http://forvo.com/word/vraies/#fr", "http://forvo.com/word/fausses/#fr"]);
 i("it is in the street", "il est dans la rue");
 i("post office", "bureau de poste");
 i("the town hall", "la mairie", "http://forvo.com/word/mairie/#fr");
 i("beside / next to", "\xe0 c\xf4t\xe9", "http://forvo.com/word/%C3%A0_c%C3%B4t%C3%A9/#fr");
 i("next to a high school", "\xe0 c\xf4t\xe9 d'un lyc\xe9e", ["http://forvo.com/word/%C3%A0_c%C3%B4t%C3%A9/#fr", "http://forvo.com/word/d%27un/#fr", "http://forvo.com/word/lyc%C3%A9e/#fr"]);
-i("there is a church facing the public garden", "il y a une église en face du jardin public", ["http://forvo.com/word/%C3%A9glise/#fr", "http://forvo.com/word/en_face/#fr", "http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
-i("the theater is far from the bank", "le théatre est loin de la banque");
-//--------------------------------------------------
-//--------------------------------------------------
 /*
-i("", "", audio.);
+i("there is a church facing the public garden", "il y a une église en face du jardin public", ["http://forvo.com/word/%C3%A9glise/#fr", "http://forvo.com/word/en_face/#fr", "http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
+i("public garden", "jardin public", ["http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
+i("the theater is far from the bank", "le théatre est loin de la banque");
+i("the theater", "le théâtre", "http://forvo.com/word/le_th%C3%A9%C3%A2tre/#fr");
+i("the library is in front of the town hall", "la bibliothêque est devant la mairie", [].concat(audio.devant, audio.mairie));
+i("there is a sculpture under a tree, on the terrace of the museum", "il y a une sculpture sous un arbre, sur la terrasse du musée");
+i("under", "sous", "http://forvo.com/word/sous/#fr");
+i("tree", "arbre", "http://forvo.com/word/arbre/#fr");
+i("terrace", "terrasse", "http://forvo.com/word/terrasse/#fr");
+i("sculpture", "sculpture", "http://forvo.com/word/sculpture/#fr");
+i("museum", "musée", "http://forvo.com/word/mus%C3%A9e/#fr");
+i("on the table", "sur la table", "http://forvo.com/word/sur_la_table/#fr");
+i("the hospital is behind the theater", "l'hôpital est derrière le théâtre");
+i("hospital", "l'hôpital", "http://forvo.com/word/l%27h%C3%B4pital/#fr");
+i("behind", "derrière", "http://forvo.com/word/derri%C3%A8re/#fr");
+i("the primary school is near the public garden", "l'école primaire est près du jardin public");
+i("primary school", "école primaire", "http://forvo.com/word/%C3%A9cole_primaire/#fr");
+i("near", "près", "http://forvo.com/word/pr%C3%A8s/#fr");
+i("there is a chimney on the roof of the church", "il y a une cheminée sur le toit de l'église");
+i("chimney", "cheminée", "http://forvo.com/word/chemin%C3%A9e/#fr");
+i("the roof", "le toit", "http://forvo.com/word/le_toit/#fr");
+i("there is a cafe between the high school and the train station", "il y a un café entre le lycée et la gare");
+i("between", "entre", "http://forvo.com/word/entre/#fr");
+i("train station", "gare", "http://forvo.com/word/gare/#fr");
+// slide 4
+i("use the right demonstrative adjective", "Utilisez le bon adjectif démonstratif");
+i("what do you prefer? This jacket or this suit?", "Qu’est-ce que tu préfères? Cette veste ou ce costume?");
+i("these shoes are very expensive", "ces chaussures sont très chères");
+i("expensive", "chères", "http://forvo.com/word/ch%C3%A8res/#fr");
+i("I use this computer for wrok", "j’utilise cet ordinateur pour travailler");
 */
+//--------------------------------------------------
+//--------------------------------------------------
+i("me neither", "moi non plus", ["http://forvo.com/word/moi_non_plus/#fr"]);
+i("you neither", "toi non plus", audio.toi_non_plus);
+i("see stars", "voir des \xe9toiles", "http://forvo.com/word/voir_des_%C3%A9toiles/#fr");
+i("word", "mot", "http://forvo.com/word/mot/#fr");
+i("this morning", "ce matin", "http://forvo.com/word/ce_matin/#fr");
+i("I'll take this round loaf of bread [\"country bread\"]", "je vais prendre ce pain de campagne", "http://forvo.com/word/pain_de_campagne/#fr");// text page 222
 //--------------------------------------------------
 //--------------------------------------------------
 convertspecialcharacters();
