@@ -1274,17 +1274,29 @@ i("", "", audio.);
 //--------------------------------------------------
 convertspecialcharacters();
 function convertspecialcharacters(){
+    var characterlist = [
+        [/è/g, "\xe8"]
+        ,[/é/g, "\xe9"]
+        ,[/ê/g, "\xea"]
+        ,[/à/g, "\xe0"]
+        ,[/â/g, "\xe2"]
+        ,[/ç/g, "\xe7"]
+        ,[/û/g, "\xfb"]
+        ,[/î/g, "\xee"]
+        ,[/ô/g, "\xf4"]
+        ,[/’/g, "\u2019"]
+    ];
     data.items.forEach(function(item){
-        item.definition = item.definition.replace(/è/g, "\xe8");
-        item.definition = item.definition.replace(/é/g, "\xe9");
-        item.definition = item.definition.replace(/ê/g, "\xea");
-        item.definition = item.definition.replace(/à/g, "\xe0");
-        item.definition = item.definition.replace(/â/g, "\xe2");
-        item.definition = item.definition.replace(/ç/g, "\xe7");
-        item.definition = item.definition.replace(/û/g, "\xfb");
-        item.definition = item.definition.replace(/î/g, "\xee");
-        item.definition = item.definition.replace(/ô/g, "\xf4");
-        item.definition = item.definition.replace(/€/g, "\x80");
+        characterlist.forEach(function(pair){
+            item.definition = item.definition.replace(pair[0], pair[1]);
+        });
+        if(item.links){
+            characterlist.forEach(function(pair){
+                item.links.forEach(function(link, index){
+                    item.links[index] = link.replace(pair[0], pair[1]);
+                });
+            });
+        }
     });
 }
 //--------------------------------------------------
