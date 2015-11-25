@@ -1320,6 +1320,16 @@ function convertspecialcharacters(){
         ,[/î/g, "\xee"]
         ,[/ô/g, "\xf4"]
         ,[/’/g, "\u2019"]
+        //
+        ,[/e\`/g, "\xe8"]
+        ,[/e\́/g, "\xe9"]
+        ,[/e\ˆ/g, "\xea"]
+        ,[/a\`/g, "\xe0"]
+        ,[/a\ˆ/g, "\xe2"]
+        //,[/ç/g, "\xe7"]// is there an alternative for this one?
+        ,[/u\ˆ/g, "\xfb"]
+        ,[/i\ˆ/g, "\xee"]
+        ,[/o\ˆ/g, "\xf4"]
     ];
     data.items.forEach(function(item){
         characterlist.forEach(function(pair){
