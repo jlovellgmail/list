@@ -409,9 +409,50 @@ audio.bibliotheque = getlist("pronunciation_fr_biblioth\xe8que.mp3", 2);
 audio.psychanalyse = ["pronunciation_fr_psychanalyse.mp3"];
 audio.toi_non_plus = ["pronunciation_fr_toi_non_plus.mp3"];
 audio.est_cequils_aiment_faire_du_volleyball = ["pronunciation_fr_est-ce_qu'ils_aiment_faire_du_volleyball.mp3"];
-audio.mairie = ["pronunciation_fr_mairie.mp3"];
+audio.mairie = getlist("pronunciation_fr_mairie.mp3", 1);
 audio.faire_les_courses = getlist("pronunciation_fr_faire_les_courses.mp3", 2);
 audio.lire_un_livre_a_lexterieur = ["pronunciation_fr_lire_un_livre_à_l’extérieur.mp3"];
+audio.pain_de_campagne = ["pronunciation_fr_pain_de_campagne.mp3"];
+audio.voir_des_etoiles = getlist("pronunciation_fr_voir_des_étoiles.mp3", 1);
+audio.les_cheveux_longs = ["pronunciation_fr_les_cheveux_longs.mp3"];
+audio.fausses = ["pronunciation_fr_fausses.mp3"];
+audio.boire_un_cafe = ["pronunciation_fr_boire_un_café.mp3"];
+audio.joyeux = getlist("pronunciation_fr_joyeux.mp3", 1);
+audio.hamburger = getlist("pronunciation_fr_hamburger.mp3", 1);
+audio.dans_une_semaine = ["pronunciation_fr_dans_une_semaine.mp3"];
+audio.a_cote = getlist("pronunciation_fr_à_côté.mp3", 2);
+audio.vraies = getlist("pronunciation_fr_vraies.mp3", 1);
+audio.sculptures = ["pronunciation_fr_sculptures.mp3"];
+audio.ce_matin = ["pronunciation_fr_ce_matin.mp3"];
+audio.reparer_ma_voiture = ["pronunciation_fr_réparer_ma_voiture.mp3"];
+audio.se_reposer = ["pronunciation_fr_se_reposer.mp3"];
+audio.descriptions = getlist("pronunciation_fr_descriptions.mp3", 1);
+
+//audio.a_cote_dun_lycee = ["pronunciation_fr_à_côté_d'un_lycée.mp3"];
+audio.a_cote_dun_lycee = ["pronunciation_fr_à_côté_d'un_lycée.mp3"];
+
+audio.se_couper = ["pronunciation_fr_se_couper.mp3"];
+audio.a_dans_2_semaines = ["pronunciation_fr_à_dans_2_semaines.mp3"];
+audio.manger_un_bon_hamburger = ["pronunciation_fr_manger_un_bon_hamburger.mp3"];
+audio.adjectif_demonstratif = ["pronunciation_fr_adjectif_démonstratif.mp3"];
+audio.longs = ["pronunciation_fr_longs.mp3"];
+audio.lexterieur = ["pronunciation_fr_l’extérieur.mp3"];
+audio.meilleure = getlist("pronunciation_fr_meilleure.mp3", 1);
+audio.la_cheminee = ["pronunciation_fr_la_cheminée.mp3"];
+audio.actrice = ["pronunciation_fr_actrice.mp3"];
+audio.gagne = ["pronunciation_fr_gagné.mp3"];
+audio.moi_non_plus = getlist("pronunciation_fr_moi_non_plus.mp3", 3);
+audio.tu_preferes = getlist("pronunciation_fr_tu_préfères.mp3", 1);
+audio.cheres = ["pronunciation_fr_chères.mp3"];
+audio.jutilise = ["pronunciation_fr_j'utilise.mp3"];
+audio.derriere = getlist("pronunciation_fr_derrière.mp3", 3);
+audio.le_theatre = ["pronunciation_fr_le_théâtre.mp3"];
+audio.musee = ["pronunciation_fr_musée.mp3"];
+audio.cette = ["pronunciation_fr_cette.mp3"];
+audio.costume = ["pronunciation_fr_costume.mp3"];
+audio.eglise = getlist("pronunciation_fr_église.mp3", 1);
+audio.en_face = ["pronunciation_fr_en_face.mp3"];
+audio.public = ["pronunciation_fr_public.mp3"];
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -1171,7 +1212,9 @@ i("do they love to play volleyball? Yes, they love to play volleyball", "Est-ce 
 i("what do you say? I say \"it's nice out today!\"", "Qu'est-ce que tu dis? Je dis: \"il fait beau aujourd'hui!\"", ["http://forvo.com/word/qu%27est-ce_que/#fr", "http://forvo.com/word/il_fait_beau_aujourd%27hui/#fr"]);
 i("it's nice out", "il fait beau", ["http://forvo.com/word/il_fait_beau/#fr"]);
 i("do you eat Nutella? No, I do not eat Nutella", "Manges-tu du Nutella? Non, je ne mange pas de Nutella.");
-i("Who wins the Oscar for Best Actress ? Julianne Moore wins the Oscar for Best Actress.", "Qui gagne l'Oscar de la meilleure actrice? Julianne Moore gagne l'Oscar de la meilleure actrice.", ["http://forvo.com/word/gagn%C3%A9/#fr", "http://forvo.com/word/meilleure/#fr", "http://forvo.com/word/actrice/#fr"]);
+*/
+i("Who wins the Oscar for Best Actress? Julianne Moore wins the Oscar for Best Actress.", "Qui gagne l'Oscar de la meilleure actrice? Julianne Moore gagne l'Oscar de la meilleure actrice.", [].concat(audio.gagne, audio.meilleure, audio.actrice));
+/*
 i("She speaks French fluently? Yes, she speaks French fluently.", "Elle parle fran\xe7ais couramment? Oui, elle parle fran\xe7ais couramment.", ["http://forvo.com/word/elle_parle/#fr", "http://forvo.com/word/couramment/#fr"]);
 i("Put the following activities in the correct order", "Mettre les activit\xe9s suivantes dans le bon ordre", ["http://forvo.com/word/mettre/#fr", "http://forvo.com/word/activit%C3%A9s/#fr", "http://forvo.com/word/dans/#fr", "http://forvo.com/word/ordre/#fr"]);
 i("get undressed", "se d\xe9shabiller", ["http://forvo.com/word/se_d%C3%A9shabiller/#fr"]);
@@ -1246,30 +1289,31 @@ i("Many people go to the gym", "Beaucoup de gens font de la gym au gymnase.", ["
 //--------------------------------------------------
 //--------------------------------------------------
 // class 8 - 11.19.15
-i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", ["http://forvo.com/word/semaines/#fr", "http://forvo.com/word/joyeux/#fr"]);
-i("in one week", "dans une semaine", ["http://forvo.com/word/dans_une_semaine/#fr"]);
+/*
+i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", [].concat(audio.a_dans_2_semaines, audio.joyeux));
+i("in one week", "dans une semaine", audio.dans_une_semaine);
 // slide 2
-i("see sculptures", "voir des sculptures");
-i("cut their long hair", "se couper les cheveux longs", ["http://forvo.com/word/se_couper/#fr", "http://forvo.com/word/les_cheveux_longs/#fr"]);
-i("eat a good burger", "manger un bon hamburger", "http://forvo.com/word/hamburger/#fr");
-i("to drink a coffee", "Boire un caf\xe9");
+i("see sculptures", "voir des sculptures", audio.sculptures);
+i("cut their long hair", "se couper les cheveux longs", [].concat(audio.se_couper, audio.les_cheveux_longs, audio.longs));
+i("eat a good burger", "manger un bon hamburger", [].concat(audio.manger_un_bon_hamburger, audio.hamburger));
+i("to drink a coffee", "boire un caf\xe9", audio.boire_un_cafe);
 i("to work", "travailler", "http://forvo.com/word/travailler/#fr");
 i("shopping", "faire les courses", audio.faire_les_courses);
-i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", audio.lire_un_livre_a_lexterieur);
-i("to relax", "se reposer", "http://forvo.com/word/se_reposer/#fr");
-i("fix my car", "r\xe9parer ma voiture", "http://forvo.com/word/r%C3%A9parer/");
+i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", [].concat(audio.lire_un_livre_a_lexterieur, audio.lexterieur));
+i("to relax", "se reposer", audio.se_reposer);
+i("fix my car", "r\xe9parer ma voiture", audio.reparer_ma_voiture);
 // slide 3
-i("if these descriptions are true or false", "si ces descriptions sont vraies ou fausses", ["http://forvo.com/word/descriptions/#fr", "http://forvo.com/word/vraies/#fr", "http://forvo.com/word/fausses/#fr"]);
+i("if these descriptions are true or false", "si ces descriptions sont vraies ou fausses", [].concat(audio.descriptions, audio.vraies, audio.fausses));
 i("it is in the street", "il est dans la rue");
 i("post office", "bureau de poste");
-i("the town hall", "la mairie", "http://forvo.com/word/mairie/#fr");
-i("beside / next to", "\xe0 c\xf4t\xe9", "http://forvo.com/word/%C3%A0_c%C3%B4t%C3%A9/#fr");
-i("next to a high school", "\xe0 c\xf4t\xe9 d'un lyc\xe9e", ["http://forvo.com/word/%C3%A0_c%C3%B4t%C3%A9/#fr", "http://forvo.com/word/d%27un/#fr", "http://forvo.com/word/lyc%C3%A9e/#fr"]);
-/*
-i("there is a church facing the public garden", "il y a une église en face du jardin public", ["http://forvo.com/word/%C3%A9glise/#fr", "http://forvo.com/word/en_face/#fr", "http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
+i("the town hall", "la mairie", audio.mairie);
+i("beside / next to", "\xe0 c\xf4t\xe9", audio.a_cote);
+i("next to a high school", "\xe0 c\xf4t\xe9 d'un lyc\xe9e", audio.a_cote_dun_lycee);
+*/
+i("there is a church facing the public garden", "il y a une église en face du jardin public", [].concat(audio.eglise, audio.en_face, "http://forvo.com/word/jardin/#fr", audio.public));
 i("public garden", "jardin public", ["http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
-i("the theater is far from the bank", "le théatre est loin de la banque");
-i("the theater", "le théâtre", "http://forvo.com/word/le_th%C3%A9%C3%A2tre/#fr");
+i("the theater is far from the bank", "le théatre est loin de la banque", [].concat(audio.le_theatre));
+i("the theater", "le théâtre", audio.le_theatre);
 i("the library is in front of the town hall", "la bibliothêque est devant la mairie", [].concat(audio.devant, audio.mairie));
 i("there is a sculpture under a tree, on the terrace of the museum", "il y a une sculpture sous un arbre, sur la terrasse du musée");
 i("under", "sous", "http://forvo.com/word/sous/#fr");
@@ -1278,33 +1322,34 @@ i("terrace", "terrasse", "http://forvo.com/word/terrasse/#fr");
 i("sculpture", "sculpture", "http://forvo.com/word/sculpture/#fr");
 i("museum", "musée", "http://forvo.com/word/mus%C3%A9e/#fr");
 i("on the table", "sur la table", "http://forvo.com/word/sur_la_table/#fr");
-i("the hospital is behind the theater", "l'hôpital est derrière le théâtre");
+i("the hospital is behind the theater", "l'hôpital est derrière le théâtre", [].concat(audio.derriere));
 i("hospital", "l'hôpital", "http://forvo.com/word/l%27h%C3%B4pital/#fr");
-i("behind", "derrière", "http://forvo.com/word/derri%C3%A8re/#fr");
+i("behind", "derrière", audio.derriere);
 i("the primary school is near the public garden", "l'école primaire est près du jardin public");
 i("primary school", "école primaire", "http://forvo.com/word/%C3%A9cole_primaire/#fr");
 i("near", "près", "http://forvo.com/word/pr%C3%A8s/#fr");
 i("there is a chimney on the roof of the church", "il y a une cheminée sur le toit de l'église");
-i("chimney", "cheminée", "http://forvo.com/word/chemin%C3%A9e/#fr");
+i("chimney", "cheminée", audio.la_cheminee);
 i("the roof", "le toit", "http://forvo.com/word/le_toit/#fr");
 i("there is a cafe between the high school and the train station", "il y a un café entre le lycée et la gare");
 i("between", "entre", "http://forvo.com/word/entre/#fr");
 i("train station", "gare", "http://forvo.com/word/gare/#fr");
 // slide 4
-i("use the right demonstrative adjective", "Utilisez le bon adjectif démonstratif");
-i("what do you prefer? This jacket or this suit?", "Qu’est-ce que tu préfères? Cette veste ou ce costume?");
-i("these shoes are very expensive", "ces chaussures sont très chères");
-i("expensive", "chères", "http://forvo.com/word/ch%C3%A8res/#fr");
-i("I use this computer for wrok", "j’utilise cet ordinateur pour travailler");
-*/
+i("use the right demonstrative adjective", "utilisez le bon adjectif démonstratif", audio.adjectif_demonstratif);
+i("what do you prefer? This jacket or this suit?", "Qu’est-ce que tu préfères? Cette veste ou ce costume?", [].concat(audio.tu_preferes, audio.cette, audio.costume));
+i("these shoes are very expensive", "ces chaussures sont très chères", audio.cheres);
+i("expensive", "chères", "http://forvo.com/word/ch%C3%A8res/#fr", audio.cheres);
+i("I use this computer for work", "j’utilise cet ordinateur pour travailler", audio.jutilise);
 //--------------------------------------------------
 //--------------------------------------------------
-i("me neither", "moi non plus", ["http://forvo.com/word/moi_non_plus/#fr"]);
+/*
+i("me neither", "moi non plus", audio.moi_non_plus);
 i("you neither", "toi non plus", audio.toi_non_plus);
-i("see stars", "voir des \xe9toiles", "http://forvo.com/word/voir_des_%C3%A9toiles/#fr");
+i("see stars", "voir des \xe9toiles", audio.voir_des_etoiles);
 i("word", "mot", "http://forvo.com/word/mot/#fr");
-i("this morning", "ce matin", "http://forvo.com/word/ce_matin/#fr");
-i("I'll take this round loaf of bread [\"country bread\"]", "je vais prendre ce pain de campagne", "http://forvo.com/word/pain_de_campagne/#fr");// text page 222
+i("this morning", "ce matin", audio.ce_matin);
+i("I'll take this round loaf of bread [\"country bread\"]", "je vais prendre ce pain de campagne", audio.pain_de_campagne);// text page 222
+*/
 //--------------------------------------------------
 //--------------------------------------------------
 convertspecialcharacters();
