@@ -47,416 +47,418 @@ function getlist(filename, topindex){
     }
     return list;
 }
+var l = getlist;
 var audio = {};
-audio.notre = ["pronunciation_fr_notre.mp3", "pronunciation_fr_notre (1).mp3", "pronunciation_fr_notre (2).mp3", "pronunciation_fr_notre (3).mp3"];
-audio.professeur = ["pronunciation_fr_professeur.mp3", "pronunciation_fr_professeur (1).mp3"];
-audio.donne = ["pronunciation_fr_donne.mp3"];
-audio.composition = ["pronunciation_fr_composition.mp3"];
-audio.ou = ["pronunciation_fr_ou.mp3"];
-audio.redaction = ["pronunciation_fr_redaction.mp3", "pronunciation_fr_redaction (1).mp3", "pronunciation_fr_redaction (2).mp3"];
-audio.nous = ["pronunciation_fr_nous.mp3", "pronunciation_fr_nous (1).mp3", "pronunciation_fr_nous (2).mp3", "pronunciation_fr_nous (3).mp3"];
-audio.choisissons = ["pronunciation_fr_choisissons.mp3"];
-audio.un_telephone = ["pronunciation_fr_un_telephone_fixe.mp3"];
-audio.pommier = ["pronunciation_fr_pommier.mp3"];
-audio.ancienne = ["pronunciation_fr_ancienne.mp3", "pronunciation_fr_ancienne (1).mp3"];
-audio.un_femme = ["pronunciation_fr_une_femme_mariee.mp3"];
-audio.dix_sept = ["pronunciation_fr_dix-sept.mp3", "pronunciation_fr_dix-sept (1).mp3", "pronunciation_fr_dix-sept (2).mp3"];
-audio.trente_neuf = ["pronunciation_fr_trente-neuf.mp3"];
-audio.trente_huit = ["pronunciation_fr_trente-huit.mp3"];
-audio.trente_quatre = ["pronunciation_fr_trente-quatre.mp3", "pronunciation_fr_trente-quatre (1).mp3"];
-audio.un_chiffre = ["pronunciation_fr_un_chiffre.mp3"];
-audio.identique = ["pronunciation_fr_identique.mp3"];
-audio.ceinture = ["pronunciation_fr_ceinture.mp3", "pronunciation_fr_ceinture (1).mp3"];
-audio.haut_couture = ["pronunciation_fr_haute_couture.mp3", "pronunciation_fr_haute_couture (1).mp3", "pronunciation_fr_haute_couture (2).mp3", "pronunciation_fr_haute_couture (3).mp3", "pronunciation_fr_haute_couture (4).mp3"];
-audio.bouteille = ["pronunciation_fr_bouteille.mp3"];
-audio.plage = ["pronunciation_fr_plage.mp3", "pronunciation_fr_plage (1).mp3", "pronunciation_fr_plage (2).mp3"];
-audio.milliard = ["pronunciation_fr_milliard.mp3", "pronunciation_fr_milliard (1).mp3"];
-audio.euro = ["pronunciation_fr_euro.mp3", "pronunciation_fr_euro (1).mp3", "pronunciation_fr_euro (2).mp3"];
-audio.maintenant = ["pronunciation_fr_maintenant.mp3", "pronunciation_fr_maintenant (1).mp3", "pronunciation_fr_maintenant (2).mp3", "pronunciation_fr_maintenant (3).mp3", "pronunciation_fr_maintenant (4).mp3", "pronunciation_fr_maintenant (5).mp3", "pronunciation_fr_maintenant (6).mp3"];
-audio.pluriel = ["pronunciation_fr_pluriel.mp3", "pronunciation_fr_le_pluriel.mp3"];
-audio.ce = ["pronunciation_fr_ce.mp3", "pronunciation_fr_ce (1).mp3", "pronunciation_fr_ce (2).mp3"];
-audio.marie = ["pronunciation_fr_marie.mp3", "pronunciation_fr_marie (1).mp3", "pronunciation_fr_marie (2).mp3"];
-audio.juin = ["pronunciation_fr_juin.mp3", "pronunciation_fr_juin (1).mp3", "pronunciation_fr_juin (2).mp3", "pronunciation_fr_juin (3).mp3"];
-audio.hiver = ["pronunciation_fr_hiver.mp3", "pronunciation_fr_hiver (1).mp3", "pronunciation_fr_hiver (2).mp3", "pronunciation_fr_hiver (3).mp3"];
-audio.printemps = ["pronunciation_fr_printemps.mp3", "pronunciation_fr_printemps (1).mp3", "pronunciation_fr_printemps (2).mp3", "pronunciation_fr_printemps (3).mp3", "pronunciation_fr_printemps (4).mp3"];
-audio.ete = ["pronunciation_fr_ete.mp3", "pronunciation_fr_ete (1).mp3", "pronunciation_fr_ete (2).mp3"];
-audio.automne = ["pronunciation_fr_automne.mp3"];
-audio.aujourd_hui = ["pronunciation_fr_aujourd'hui.mp3", "pronunciation_fr_aujourd'hui (1).mp3", "pronunciation_fr_aujourd'hui (2).mp3", "pronunciation_fr_aujourd'hui (3).mp3", "pronunciation_fr_aujourd'hui (4).mp3"];
-audio.demain = ["pronunciation_fr_demain.mp3", "pronunciation_fr_demain (1).mp3"];
-audio.hier = ["pronunciation_fr_hier.mp3", "pronunciation_fr_hier (1).mp3", "pronunciation_fr_hier (2).mp3"];
-audio.le_poste = ["pronunciation_fr_le_poste.mp3"];
-audio.la_tour_dargent = ["pronunciation_fr_la_tour_d'argent.mp3"];
-audio.le_tour_de_france = ["pronunciation_fr_le_tour_de_france.mp3", "pronunciation_fr_le_tour_de_france (1).mp3"];
-audio.la_poste = ["pronunciation_fr_la_poste.mp3", "pronunciation_fr_la_poste (1).mp3"];
-audio.garer_la_voiture = ["pronunciation_fr_garer_la_voiture.mp3"];
-audio.parfait = ["pronunciation_fr_parfait.mp3", "pronunciation_fr_parfait (1).mp3"];
+var a = audio;
+a.notre = ["pronunciation_fr_notre.mp3", "pronunciation_fr_notre (1).mp3", "pronunciation_fr_notre (2).mp3", "pronunciation_fr_notre (3).mp3"];
+a.professeur = ["pronunciation_fr_professeur.mp3", "pronunciation_fr_professeur (1).mp3"];
+a.donne = ["pronunciation_fr_donne.mp3"];
+a.composition = ["pronunciation_fr_composition.mp3"];
+a.ou = ["pronunciation_fr_ou.mp3"];
+a.redaction = ["pronunciation_fr_redaction.mp3", "pronunciation_fr_redaction (1).mp3", "pronunciation_fr_redaction (2).mp3"];
+a.nous = ["pronunciation_fr_nous.mp3", "pronunciation_fr_nous (1).mp3", "pronunciation_fr_nous (2).mp3", "pronunciation_fr_nous (3).mp3"];
+a.choisissons = ["pronunciation_fr_choisissons.mp3"];
+a.un_telephone = ["pronunciation_fr_un_telephone_fixe.mp3"];
+a.pommier = ["pronunciation_fr_pommier.mp3"];
+a.ancienne = ["pronunciation_fr_ancienne.mp3", "pronunciation_fr_ancienne (1).mp3"];
+a.un_femme = ["pronunciation_fr_une_femme_mariee.mp3"];
+a.dix_sept = ["pronunciation_fr_dix-sept.mp3", "pronunciation_fr_dix-sept (1).mp3", "pronunciation_fr_dix-sept (2).mp3"];
+a.trente_neuf = ["pronunciation_fr_trente-neuf.mp3"];
+a.trente_huit = ["pronunciation_fr_trente-huit.mp3"];
+a.trente_quatre = ["pronunciation_fr_trente-quatre.mp3", "pronunciation_fr_trente-quatre (1).mp3"];
+a.un_chiffre = ["pronunciation_fr_un_chiffre.mp3"];
+a.identique = ["pronunciation_fr_identique.mp3"];
+a.ceinture = ["pronunciation_fr_ceinture.mp3", "pronunciation_fr_ceinture (1).mp3"];
+a.haut_couture = ["pronunciation_fr_haute_couture.mp3", "pronunciation_fr_haute_couture (1).mp3", "pronunciation_fr_haute_couture (2).mp3", "pronunciation_fr_haute_couture (3).mp3", "pronunciation_fr_haute_couture (4).mp3"];
+a.bouteille = ["pronunciation_fr_bouteille.mp3"];
+a.plage = ["pronunciation_fr_plage.mp3", "pronunciation_fr_plage (1).mp3", "pronunciation_fr_plage (2).mp3"];
+a.milliard = ["pronunciation_fr_milliard.mp3", "pronunciation_fr_milliard (1).mp3"];
+a.euro = ["pronunciation_fr_euro.mp3", "pronunciation_fr_euro (1).mp3", "pronunciation_fr_euro (2).mp3"];
+a.maintenant = ["pronunciation_fr_maintenant.mp3", "pronunciation_fr_maintenant (1).mp3", "pronunciation_fr_maintenant (2).mp3", "pronunciation_fr_maintenant (3).mp3", "pronunciation_fr_maintenant (4).mp3", "pronunciation_fr_maintenant (5).mp3", "pronunciation_fr_maintenant (6).mp3"];
+a.pluriel = ["pronunciation_fr_pluriel.mp3", "pronunciation_fr_le_pluriel.mp3"];
+a.ce = ["pronunciation_fr_ce.mp3", "pronunciation_fr_ce (1).mp3", "pronunciation_fr_ce (2).mp3"];
+a.marie = ["pronunciation_fr_marie.mp3", "pronunciation_fr_marie (1).mp3", "pronunciation_fr_marie (2).mp3"];
+a.juin = ["pronunciation_fr_juin.mp3", "pronunciation_fr_juin (1).mp3", "pronunciation_fr_juin (2).mp3", "pronunciation_fr_juin (3).mp3"];
+a.hiver = ["pronunciation_fr_hiver.mp3", "pronunciation_fr_hiver (1).mp3", "pronunciation_fr_hiver (2).mp3", "pronunciation_fr_hiver (3).mp3"];
+a.printemps = ["pronunciation_fr_printemps.mp3", "pronunciation_fr_printemps (1).mp3", "pronunciation_fr_printemps (2).mp3", "pronunciation_fr_printemps (3).mp3", "pronunciation_fr_printemps (4).mp3"];
+a.ete = ["pronunciation_fr_ete.mp3", "pronunciation_fr_ete (1).mp3", "pronunciation_fr_ete (2).mp3"];
+a.automne = ["pronunciation_fr_automne.mp3"];
+a.aujourd_hui = ["pronunciation_fr_aujourd'hui.mp3", "pronunciation_fr_aujourd'hui (1).mp3", "pronunciation_fr_aujourd'hui (2).mp3", "pronunciation_fr_aujourd'hui (3).mp3", "pronunciation_fr_aujourd'hui (4).mp3"];
+a.demain = ["pronunciation_fr_demain.mp3", "pronunciation_fr_demain (1).mp3"];
+a.hier = ["pronunciation_fr_hier.mp3", "pronunciation_fr_hier (1).mp3", "pronunciation_fr_hier (2).mp3"];
+a.le_poste = ["pronunciation_fr_le_poste.mp3"];
+a.la_tour_dargent = ["pronunciation_fr_la_tour_d'argent.mp3"];
+a.le_tour_de_france = ["pronunciation_fr_le_tour_de_france.mp3", "pronunciation_fr_le_tour_de_france (1).mp3"];
+a.la_poste = ["pronunciation_fr_la_poste.mp3", "pronunciation_fr_la_poste (1).mp3"];
+a.garer_la_voiture = ["pronunciation_fr_garer_la_voiture.mp3"];
+a.parfait = ["pronunciation_fr_parfait.mp3", "pronunciation_fr_parfait (1).mp3"];
 //
-audio.a_jeudi = ["pronunciation_fr_a_jeudi.mp3"];
-audio.tournez = ["pronunciation_fr_tournez.mp3", "pronunciation_fr_tournez (1).mp3"];
-audio.la_page = ["pronunciation_fr_la_page.mp3"];
-audio.ouvrez = ["pronunciation_fr_ouvrez.mp3"];
-audio.le_livre = ["pronunciation_fr_le_livre.mp3", "pronunciation_fr_le_livre (1).mp3"];
-audio.fermez = ["pronunciation_fr_fermez.mp3"];
-audio.regardez = ["pronunciation_fr_regardez.mp3"];
-audio.tableau = ["pronunciation_fr_tableau.mp3", "pronunciation_fr_tableau (1).mp3", "pronunciation_fr_tableau (2).mp3"];
-audio.ecrivez = ["pronunciation_fr_ecrivez.mp3"];
-audio.votre_nom_ici = ["pronunciation_fr_votre_nom_ici.mp3"];
-audio.a_la_semaine_prochaine = ["pronunciation_fr_a_la_semaine_prochaine.mp3", "pronunciation_fr_a_la_semaine_prochaine (1).mp3", "pronunciation_fr_a_la_semaine_prochaine (2).mp3"];
+a.a_jeudi = ["pronunciation_fr_a_jeudi.mp3"];
+a.tournez = ["pronunciation_fr_tournez.mp3", "pronunciation_fr_tournez (1).mp3"];
+a.la_page = ["pronunciation_fr_la_page.mp3"];
+a.ouvrez = ["pronunciation_fr_ouvrez.mp3"];
+a.le_livre = ["pronunciation_fr_le_livre.mp3", "pronunciation_fr_le_livre (1).mp3"];
+a.fermez = ["pronunciation_fr_fermez.mp3"];
+a.regardez = ["pronunciation_fr_regardez.mp3"];
+a.tableau = ["pronunciation_fr_tableau.mp3", "pronunciation_fr_tableau (1).mp3", "pronunciation_fr_tableau (2).mp3"];
+a.ecrivez = ["pronunciation_fr_ecrivez.mp3"];
+a.votre_nom_ici = ["pronunciation_fr_votre_nom_ici.mp3"];
+a.a_la_semaine_prochaine = ["pronunciation_fr_a_la_semaine_prochaine.mp3", "pronunciation_fr_a_la_semaine_prochaine (1).mp3", "pronunciation_fr_a_la_semaine_prochaine (2).mp3"];
 //
-audio.avoir = ["pronunciation_fr_avoir.mp3", "pronunciation_fr_avoir (1).mp3", "pronunciation_fr_avoir (2).mp3", "pronunciation_fr_avoir (3).mp3", "pronunciation_fr_avoir (4).mp3", "pronunciation_fr_avoir (5).mp3", "pronunciation_fr_avoir (6).mp3"];
-audio.jai = ["pronunciation_fr_j\'ai.mp3", "pronunciation_fr_j\'ai (1).mp3", "pronunciation_fr_j\'ai (2).mp3"];
-audio.tu_as = ["pronunciation_fr_tu_as.mp3", "pronunciation_fr_tu_as (1).mp3"];
-audio.il_a = ["pronunciation_fr_il_a.mp3"];
-audio.nous_avons = ["pronunciation_fr_nous_avons.mp3", "pronunciation_fr_nous_avons (1).mp3", "pronunciation_fr_nous_avons (2).mp3", "pronunciation_fr_nous_avons (3).mp3"];
-audio.vous_avez = ["pronunciation_fr_vous_avez.mp3", "pronunciation_fr_vous_avez (1).mp3"];
-audio.ils_ont = ["pronunciation_fr_ils_ont.mp3", "pronunciation_fr_ils_ont (1).mp3"];
+a.avoir = ["pronunciation_fr_avoir.mp3", "pronunciation_fr_avoir (1).mp3", "pronunciation_fr_avoir (2).mp3", "pronunciation_fr_avoir (3).mp3", "pronunciation_fr_avoir (4).mp3", "pronunciation_fr_avoir (5).mp3", "pronunciation_fr_avoir (6).mp3"];
+a.jai = ["pronunciation_fr_j\'ai.mp3", "pronunciation_fr_j\'ai (1).mp3", "pronunciation_fr_j\'ai (2).mp3"];
+a.tu_as = ["pronunciation_fr_tu_as.mp3", "pronunciation_fr_tu_as (1).mp3"];
+a.il_a = ["pronunciation_fr_il_a.mp3"];
+a.nous_avons = ["pronunciation_fr_nous_avons.mp3", "pronunciation_fr_nous_avons (1).mp3", "pronunciation_fr_nous_avons (2).mp3", "pronunciation_fr_nous_avons (3).mp3"];
+a.vous_avez = ["pronunciation_fr_vous_avez.mp3", "pronunciation_fr_vous_avez (1).mp3"];
+a.ils_ont = ["pronunciation_fr_ils_ont.mp3", "pronunciation_fr_ils_ont (1).mp3"];
 //
-audio.etre = ["pronunciation_fr_etre.mp3", "pronunciation_fr_etre (1).mp3"];
-audio.je_suis = ["pronunciation_fr_je_suis.mp3", "pronunciation_fr_je_suis (1).mp3", "pronunciation_fr_je_suis (2).mp3", "pronunciation_fr_je_suis (3).mp3", "pronunciation_fr_je_suis (4).mp3", "pronunciation_fr_je_suis (5).mp3"];
-audio.tu_es = ["pronunciation_fr_tu_es.mp3", "pronunciation_fr_tu_es (1).mp3", "pronunciation_fr_tu_es (2).mp3", "pronunciation_fr_tu_es (3).mp3"];
-audio.il_est = ["pronunciation_fr_il_est.mp3", "pronunciation_fr_il_est (1).mp3", "pronunciation_fr_il_est (2).mp3"];
-audio.nous_sommes = ["pronunciation_fr_nous_sommes.mp3", "pronunciation_fr_nous_sommes (1).mp3", "pronunciation_fr_nous_sommes (2).mp3"];
-audio.vous_etes = ["pronunciation_fr_vous_etes.mp3", "pronunciation_fr_vous_etes (1).mp3", "pronunciation_fr_vous_etes (2).mp3"];
-audio.ils_sont = ["pronunciation_fr_ils_sont.mp3", "pronunciation_fr_ils_sont (1).mp3", "pronunciation_fr_ils_sont (2).mp3"];
+a.etre = ["pronunciation_fr_etre.mp3", "pronunciation_fr_etre (1).mp3"];
+a.je_suis = ["pronunciation_fr_je_suis.mp3", "pronunciation_fr_je_suis (1).mp3", "pronunciation_fr_je_suis (2).mp3", "pronunciation_fr_je_suis (3).mp3", "pronunciation_fr_je_suis (4).mp3", "pronunciation_fr_je_suis (5).mp3"];
+a.tu_es = ["pronunciation_fr_tu_es.mp3", "pronunciation_fr_tu_es (1).mp3", "pronunciation_fr_tu_es (2).mp3", "pronunciation_fr_tu_es (3).mp3"];
+a.il_est = ["pronunciation_fr_il_est.mp3", "pronunciation_fr_il_est (1).mp3", "pronunciation_fr_il_est (2).mp3"];
+a.nous_sommes = ["pronunciation_fr_nous_sommes.mp3", "pronunciation_fr_nous_sommes (1).mp3", "pronunciation_fr_nous_sommes (2).mp3"];
+a.vous_etes = ["pronunciation_fr_vous_etes.mp3", "pronunciation_fr_vous_etes (1).mp3", "pronunciation_fr_vous_etes (2).mp3"];
+a.ils_sont = ["pronunciation_fr_ils_sont.mp3", "pronunciation_fr_ils_sont (1).mp3", "pronunciation_fr_ils_sont (2).mp3"];
 //
-audio.les_grands_parents = ["pronunciation_fr_les_grands-parents.mp3"];
-audio.grand_pere = ["pronunciation_fr_grand-pere.mp3", "pronunciation_fr_grand-pere (1).mp3", "pronunciation_fr_grand-pere (2).mp3"];
-audio.grand_mere = ["pronunciation_fr_grand-mere.mp3", "pronunciation_fr_grand-mere (1).mp3"];
-audio.les_enfants = ["pronunciation_fr_les_enfants.mp3"];
-audio.filles = ["pronunciation_fr_filles.mp3"];
-audio.fils = ["pronunciation_fr_fils.mp3", "pronunciation_fr_fils (1).mp3", "pronunciation_fr_fils (2).mp3"];
-audio.freres = ["pronunciation_fr_freres.mp3"];
-audio.soeurs = ["pronunciation_fr_soeurs.mp3"];
-audio.petite_fille = ["pronunciation_fr_petite-fille.mp3", "pronunciation_fr_petite-fille (1).mp3", "pronunciation_fr_petite-fille (2).mp3"];
-audio.petit_fils = ["pronunciation_fr_petit-fils.mp3", "pronunciation_fr_petit-fils (1).mp3", "pronunciation_fr_petit-fils (2).mp3"];
-audio.parents = ["pronunciation_fr_parents.mp3"];
-audio.construisez = ["pronunciation_fr_construisez.mp3", "pronunciation_fr_construisez (1).mp3"];
-audio.phrases = ["pronunciation_fr_phrases.mp3"];
-audio.qui = ["pronunciation_fr_qui.mp3", "pronunciation_fr_qui (1).mp3"];
-audio.ont = ["pronunciation_fr_ont.mp3"];
-audio.du = ["pronunciation_fr_du.mp3", "pronunciation_fr_du (1).mp3", "pronunciation_fr_du (2).mp3", "pronunciation_fr_du (3).mp3"];
-audio.sens = ["pronunciation_fr_sens.mp3"];
-audio.en_utilisant = ["pronunciation_fr_en_utilisant.mp3", "pronunciation_fr_en_utilisant (1).mp3", "pronunciation_fr_en_utilisant (2).mp3"];
-audio.verbes = ["pronunciation_fr_verbes.mp3"];
+a.les_grands_parents = ["pronunciation_fr_les_grands-parents.mp3"];
+a.grand_pere = ["pronunciation_fr_grand-pere.mp3", "pronunciation_fr_grand-pere (1).mp3", "pronunciation_fr_grand-pere (2).mp3"];
+a.grand_mere = ["pronunciation_fr_grand-mere.mp3", "pronunciation_fr_grand-mere (1).mp3"];
+a.les_enfants = ["pronunciation_fr_les_enfants.mp3"];
+a.filles = ["pronunciation_fr_filles.mp3"];
+a.fils = ["pronunciation_fr_fils.mp3", "pronunciation_fr_fils (1).mp3", "pronunciation_fr_fils (2).mp3"];
+a.freres = ["pronunciation_fr_freres.mp3"];
+a.soeurs = ["pronunciation_fr_soeurs.mp3"];
+a.petite_fille = ["pronunciation_fr_petite-fille.mp3", "pronunciation_fr_petite-fille (1).mp3", "pronunciation_fr_petite-fille (2).mp3"];
+a.petit_fils = ["pronunciation_fr_petit-fils.mp3", "pronunciation_fr_petit-fils (1).mp3", "pronunciation_fr_petit-fils (2).mp3"];
+a.parents = ["pronunciation_fr_parents.mp3"];
+a.construisez = ["pronunciation_fr_construisez.mp3", "pronunciation_fr_construisez (1).mp3"];
+a.phrases = ["pronunciation_fr_phrases.mp3"];
+a.qui = ["pronunciation_fr_qui.mp3", "pronunciation_fr_qui (1).mp3"];
+a.ont = ["pronunciation_fr_ont.mp3"];
+a.du = ["pronunciation_fr_du.mp3", "pronunciation_fr_du (1).mp3", "pronunciation_fr_du (2).mp3", "pronunciation_fr_du (3).mp3"];
+a.sens = ["pronunciation_fr_sens.mp3"];
+a.en_utilisant = ["pronunciation_fr_en_utilisant.mp3", "pronunciation_fr_en_utilisant (1).mp3", "pronunciation_fr_en_utilisant (2).mp3"];
+a.verbes = ["pronunciation_fr_verbes.mp3"];
 //
-audio.quelque_chose = ["pronunciation_fr_quelque_chose.mp3", "pronunciation_fr_quelque_chose (1).mp3", "pronunciation_fr_quelque_chose (2).mp3", "pronunciation_fr_quelque_chose (3).mp3", "pronunciation_fr_quelque_chose (4).mp3"];
-audio.suivantes = ["pronunciation_fr_suivantes.mp3"];
+a.quelque_chose = ["pronunciation_fr_quelque_chose.mp3", "pronunciation_fr_quelque_chose (1).mp3", "pronunciation_fr_quelque_chose (2).mp3", "pronunciation_fr_quelque_chose (3).mp3", "pronunciation_fr_quelque_chose (4).mp3"];
+a.suivantes = ["pronunciation_fr_suivantes.mp3"];
 //
-audio.sappeler = ["pronunciation_fr_s'appeler.mp3"];
-audio.je_mappelle = ["pronunciation_fr_je_m'appelle.mp3", "pronunciation_fr_je_m'appelle (1).mp3", "pronunciation_fr_je_m'appelle (2).mp3", "pronunciation_fr_je_m'appelle (3).mp3", "pronunciation_fr_je_m'appelle (4).mp3"];
-audio.tappelles = ["pronunciation_fr_tu_t'appelles.mp3", "pronunciation_fr_tu_t'appelles (1).mp3", "pronunciation_fr_tu_t'appelles (2).mp3"];
-audio.il_sappelle = ["pronunciation_fr_il_s'appelle.mp3", "pronunciation_fr_il_s'appelle (1).mp3"];
-audio.nous_nous_appelons = ["pronunciation_fr_nous_nous_appelons.mp3", "pronunciation_fr_nous_nous_appelons (1).mp3", "pronunciation_fr_nous_nous_appelons (2).mp3"];
-audio.vous_vous_appelez = ["pronunciation_fr_vous_vous_appelez.mp3", "pronunciation_fr_vous_vous_appelez (1).mp3", "pronunciation_fr_vous_vous_appelez (2).mp3"];
-audio.elles_sappellent = ["pronunciation_fr_elles_s'appellent.mp3", "pronunciation_fr_elles_s'appellent (1).mp3"];
+a.sappeler = ["pronunciation_fr_s'appeler.mp3"];
+a.je_mappelle = ["pronunciation_fr_je_m'appelle.mp3", "pronunciation_fr_je_m'appelle (1).mp3", "pronunciation_fr_je_m'appelle (2).mp3", "pronunciation_fr_je_m'appelle (3).mp3", "pronunciation_fr_je_m'appelle (4).mp3"];
+a.tappelles = ["pronunciation_fr_tu_t'appelles.mp3", "pronunciation_fr_tu_t'appelles (1).mp3", "pronunciation_fr_tu_t'appelles (2).mp3"];
+a.il_sappelle = ["pronunciation_fr_il_s'appelle.mp3", "pronunciation_fr_il_s'appelle (1).mp3"];
+a.nous_nous_appelons = ["pronunciation_fr_nous_nous_appelons.mp3", "pronunciation_fr_nous_nous_appelons (1).mp3", "pronunciation_fr_nous_nous_appelons (2).mp3"];
+a.vous_vous_appelez = ["pronunciation_fr_vous_vous_appelez.mp3", "pronunciation_fr_vous_vous_appelez (1).mp3", "pronunciation_fr_vous_vous_appelez (2).mp3"];
+a.elles_sappellent = ["pronunciation_fr_elles_s'appellent.mp3", "pronunciation_fr_elles_s'appellent (1).mp3"];
 //
-audio.aimer = ["pronunciation_fr_aimer.mp3", "pronunciation_fr_aimer (1).mp3", "pronunciation_fr_aimer (2).mp3"];
-audio.aime = ["pronunciation_fr_aime.mp3"];
-audio.aimes = ["pronunciation_fr_aimes.mp3", "pronunciation_fr_aimes (1).mp3"];
-audio.aimons = ["pronunciation_fr_aimons.mp3", "pronunciation_fr_aimons (1).mp3"];
-audio.aimez = ["pronunciation_fr_aimez.mp3"];
-audio.aiment = ["pronunciation_fr_aiment.mp3", "pronunciation_fr_aiment (1).mp3", "pronunciation_fr_aiment (2).mp3"];
+a.aimer = ["pronunciation_fr_aimer.mp3", "pronunciation_fr_aimer (1).mp3", "pronunciation_fr_aimer (2).mp3"];
+a.aime = ["pronunciation_fr_aime.mp3"];
+a.aimes = ["pronunciation_fr_aimes.mp3", "pronunciation_fr_aimes (1).mp3"];
+a.aimons = ["pronunciation_fr_aimons.mp3", "pronunciation_fr_aimons (1).mp3"];
+a.aimez = ["pronunciation_fr_aimez.mp3"];
+a.aiment = ["pronunciation_fr_aiment.mp3", "pronunciation_fr_aiment (1).mp3", "pronunciation_fr_aiment (2).mp3"];
 //
-audio.pratiquer = ["pronunciation_fr_pratiquer.mp3"];
-audio.pratique = ["pronunciation_fr_pratique.mp3"];
-audio.pratiques = ["pronunciation_fr_pratiques.mp3"];
-audio.pratiquons = ["pronunciation_fr_pratiquons.mp3"];
-audio.pratiquez = ["pronunciation_fr_pratiquez.mp3"];
-audio.pratiquent = ["pronunciation_fr_pratiquent.mp3"];
+a.pratiquer = ["pronunciation_fr_pratiquer.mp3"];
+a.pratique = ["pronunciation_fr_pratique.mp3"];
+a.pratiques = ["pronunciation_fr_pratiques.mp3"];
+a.pratiquons = ["pronunciation_fr_pratiquons.mp3"];
+a.pratiquez = ["pronunciation_fr_pratiquez.mp3"];
+a.pratiquent = ["pronunciation_fr_pratiquent.mp3"];
 //
-audio.preferer = ["pronunciation_fr_preferer.mp3", "pronunciation_fr_preferer (1).mp3"];
-audio.prefere = ["pronunciation_fr_prefere.mp3"];
-audio.preferes = ["pronunciation_fr_preferes.mp3"];
-audio.preferez = ["pronunciation_fr_preferez.mp3"];
-audio.preferent = ["pronunciation_fr_preferent.mp3"];
+a.preferer = ["pronunciation_fr_preferer.mp3", "pronunciation_fr_preferer (1).mp3"];
+a.prefere = ["pronunciation_fr_prefere.mp3"];
+a.preferes = ["pronunciation_fr_preferes.mp3"];
+a.preferez = ["pronunciation_fr_preferez.mp3"];
+a.preferent = ["pronunciation_fr_preferent.mp3"];
 //
-audio.mon = ["pronunciation_fr_mon.mp3"];
-audio.ma = ["pronunciation_fr_ma.mp3"];
-audio.ton = ["pronunciation_fr_ton.mp3", "pronunciation_fr_ton (1).mp3", "pronunciation_fr_ton (2).mp3"];
-audio.ta = ["pronunciation_fr_ta.mp3", "pronunciation_fr_ta (1).mp3", "pronunciation_fr_ta (2).mp3"];
-audio.son = ["pronunciation_fr_son.mp3", "pronunciation_fr_son (1).mp3", "pronunciation_fr_son (2).mp3", "pronunciation_fr_son (3).mp3"];
-audio.sa = ["pronunciation_fr_sa.mp3", "pronunciation_fr_sa (1).mp3", "pronunciation_fr_sa (2).mp3"];
-audio.votre = ["pronunciation_fr_votre.mp3", "pronunciation_fr_votre (1).mp3", "pronunciation_fr_votre (2).mp3"];
-audio.leur = ["pronunciation_fr_leur.mp3", "pronunciation_fr_leur (1).mp3", "pronunciation_fr_leur (2).mp3", "pronunciation_fr_leur (3).mp3"];
+a.mon = ["pronunciation_fr_mon.mp3"];
+a.ma = ["pronunciation_fr_ma.mp3"];
+a.ton = ["pronunciation_fr_ton.mp3", "pronunciation_fr_ton (1).mp3", "pronunciation_fr_ton (2).mp3"];
+a.ta = ["pronunciation_fr_ta.mp3", "pronunciation_fr_ta (1).mp3", "pronunciation_fr_ta (2).mp3"];
+a.son = ["pronunciation_fr_son.mp3", "pronunciation_fr_son (1).mp3", "pronunciation_fr_son (2).mp3", "pronunciation_fr_son (3).mp3"];
+a.sa = ["pronunciation_fr_sa.mp3", "pronunciation_fr_sa (1).mp3", "pronunciation_fr_sa (2).mp3"];
+a.votre = ["pronunciation_fr_votre.mp3", "pronunciation_fr_votre (1).mp3", "pronunciation_fr_votre (2).mp3"];
+a.leur = ["pronunciation_fr_leur.mp3", "pronunciation_fr_leur (1).mp3", "pronunciation_fr_leur (2).mp3", "pronunciation_fr_leur (3).mp3"];
 //
-audio.mes = ["pronunciation_fr_mes.mp3", "pronunciation_fr_mes (1).mp3", "pronunciation_fr_mes (2).mp3"];
-audio.tes = ["pronunciation_fr_tes.mp3", "pronunciation_fr_tes (1).mp3", "pronunciation_fr_tes (2).mp3"];
-audio.ses = ["pronunciation_fr_ses.mp3"];
-audio.nos = ["pronunciation_fr_nos.mp3", "pronunciation_fr_nos (1).mp3", "pronunciation_fr_nos (2).mp3"];
-audio.vos = ["pronunciation_fr_vos.mp3", "pronunciation_fr_vos (1).mp3", "pronunciation_fr_vos (2).mp3"];
-audio.leurs = ["pronunciation_fr_leurs.mp3", "pronunciation_fr_leurs (1).mp3", "pronunciation_fr_leurs (2).mp3"];
+a.mes = ["pronunciation_fr_mes.mp3", "pronunciation_fr_mes (1).mp3", "pronunciation_fr_mes (2).mp3"];
+a.tes = ["pronunciation_fr_tes.mp3", "pronunciation_fr_tes (1).mp3", "pronunciation_fr_tes (2).mp3"];
+a.ses = ["pronunciation_fr_ses.mp3"];
+a.nos = ["pronunciation_fr_nos.mp3", "pronunciation_fr_nos (1).mp3", "pronunciation_fr_nos (2).mp3"];
+a.vos = ["pronunciation_fr_vos.mp3", "pronunciation_fr_vos (1).mp3", "pronunciation_fr_vos (2).mp3"];
+a.leurs = ["pronunciation_fr_leurs.mp3", "pronunciation_fr_leurs (1).mp3", "pronunciation_fr_leurs (2).mp3"];
 //
-audio.janvier = ["pronunciation_fr_janvier.mp3", "pronunciation_fr_janvier (1).mp3", "pronunciation_fr_janvier (2).mp3"];
-audio.fevrier = ["pronunciation_fr_fevrier.mp3", "pronunciation_fr_fevrier (1).mp3"];
-audio.mars = ["pronunciation_fr_mars.mp3", "pronunciation_fr_mars (1).mp3", "pronunciation_fr_mars (2).mp3"];
-audio.avril = ["pronunciation_fr_avril.mp3", "pronunciation_fr_avril (1).mp3", "pronunciation_fr_avril (2).mp3"];
-audio.mai = ["pronunciation_fr_mai.mp3", "pronunciation_fr_mai (1).mp3", "pronunciation_fr_mai (2).mp3"];
-audio.juillet = ["pronunciation_fr_juillet.mp3", "pronunciation_fr_juillet (1).mp3", "pronunciation_fr_juillet (2).mp3", "pronunciation_fr_juillet (3).mp3"];
-audio.aout = ["pronunciation_fr_aout.mp3", "pronunciation_fr_aout (1).mp3", "pronunciation_fr_aout (2).mp3", "pronunciation_fr_aout (3).mp3", "pronunciation_fr_aout (4).mp3"];
-audio.septembre = ["pronunciation_fr_septembre.mp3", "pronunciation_fr_septembre (1).mp3", "pronunciation_fr_septembre (2).mp3", "pronunciation_fr_septembre (3).mp3"];
-audio.octobre = ["pronunciation_fr_octobre.mp3", "pronunciation_fr_octobre (1).mp3", "pronunciation_fr_octobre (2).mp3", "pronunciation_fr_octobre (3).mp3"];
-audio.novembre = ["pronunciation_fr_novembre.mp3", "pronunciation_fr_novembre (1).mp3", "pronunciation_fr_novembre (2).mp3"];
-audio.squelette = ["pronunciation_fr_squelette.mp3"];
+a.janvier = ["pronunciation_fr_janvier.mp3", "pronunciation_fr_janvier (1).mp3", "pronunciation_fr_janvier (2).mp3"];
+a.fevrier = ["pronunciation_fr_fevrier.mp3", "pronunciation_fr_fevrier (1).mp3"];
+a.mars = ["pronunciation_fr_mars.mp3", "pronunciation_fr_mars (1).mp3", "pronunciation_fr_mars (2).mp3"];
+a.avril = ["pronunciation_fr_avril.mp3", "pronunciation_fr_avril (1).mp3", "pronunciation_fr_avril (2).mp3"];
+a.mai = ["pronunciation_fr_mai.mp3", "pronunciation_fr_mai (1).mp3", "pronunciation_fr_mai (2).mp3"];
+a.juillet = ["pronunciation_fr_juillet.mp3", "pronunciation_fr_juillet (1).mp3", "pronunciation_fr_juillet (2).mp3", "pronunciation_fr_juillet (3).mp3"];
+a.aout = ["pronunciation_fr_aout.mp3", "pronunciation_fr_aout (1).mp3", "pronunciation_fr_aout (2).mp3", "pronunciation_fr_aout (3).mp3", "pronunciation_fr_aout (4).mp3"];
+a.septembre = ["pronunciation_fr_septembre.mp3", "pronunciation_fr_septembre (1).mp3", "pronunciation_fr_septembre (2).mp3", "pronunciation_fr_septembre (3).mp3"];
+a.octobre = ["pronunciation_fr_octobre.mp3", "pronunciation_fr_octobre (1).mp3", "pronunciation_fr_octobre (2).mp3", "pronunciation_fr_octobre (3).mp3"];
+a.novembre = ["pronunciation_fr_novembre.mp3", "pronunciation_fr_novembre (1).mp3", "pronunciation_fr_novembre (2).mp3"];
+a.squelette = ["pronunciation_fr_squelette.mp3"];
 //
-audio.vouloir = getlist("pronunciation_fr_vouloir.mp3", 2);
-audio.veux = getlist("pronunciation_fr_veux.mp3", 2);
-audio.je_veux = getlist("pronunciation_fr_je_veux.mp3", 2);
-audio.tu_veux = getlist("pronunciation_fr_tu_veux.mp3", 2);
-audio.veut = getlist("pronunciation_fr_veut.mp3", 2);
-audio.elle_veut = getlist("pronunciation_fr_elle_veut.mp3", 1);
-audio.voulons = getlist("pronunciation_fr_voulons.mp3", 4);
-audio.nous_voulons = getlist("pronunciation_fr_nous_voulons.mp3", 3);
-audio.voulez = getlist("pronunciation_fr_voulez.mp3", 1);
-audio.vous_voulez = getlist("pronunciation_fr_vous_voulez.mp3", 3);
-audio.veulent = getlist("pronunciation_fr_veulent.mp3", 1);
-audio.elles_veulent = getlist("pronunciation_fr_elles_veulent.mp3", 1);
+a.vouloir = l("pronunciation_fr_vouloir.mp3", 2);
+a.veux = l("pronunciation_fr_veux.mp3", 2);
+a.je_veux = l("pronunciation_fr_je_veux.mp3", 2);
+a.tu_veux = l("pronunciation_fr_tu_veux.mp3", 2);
+a.veut = l("pronunciation_fr_veut.mp3", 2);
+a.elle_veut = l("pronunciation_fr_elle_veut.mp3", 1);
+a.voulons = l("pronunciation_fr_voulons.mp3", 4);
+a.nous_voulons = l("pronunciation_fr_nous_voulons.mp3", 3);
+a.voulez = l("pronunciation_fr_voulez.mp3", 1);
+a.vous_voulez = l("pronunciation_fr_vous_voulez.mp3", 3);
+a.veulent = l("pronunciation_fr_veulent.mp3", 1);
+a.elles_veulent = l("pronunciation_fr_elles_veulent.mp3", 1);
 //
-audio.aller = getlist("pronunciation_fr_aller.mp3", 1);
-audio.je_vais = getlist("pronunciation_fr_je_vais.mp3", 2);
-audio.vais = getlist("pronunciation_fr_vais.mp3", 3);
-audio.tu_vas = getlist("pronunciation_fr_tu_vas.mp3", 2);
-audio.il_va = getlist("pronunciation_fr_il_va.mp3", 2);
-audio.nous_allons = getlist("pronunciation_fr_nous_allons.mp3", 1);
-audio.vous_allez = getlist("pronunciation_fr_vous_allez.mp3", 1);
-audio.elles_vont = getlist("pronunciation_fr_elles_vont.mp3", 1);
-audio.decembre = getlist("pronunciation_fr_decembre.mp3", 1);
+a.aller = l("pronunciation_fr_aller.mp3", 1);
+a.je_vais = l("pronunciation_fr_je_vais.mp3", 2);
+a.vais = l("pronunciation_fr_vais.mp3", 3);
+a.tu_vas = l("pronunciation_fr_tu_vas.mp3", 2);
+a.il_va = l("pronunciation_fr_il_va.mp3", 2);
+a.nous_allons = l("pronunciation_fr_nous_allons.mp3", 1);
+a.vous_allez = l("pronunciation_fr_vous_allez.mp3", 1);
+a.elles_vont = l("pronunciation_fr_elles_vont.mp3", 1);
+a.decembre = l("pronunciation_fr_decembre.mp3", 1);
 //
-audio.mon_amour = getlist("pronunciation_fr_mon_amour.mp3", 1);
-audio.mon_cheri = getlist("pronunciation_fr_mon_ch\xe9ri.mp3", 3);
-audio.ton_ordinateur = ["pronunciation_fr_ton_ordinateur.mp3"];
-audio.quel_est_ton_numero_de_telephone = ["pronunciation_fr_quel_est_ton_num\xe9ro_de_t\xe9l\xe9phone.mp3"];
-audio.son_ordinateur = ["pronunciation_fr_son_ordinateur.mp3"];
-audio.son_trip = ["pronunciation_fr_son_trip.mp3"];
+a.mon_amour = l("pronunciation_fr_mon_amour.mp3", 1);
+a.mon_cheri = l("pronunciation_fr_mon_ch\xe9ri.mp3", 3);
+a.ton_ordinateur = ["pronunciation_fr_ton_ordinateur.mp3"];
+a.quel_est_ton_numero_de_telephone = ["pronunciation_fr_quel_est_ton_num\xe9ro_de_t\xe9l\xe9phone.mp3"];
+a.son_ordinateur = ["pronunciation_fr_son_ordinateur.mp3"];
+a.son_trip = ["pronunciation_fr_son_trip.mp3"];
 //
-audio.ma_mere = ["pronunciation_fr_ma_m\xe8re.mp3"];
-audio.ma_femme = getlist("pronunciation_fr_ma_femme.mp3", 1);
-audio.ta_mode = getlist("pronunciation_fr_ta_mode.mp3", 1);
-audio.ta_vie = ["pronunciation_fr_ta_vie.mp3"];
-audio.retourner_sa_veste = getlist("pronunciation_fr_retourner_sa_veste.mp3", 3);
-audio.sa_famille = ["pronunciation_fr_sa_famille.mp3"];
+a.ma_mere = ["pronunciation_fr_ma_m\xe8re.mp3"];
+a.ma_femme = l("pronunciation_fr_ma_femme.mp3", 1);
+a.ta_mode = l("pronunciation_fr_ta_mode.mp3", 1);
+a.ta_vie = ["pronunciation_fr_ta_vie.mp3"];
+a.retourner_sa_veste = l("pronunciation_fr_retourner_sa_veste.mp3", 3);
+a.sa_famille = ["pronunciation_fr_sa_famille.mp3"];
 //
-audio.notre_sucre = getlist("pronunciation_fr_notre_sucre.mp3", 1);
-audio.votre_travail = ["pronunciation_fr_votre_travail.mp3"];
-audio.leur_universite = getlist("pronunciation_fr_leur_universit\xe9.mp3", 1);
+a.notre_sucre = l("pronunciation_fr_notre_sucre.mp3", 1);
+a.votre_travail = ["pronunciation_fr_votre_travail.mp3"];
+a.leur_universite = l("pronunciation_fr_leur_universit\xe9.mp3", 1);
 //
-audio.mes_favorites = ["pronunciation_fr_mes_favorites.mp3"];
-audio.tes_amis = getlist("pronunciation_fr_tes_amis.mp3", 1);
-audio.allumer_ses_roues = ["pronunciation_fr_allumer_ses_roues.mp3"];
-audio.nos_devoirs = ["pronunciation_fr_nos_devoirs.mp3"];
-audio.nos_bagages = getlist("pronunciation_fr_nos_bagages.mp3", 1);
-audio.ouvrez_vos_livres = ["pronunciation_fr_ouvrez_vos_livres.mp3"];
-audio.leurs_yeux = ["pronunciation_fr_leurs_yeux.mp3"];
+a.mes_favorites = ["pronunciation_fr_mes_favorites.mp3"];
+a.tes_amis = l("pronunciation_fr_tes_amis.mp3", 1);
+a.allumer_ses_roues = ["pronunciation_fr_allumer_ses_roues.mp3"];
+a.nos_devoirs = ["pronunciation_fr_nos_devoirs.mp3"];
+a.nos_bagages = l("pronunciation_fr_nos_bagages.mp3", 1);
+a.ouvrez_vos_livres = ["pronunciation_fr_ouvrez_vos_livres.mp3"];
+a.leurs_yeux = ["pronunciation_fr_leurs_yeux.mp3"];
 //
-audio.preferons = ["pronunciation_fr_pr\xe9f\xe9rons.mp3"];
-audio.levez = ["pronunciation_fr_levez.mp3"];
-audio.je_me_leve = getlist("pronunciation_fr_je_me_l\xe8ve.mp3", 1);
-audio.la_main = getlist("pronunciation_fr_la_main.mp3", 1);
-audio.prenez = ["pronunciation_fr_prenez.mp3"];
-audio.un_stylo = ["pronunciation_fr_un_stylo.mp3"];
+a.preferons = ["pronunciation_fr_pr\xe9f\xe9rons.mp3"];
+a.levez = ["pronunciation_fr_levez.mp3"];
+a.je_me_leve = l("pronunciation_fr_je_me_l\xe8ve.mp3", 1);
+a.la_main = l("pronunciation_fr_la_main.mp3", 1);
+a.prenez = ["pronunciation_fr_prenez.mp3"];
+a.un_stylo = ["pronunciation_fr_un_stylo.mp3"];
 //
-audio.prendre = getlist("pronunciation_fr_prendre.mp3", 3);
-audio.je_prends = getlist("pronunciation_fr_je_prends.mp3", 1);
-audio.tu_prends = getlist("pronunciation_fr_tu_prends.mp3", 1);
-audio.elle_prend = getlist("pronunciation_fr_elle_prend.mp3", 1);
-audio.nous_prenons = getlist("pronunciation_fr_nous_prenons.mp3", 1);
-audio.vous_prenez = getlist("pronunciation_fr_vous_prenez.mp3", 1);
-audio.elles_prennent = getlist("pronunciation_fr_elles_prennent.mp3", 1);
+a.prendre = l("pronunciation_fr_prendre.mp3", 3);
+a.je_prends = l("pronunciation_fr_je_prends.mp3", 1);
+a.tu_prends = l("pronunciation_fr_tu_prends.mp3", 1);
+a.elle_prend = l("pronunciation_fr_elle_prend.mp3", 1);
+a.nous_prenons = l("pronunciation_fr_nous_prenons.mp3", 1);
+a.vous_prenez = l("pronunciation_fr_vous_prenez.mp3", 1);
+a.elles_prennent = l("pronunciation_fr_elles_prennent.mp3", 1);
 //
-audio.pourquoi = getlist("pronunciation_fr_pourquoi.mp3", 3);
-audio.escroc = getlist("pronunciation_fr_escroc.mp3", 2);
-audio.a = getlist("pronunciation_fr_a.mp3", 2);
-audio.b = ["pronunciation_fr_b.mp3"];
-audio.c = ["pronunciation_fr_c.mp3"];
-audio.d = getlist("pronunciation_fr_d.mp3", 1);
-audio.e = getlist("pronunciation_fr_e.mp3", 1);
-audio.f = getlist("pronunciation_fr_f.mp3", 1);
-audio.g = ["pronunciation_fr_g.mp3"];
-audio.h = ["pronunciation_fr_h.mp3"];
-audio.i = ["pronunciation_fr_i.mp3"];
-audio.j = ["pronunciation_fr_j.mp3"];
-audio.k = ["pronunciation_fr_k.mp3"];
-audio.l = ["pronunciation_fr_l.mp3"];
-audio.m = ["pronunciation_fr_m.mp3"];
-audio.n = ["pronunciation_fr_n.mp3"];
-audio.o = ["pronunciation_fr_o.mp3"];
-audio.p = ["pronunciation_fr_p.mp3"];
-audio.q = ["pronunciation_fr_q.mp3"];
-audio.r = getlist("pronunciation_fr_r.mp3", 2);
-audio.s = getlist("pronunciation_fr_s.mp3", 1);
-audio.t = ["pronunciation_fr_t.mp3"];
-audio.u = getlist("pronunciation_fr_u.mp3", 2);
-audio.v = ["pronunciation_fr_v.mp3"];
-audio.w = ["pronunciation_fr_w.mp3"];
-audio.x = ["pronunciation_fr_x.mp3"];
-audio.y = getlist("pronunciation_fr_y.mp3", 1);
-audio.z = ["pronunciation_fr_z.mp3"];
-audio.daccord = getlist("pronunciation_fr_d'accord.mp3", 4);
-audio.donc = ["pronunciation_fr_donc.mp3"];
-audio.mois = ["pronunciation_fr_mois.mp3"];
-audio.preferee = ["pronunciation_fr_pr\xe9f\xe9re\xe9.mp3"];
-audio.couleur = getlist("pronunciation_fr_couleur.mp3", 2);
-audio.piece_de_resistance = getlist("pronunciation_fr_pi\xe8ce_de_r\xe9sistance.mp3", 1);
+a.pourquoi = l("pronunciation_fr_pourquoi.mp3", 3);
+a.escroc = l("pronunciation_fr_escroc.mp3", 2);
+a.a = l("pronunciation_fr_a.mp3", 2);
+a.b = ["pronunciation_fr_b.mp3"];
+a.c = ["pronunciation_fr_c.mp3"];
+a.d = l("pronunciation_fr_d.mp3", 1);
+a.e = l("pronunciation_fr_e.mp3", 1);
+a.f = l("pronunciation_fr_f.mp3", 1);
+a.g = ["pronunciation_fr_g.mp3"];
+a.h = ["pronunciation_fr_h.mp3"];
+a.i = ["pronunciation_fr_i.mp3"];
+a.j = ["pronunciation_fr_j.mp3"];
+a.k = ["pronunciation_fr_k.mp3"];
+a.l = ["pronunciation_fr_l.mp3"];
+a.m = ["pronunciation_fr_m.mp3"];
+a.n = ["pronunciation_fr_n.mp3"];
+a.o = ["pronunciation_fr_o.mp3"];
+a.p = ["pronunciation_fr_p.mp3"];
+a.q = ["pronunciation_fr_q.mp3"];
+a.r = l("pronunciation_fr_r.mp3", 2);
+a.s = l("pronunciation_fr_s.mp3", 1);
+a.t = ["pronunciation_fr_t.mp3"];
+a.u = l("pronunciation_fr_u.mp3", 2);
+a.v = ["pronunciation_fr_v.mp3"];
+a.w = ["pronunciation_fr_w.mp3"];
+a.x = ["pronunciation_fr_x.mp3"];
+a.y = l("pronunciation_fr_y.mp3", 1);
+a.z = ["pronunciation_fr_z.mp3"];
+a.daccord = l("pronunciation_fr_d'accord.mp3", 4);
+a.donc = ["pronunciation_fr_donc.mp3"];
+a.mois = ["pronunciation_fr_mois.mp3"];
+a.preferee = ["pronunciation_fr_pr\xe9f\xe9re\xe9.mp3"];
+a.couleur = l("pronunciation_fr_couleur.mp3", 2);
+a.piece_de_resistance = l("pronunciation_fr_pi\xe8ce_de_r\xe9sistance.mp3", 1);
 //
-audio.faire = getlist("pronunciation_fr_faire.mp3", 2);
-audio.je_fais = getlist("pronunciation_fr_je_fais.mp3", 2);
-audio.tu_fais = getlist("pronunciation_fr_tu_fais.mp3", 2);
-audio.elle_fait = getlist("pronunciation_fr_elle_fait.mp3", 1);
-audio.nous_faisons = getlist("pronunciation_fr_nous_faisons.mp3", 6);
-audio.vous_faites = getlist("pronunciation_fr_vous_faites.mp3", 2);
-audio.elles_font = getlist("pronunciation_fr_elles_font.mp3", 1);
+a.faire = l("pronunciation_fr_faire.mp3", 2);
+a.je_fais = l("pronunciation_fr_je_fais.mp3", 2);
+a.tu_fais = l("pronunciation_fr_tu_fais.mp3", 2);
+a.elle_fait = l("pronunciation_fr_elle_fait.mp3", 1);
+a.nous_faisons = l("pronunciation_fr_nous_faisons.mp3", 6);
+a.vous_faites = l("pronunciation_fr_vous_faites.mp3", 2);
+a.elles_font = l("pronunciation_fr_elles_font.mp3", 1);
 //
-audio.savoir = getlist("pronunciation_fr_savoir.mp3", 1);
-audio.je_sais = getlist("pronunciation_fr_je_sais.mp3", 1);
-audio.tu_sais = getlist("pronunciation_fr_tu_sais.mp3", 1);
-audio.elle_sait = getlist("pronunciation_fr_elle_sait.mp3", 1);
-audio.il_sait = getlist("pronunciation_fr_il_sait.mp3", 1);
-audio.nous_savons = getlist("pronunciation_fr_nous_savons.mp3", 1);
-audio.vous_savez = getlist("pronunciation_fr_vous_savez.mp3", 1);
-audio.elles_savent = ["pronunciation_fr_elles_savent.mp3"];
-audio.ils_savent = ["pronunciation_fr_ils_savent.mp3"];
+a.savoir = l("pronunciation_fr_savoir.mp3", 1);
+a.je_sais = l("pronunciation_fr_je_sais.mp3", 1);
+a.tu_sais = l("pronunciation_fr_tu_sais.mp3", 1);
+a.elle_sait = l("pronunciation_fr_elle_sait.mp3", 1);
+a.il_sait = l("pronunciation_fr_il_sait.mp3", 1);
+a.nous_savons = l("pronunciation_fr_nous_savons.mp3", 1);
+a.vous_savez = l("pronunciation_fr_vous_savez.mp3", 1);
+a.elles_savent = ["pronunciation_fr_elles_savent.mp3"];
+a.ils_savent = ["pronunciation_fr_ils_savent.mp3"];
 //
-audio.pouvoir = getlist("pronunciation_fr_pouvoir.mp3", 1);
-audio.je_peux = getlist("pronunciation_fr_je_peux.mp3", 3);
-audio.tu_peux = getlist("pronunciation_fr_tu_peux.mp3", 1);
-audio.elle_peut = getlist("pronunciation_fr_elle_peut.mp3", 1);
-audio.nous_pouvons = getlist("pronunciation_fr_nous_pouvons.mp3", 1);
-audio.vous_pouvez = getlist("pronunciation_fr_vous_pouvez.mp3", 2);
-audio.elles_peuvent = getlist("pronunciation_fr_elles_peuvent.mp3", 1);
+a.pouvoir = l("pronunciation_fr_pouvoir.mp3", 1);
+a.je_peux = l("pronunciation_fr_je_peux.mp3", 3);
+a.tu_peux = l("pronunciation_fr_tu_peux.mp3", 1);
+a.elle_peut = l("pronunciation_fr_elle_peut.mp3", 1);
+a.nous_pouvons = l("pronunciation_fr_nous_pouvons.mp3", 1);
+a.vous_pouvez = l("pronunciation_fr_vous_pouvez.mp3", 2);
+a.elles_peuvent = l("pronunciation_fr_elles_peuvent.mp3", 1);
 //
-audio.lire = getlist("pronunciation_fr_lire.mp3", 2);
-audio.apres = getlist("pronunciation_fr_apr\xe8s.mp3", 1);
-audio.mari = getlist("pronunciation_fr_mari.mp3", 3);
-audio.beau_fils = getlist("pronunciation_fr_beau-fils.mp3", 1);
-audio.belle_mere = ["pronunciation_fr_belle-m\xe8re.mp3"];
-audio.la_belle_mere = ["pronunciation_fr_la_belle-m\xe8re.mp3"];
-audio.ma_belle_mere = ["pronunciation_fr_ma_belle-m\xe8re.mp3"];
-audio.niece = getlist("pronunciation_fr_ni\xe8ce.mp3", 2);
-audio.neveu = getlist("pronunciation_fr_neveu.mp3", 1);
-audio.tante = ["pronunciation_fr_tante.mp3"];
-audio.beau_frere = getlist("pronunciation_fr_beau-fr\xe8re.mp3", 2);
-audio.cousin = getlist("pronunciation_fr_cousin.mp3", 2);
-audio.cousine = ["pronunciation_fr_cousine.mp3"];
-audio.un_cheval = ["pronunciation_fr_un_cheval.mp3"];
-audio.les_chevaux = ["pronunciation_fr_les_chevaux.mp3"];
-audio.la_ville = getlist("pronunciation_fr_la_ville.mp3", 2);
-audio.campagne = ["pronunciation_fr_campagne.mp3"];
-audio.bruit = getlist("pronunciation_fr_bruit.mp3", 3);
-audio.silence = ["pronunciation_fr_silence.mp3"];
-audio.peindre = getlist("pronunciation_fr_peindre.mp3", 2);
-audio.faire_du_velo = ["pronunciation_fr_faire_du_v\xe9lo.mp3"];
-audio.faire_du_surf = ["pronunciation_fr_faire_du_surf.mp3"];
-audio.nager = getlist("pronunciation_fr_nager.mp3", 1);
-audio.le_samedi = ["pronunciation_fr_le_samedi.mp3"];
-audio.le_dimanche = ["pronunciation_fr_le_dimanche.mp3"];
-audio.sortir = getlist("pronunciation_fr_sortir.mp3");
-audio.avec = ["pronunciation_fr_avec.mp3"];
-audio.copains = ["pronunciation_fr_copains.mp3"];
-audio.leve = ["pronunciation_fr_l\xe8ve.mp3"];
-audio.pour = getlist("pronunciation_fr_pour.mp3", 2);
-audio.dire = ["pronunciation_fr_dire.mp3"];
-audio.bonjour = getlist("pronunciation_fr_bonjour.mp3", 14);
-audio.du_cafe = getlist("pronunciation_fr_du_caf\xe9.mp3", 1);
-audio.ca_va = getlist("pronunciation_fr_\xe7a_va_-.mp3", 3);
+a.lire = l("pronunciation_fr_lire.mp3", 2);
+a.apres = l("pronunciation_fr_apr\xe8s.mp3", 1);
+a.mari = l("pronunciation_fr_mari.mp3", 3);
+a.beau_fils = l("pronunciation_fr_beau-fils.mp3", 1);
+a.belle_mere = ["pronunciation_fr_belle-m\xe8re.mp3"];
+a.la_belle_mere = ["pronunciation_fr_la_belle-m\xe8re.mp3"];
+a.ma_belle_mere = ["pronunciation_fr_ma_belle-m\xe8re.mp3"];
+a.niece = l("pronunciation_fr_ni\xe8ce.mp3", 2);
+a.neveu = l("pronunciation_fr_neveu.mp3", 1);
+a.tante = ["pronunciation_fr_tante.mp3"];
+a.beau_frere = l("pronunciation_fr_beau-fr\xe8re.mp3", 2);
+a.cousin = l("pronunciation_fr_cousin.mp3", 2);
+a.cousine = ["pronunciation_fr_cousine.mp3"];
+a.un_cheval = ["pronunciation_fr_un_cheval.mp3"];
+a.les_chevaux = ["pronunciation_fr_les_chevaux.mp3"];
+a.la_ville = l("pronunciation_fr_la_ville.mp3", 2);
+a.campagne = ["pronunciation_fr_campagne.mp3"];
+a.bruit = l("pronunciation_fr_bruit.mp3", 3);
+a.silence = ["pronunciation_fr_silence.mp3"];
+a.peindre = l("pronunciation_fr_peindre.mp3", 2);
+a.faire_du_velo = ["pronunciation_fr_faire_du_v\xe9lo.mp3"];
+a.faire_du_surf = ["pronunciation_fr_faire_du_surf.mp3"];
+a.nager = l("pronunciation_fr_nager.mp3", 1);
+a.le_samedi = ["pronunciation_fr_le_samedi.mp3"];
+a.le_dimanche = ["pronunciation_fr_le_dimanche.mp3"];
+a.sortir = l("pronunciation_fr_sortir.mp3");
+a.avec = ["pronunciation_fr_avec.mp3"];
+a.copains = ["pronunciation_fr_copains.mp3"];
+a.leve = ["pronunciation_fr_l\xe8ve.mp3"];
+a.pour = l("pronunciation_fr_pour.mp3", 2);
+a.dire = ["pronunciation_fr_dire.mp3"];
+a.bonjour = l("pronunciation_fr_bonjour.mp3", 14);
+a.du_cafe = l("pronunciation_fr_du_caf\xe9.mp3", 1);
+a.ca_va = l("pronunciation_fr_\xe7a_va_-.mp3", 3);
 //
-audio.tous_les_jours = getlist("pronunciation_fr_tous_les_jours.mp3", 2);
-audio.de_bonne_heure = getlist("pronunciation_fr_de_bonne_heure.mp3", 1);
-audio.bonne_heure = ["pronunciation_fr_bonne_heure.mp3"];
-audio.elle_se_reveille_tres_lentement = ["pronunciation_fr_elle_se_r\xe9veille_tr\xe8s_lentement.mp3"];
-audio.reveille = getlist("pronunciation_fr_r\xe9veille.mp3", 2);
-audio.tres = getlist("pronunciation_fr_tr\xe8s.mp3", 4);
-audio.lentement = getlist("pronunciation_fr_lentement.mp3", 1);
-audio.douche = ["pronunciation_fr_douche.mp3"];
-audio.toujours = getlist("pronunciation_fr_toujours.mp3", 4);
-audio.matin = getlist("pronunciation_fr_matin.mp3", 3);
-audio.le_matin = getlist("pronunciation_fr_le_matin.mp3", 1);
-audio.ensuite = ["pronunciation_fr_ensuite.mp3"];
-audio.il_se_rase = ["pronunciation_fr_il_se_rase.mp3"];
-audio.rase = ["pronunciation_fr_rase.mp3"];
-audio.devant = getlist("pronunciation_fr_devant.mp3", 2);
-audio.miroir = getlist("pronunciation_fr_miroir.mp3", 1);
-audio.depeche = ["pronunciation_fr_d\xe9p\xeache.mp3"];
-audio.habille = getlist("pronunciation_fr_habille.mp3", 1);
-audio.je_mhabille = ["pronunciation_fr_je_m'habille.mp3"];
-audio.vite = getlist("pronunciation_fr_vite.mp3", 1);
-audio.parce = ["pronunciation_fr_parce.mp3"];
-audio.quelle = ["pronunciation_fr_qu'elle.mp3"];
-audio.parce_que = getlist("pronunciation_fr_parce_que.mp3", 3);
-audio.naime_pas = ["pronunciation_fr_n'aime_pas.mp3"];
-audio.etre_en_retard = ["pronunciation_fr_\xeatre_en_retard.mp3"];
-audio.lecole = ["pronunciation_fr_l'\xe9cole.mp3"];
-audio.elle_se_depeche = ["pronunciation_fr_elle_se_d\xe9p\xeache.mp3"];
-audio.elle_se_depeche_le_matin = ["pronunciation_fr_elle_se_d\xe9p\xeache_le_matin.mp3"];
+a.tous_les_jours = l("pronunciation_fr_tous_les_jours.mp3", 2);
+a.de_bonne_heure = l("pronunciation_fr_de_bonne_heure.mp3", 1);
+a.bonne_heure = ["pronunciation_fr_bonne_heure.mp3"];
+a.elle_se_reveille_tres_lentement = ["pronunciation_fr_elle_se_r\xe9veille_tr\xe8s_lentement.mp3"];
+a.reveille = l("pronunciation_fr_r\xe9veille.mp3", 2);
+a.tres = l("pronunciation_fr_tr\xe8s.mp3", 4);
+a.lentement = l("pronunciation_fr_lentement.mp3", 1);
+a.douche = ["pronunciation_fr_douche.mp3"];
+a.toujours = l("pronunciation_fr_toujours.mp3", 4);
+a.matin = l("pronunciation_fr_matin.mp3", 3);
+a.le_matin = l("pronunciation_fr_le_matin.mp3", 1);
+a.ensuite = ["pronunciation_fr_ensuite.mp3"];
+a.il_se_rase = ["pronunciation_fr_il_se_rase.mp3"];
+a.rase = ["pronunciation_fr_rase.mp3"];
+a.devant = l("pronunciation_fr_devant.mp3", 2);
+a.miroir = l("pronunciation_fr_miroir.mp3", 1);
+a.depeche = ["pronunciation_fr_d\xe9p\xeache.mp3"];
+a.habille = l("pronunciation_fr_habille.mp3", 1);
+a.je_mhabille = ["pronunciation_fr_je_m'habille.mp3"];
+a.vite = l("pronunciation_fr_vite.mp3", 1);
+a.parce = ["pronunciation_fr_parce.mp3"];
+a.quelle = ["pronunciation_fr_qu'elle.mp3"];
+a.parce_que = l("pronunciation_fr_parce_que.mp3", 3);
+a.naime_pas = ["pronunciation_fr_n'aime_pas.mp3"];
+a.etre_en_retard = ["pronunciation_fr_\xeatre_en_retard.mp3"];
+a.lecole = ["pronunciation_fr_l'\xe9cole.mp3"];
+a.elle_se_depeche = ["pronunciation_fr_elle_se_d\xe9p\xeache.mp3"];
+a.elle_se_depeche_le_matin = ["pronunciation_fr_elle_se_d\xe9p\xeache_le_matin.mp3"];
 //
-audio.sentrainer = ["pronunciation_fr_s'entra\xeener.mp3"];
-audio.au = ["pronunciation_fr_au.mp3"];
-audio.gymnase = ["pronunciation_fr_gymnase.mp3"];
-audio.fois = ["pronunciation_fr_fois.mp3"];
-audio.par_semaine = ["pronunciation_fr_par_semaine.mp3"];
+a.sentrainer = ["pronunciation_fr_s'entra\xeener.mp3"];
+a.au = ["pronunciation_fr_au.mp3"];
+a.gymnase = ["pronunciation_fr_gymnase.mp3"];
+a.fois = ["pronunciation_fr_fois.mp3"];
+a.par_semaine = ["pronunciation_fr_par_semaine.mp3"];
 //
-audio.brosse = getlist("pronunciation_fr_brosse.mp3", 1);
-audio.les_dents = getlist("pronunciation_fr_les_dents.mp3", 1);
-audio.avant = getlist("pronunciation_fr_avant.mp3", 3);
-audio.lheure_daller_au_lit = getlist("pronunciation_fr_l'heure_d'aller_au_lit.mp3", 1);
-audio.lit = getlist("pronunciation_fr_lit.mp3", 2);
+a.brosse = l("pronunciation_fr_brosse.mp3", 1);
+a.les_dents = l("pronunciation_fr_les_dents.mp3", 1);
+a.avant = l("pronunciation_fr_avant.mp3", 3);
+a.lheure_daller_au_lit = l("pronunciation_fr_l'heure_d'aller_au_lit.mp3", 1);
+a.lit = l("pronunciation_fr_lit.mp3", 2);
 //
-audio.se_couchent = ["pronunciation_fr_se_couchent.mp3"];
-audio.tot = ["pronunciation_fr_t\xf4t.mp3"];
-audio.se_lever_plus_tot = getlist("pronunciation_fr_se_lever_plus_t\xf4t.mp3", 1);
-audio.salle_de_classe = ["pronunciation_fr_salle_de_classe.mp3"];
+a.se_couchent = ["pronunciation_fr_se_couchent.mp3"];
+a.tot = ["pronunciation_fr_t\xf4t.mp3"];
+a.se_lever_plus_tot = l("pronunciation_fr_se_lever_plus_t\xf4t.mp3", 1);
+a.salle_de_classe = ["pronunciation_fr_salle_de_classe.mp3"];
 //
-audio.tous_mes_amis = ["pronunciation_fr_tous_mes_amis.mp3"];
-audio.bibliotheque = getlist("pronunciation_fr_biblioth\xe8que.mp3", 2);
-audio.psychanalyse = ["pronunciation_fr_psychanalyse.mp3"];
-audio.toi_non_plus = ["pronunciation_fr_toi_non_plus.mp3"];
-audio.est_cequils_aiment_faire_du_volleyball = ["pronunciation_fr_est-ce_qu'ils_aiment_faire_du_volleyball.mp3"];
-audio.mairie = getlist("pronunciation_fr_mairie.mp3", 1);
-audio.faire_les_courses = getlist("pronunciation_fr_faire_les_courses.mp3", 2);
-audio.lire_un_livre_a_lexterieur = ["pronunciation_fr_lire_un_livre_à_l’extérieur.mp3"];
-audio.pain_de_campagne = ["pronunciation_fr_pain_de_campagne.mp3"];
-audio.voir_des_etoiles = getlist("pronunciation_fr_voir_des_étoiles.mp3", 1);
-audio.les_cheveux_longs = ["pronunciation_fr_les_cheveux_longs.mp3"];
-audio.fausses = ["pronunciation_fr_fausses.mp3"];
-audio.boire_un_cafe = ["pronunciation_fr_boire_un_café.mp3"];
-audio.joyeux = getlist("pronunciation_fr_joyeux.mp3", 1);
-audio.hamburger = getlist("pronunciation_fr_hamburger.mp3", 1);
-audio.dans_une_semaine = ["pronunciation_fr_dans_une_semaine.mp3"];
-audio.a_cote = getlist("pronunciation_fr_à_côté.mp3", 2);
-audio.vraies = getlist("pronunciation_fr_vraies.mp3", 1);
-audio.sculptures = ["pronunciation_fr_sculptures.mp3"];
-audio.ce_matin = ["pronunciation_fr_ce_matin.mp3"];
-audio.reparer_ma_voiture = ["pronunciation_fr_réparer_ma_voiture.mp3"];
-audio.se_reposer = ["pronunciation_fr_se_reposer.mp3"];
-audio.descriptions = getlist("pronunciation_fr_descriptions.mp3", 1);
+a.tous_mes_amis = ["pronunciation_fr_tous_mes_amis.mp3"];
+a.bibliotheque = l("pronunciation_fr_biblioth\xe8que.mp3", 2);
+a.psychanalyse = ["pronunciation_fr_psychanalyse.mp3"];
+a.toi_non_plus = ["pronunciation_fr_toi_non_plus.mp3"];
+a.est_cequils_aiment_faire_du_volleyball = ["pronunciation_fr_est-ce_qu'ils_aiment_faire_du_volleyball.mp3"];
+a.mairie = l("pronunciation_fr_mairie.mp3", 1);
+a.faire_les_courses = l("pronunciation_fr_faire_les_courses.mp3", 2);
+a.lire_un_livre_a_lexterieur = ["pronunciation_fr_lire_un_livre_à_l’extérieur.mp3"];
+a.pain_de_campagne = ["pronunciation_fr_pain_de_campagne.mp3"];
+a.voir_des_etoiles = l("pronunciation_fr_voir_des_étoiles.mp3", 1);
+a.les_cheveux_longs = ["pronunciation_fr_les_cheveux_longs.mp3"];
+a.fausses = ["pronunciation_fr_fausses.mp3"];
+a.boire_un_cafe = ["pronunciation_fr_boire_un_café.mp3"];
+a.joyeux = l("pronunciation_fr_joyeux.mp3", 1);
+a.hamburger = l("pronunciation_fr_hamburger.mp3", 1);
+a.dans_une_semaine = ["pronunciation_fr_dans_une_semaine.mp3"];
+a.a_cote = l("pronunciation_fr_à_côté.mp3", 2);
+a.vraies = l("pronunciation_fr_vraies.mp3", 1);
+a.sculptures = ["pronunciation_fr_sculptures.mp3"];
+a.ce_matin = ["pronunciation_fr_ce_matin.mp3"];
+a.reparer_ma_voiture = ["pronunciation_fr_réparer_ma_voiture.mp3"];
+a.se_reposer = ["pronunciation_fr_se_reposer.mp3"];
+a.descriptions = l("pronunciation_fr_descriptions.mp3", 1);
 
-//audio.a_cote_dun_lycee = ["pronunciation_fr_à_côté_d'un_lycée.mp3"];
-audio.a_cote_dun_lycee = ["pronunciation_fr_à_côté_d'un_lycée.mp3"];
+//a.a_cote_dun_lycee = ["pronunciation_fr_à_côté_d'un_lycée.mp3"];
+a.a_cote_dun_lycee = ["pronunciation_fr_à_côté_d'un_lycée.mp3"];
 
-audio.se_couper = ["pronunciation_fr_se_couper.mp3"];
-audio.a_dans_2_semaines = ["pronunciation_fr_à_dans_2_semaines.mp3"];
-audio.manger_un_bon_hamburger = ["pronunciation_fr_manger_un_bon_hamburger.mp3"];
-audio.adjectif_demonstratif = ["pronunciation_fr_adjectif_démonstratif.mp3"];
-audio.longs = ["pronunciation_fr_longs.mp3"];
-audio.lexterieur = ["pronunciation_fr_l’extérieur.mp3"];
-audio.meilleure = getlist("pronunciation_fr_meilleure.mp3", 1);
-audio.la_cheminee = ["pronunciation_fr_la_cheminée.mp3"];
-audio.actrice = ["pronunciation_fr_actrice.mp3"];
-audio.gagne = ["pronunciation_fr_gagné.mp3"];
-audio.moi_non_plus = getlist("pronunciation_fr_moi_non_plus.mp3", 3);
-audio.tu_preferes = getlist("pronunciation_fr_tu_préfères.mp3", 1);
-audio.cheres = ["pronunciation_fr_chères.mp3"];
-audio.jutilise = ["pronunciation_fr_j'utilise.mp3"];
-audio.derriere = getlist("pronunciation_fr_derrière.mp3", 3);
-audio.le_theatre = ["pronunciation_fr_le_théâtre.mp3"];
-audio.musee = ["pronunciation_fr_musée.mp3"];
-audio.cette = ["pronunciation_fr_cette.mp3"];
-audio.costume = ["pronunciation_fr_costume.mp3"];
-audio.eglise = getlist("pronunciation_fr_église.mp3", 1);
-audio.en_face = ["pronunciation_fr_en_face.mp3"];
-audio.public = ["pronunciation_fr_public.mp3"];
-audio.gare = getlist("pronunciation_fr_gare.mp3", 1);
+a.se_couper = ["pronunciation_fr_se_couper.mp3"];
+a.a_dans_2_semaines = ["pronunciation_fr_à_dans_2_semaines.mp3"];
+a.manger_un_bon_hamburger = ["pronunciation_fr_manger_un_bon_hamburger.mp3"];
+a.adjectif_demonstratif = ["pronunciation_fr_adjectif_démonstratif.mp3"];
+a.longs = ["pronunciation_fr_longs.mp3"];
+a.lexterieur = ["pronunciation_fr_l’extérieur.mp3"];
+a.meilleure = l("pronunciation_fr_meilleure.mp3", 1);
+a.la_cheminee = ["pronunciation_fr_la_cheminée.mp3"];
+a.actrice = ["pronunciation_fr_actrice.mp3"];
+a.gagne = ["pronunciation_fr_gagné.mp3"];
+a.moi_non_plus = l("pronunciation_fr_moi_non_plus.mp3", 3);
+a.tu_preferes = l("pronunciation_fr_tu_préfères.mp3", 1);
+a.cheres = ["pronunciation_fr_chères.mp3"];
+a.jutilise = ["pronunciation_fr_j'utilise.mp3"];
+a.derriere = l("pronunciation_fr_derrière.mp3", 3);
+a.le_theatre = ["pronunciation_fr_le_théâtre.mp3"];
+a.musee = ["pronunciation_fr_musée.mp3"];
+a.cette = ["pronunciation_fr_cette.mp3"];
+a.costume = ["pronunciation_fr_costume.mp3"];
+a.eglise = l("pronunciation_fr_église.mp3", 1);
+a.en_face = ["pronunciation_fr_en_face.mp3"];
+a.public = ["pronunciation_fr_public.mp3"];
+a.gare = l("pronunciation_fr_gare.mp3", 1);
 //--------------------------------------------------
 /*
-audio. = [""];
+a. = [""];
 */
 //--------------------------------------------------
 // prepend audio folder name
@@ -589,30 +591,30 @@ i("26", "vingt-six", ["http://forvo.com/word/vingt-six/#fr"]);
 i("91", "quatre-vingt-onze", ["http://forvo.com/word/quatre-vingt-onze/#fr"]);
 */
 /*
-i("a", "a", audio.a);
-i("b", "b", audio.b);
-i("c", "c", audio.c);
-i("d", "d", audio.d);
-i("e", "e", audio.e);
-i("f", "f", audio.f);
-i("g", "g", audio.g);
-i("h", "h", audio.h);
-i("i", "i", audio.i);
-i("j", "j", audio.j);
-i("k", "k", audio.k);
-i("l m n o p", "l m n o p", [].concat(audio.l, audio.m, audio.n, audio.o, audio.p));
-i("q", "q", audio.q);
-i("r", "r", audio.r);
-i("s", "s", audio.s);
-i("t", "t", audio.t);
-i("u", "u", audio.u);
-i("v", "v", audio.v);
-i("w", "w", audio.w);
-i("x", "x", audio.x);
-i("y", "y", [].concat(audio.y, "https://www.youtube.com/watch?v=fVBDTb_nNgE"));
-i("z", "z", audio.z);
-i("ok", "d'accord", audio.daccord);
-i("so", "donc", audio.donc);
+i("a", "a", a.a);
+i("b", "b", a.b);
+i("c", "c", a.c);
+i("d", "d", a.d);
+i("e", "e", a.e);
+i("f", "f", a.f);
+i("g", "g", a.g);
+i("h", "h", a.h);
+i("i", "i", a.i);
+i("j", "j", a.j);
+i("k", "k", a.k);
+i("l m n o p", "l m n o p", [].concat(a.l, a.m, a.n, a.o, a.p));
+i("q", "q", a.q);
+i("r", "r", a.r);
+i("s", "s", a.s);
+i("t", "t", a.t);
+i("u", "u", a.u);
+i("v", "v", a.v);
+i("w", "w", a.w);
+i("x", "x", a.x);
+i("y", "y", [].concat(a.y, "https://www.youtube.com/watch?v=fVBDTb_nNgE"));
+i("z", "z", a.z);
+i("ok", "d'accord", a.daccord);
+i("so", "donc", a.donc);
 */
 /*
 i("flip flops", "tongs", ["http://forvo.com/word/tongs/#fr"]);
@@ -680,10 +682,10 @@ i("key", "cl\xe9", [audio_folder+"pronunciation_fr_cle.mp3", "http://forvo.com/w
 //--------------------------------------------------
 // class 2 - slides page 5
 /*
-i("the following sentences", "les phrases suivantes", [].concat(audio.phrases, audio.suivantes, [slides2_page5]) );
-i("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", [].concat(audio.nous, audio.choisissons, audio.un_telephone, ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]) );
+i("the following sentences", "les phrases suivantes", [].concat(a.phrases, a.suivantes, [slides2_page5]) );
+i("we choose a modern phone", "Nous choisissons un t\xe9l\xe9phone moderne", [].concat(a.nous, a.choisissons, a.un_telephone, ["http://forvo.com/word/nous/#fr", "http://forvo.com/word/choisissons/#fr", "http://forvo.com/word/t%C3%A9l%C3%A9phone/#fr", "http://forvo.com/word/moderne/#fr", slides2_page5]) );
 i("choose", "choisir", [audio_folder+"pronunciation_fr_choisir.mp3", audio_folder+"pronunciation_fr_choisir (1).mp3", "http://forvo.com/word/choisir/#fr", "http://www.linguee.fr/francais-anglais/traduction/choisir.html"]);
-i("we choose", "nous choisissons", [].concat(audio.nous, audio.choisissons, ["http://forvo.com/word/choisissons/#fr"]) );
+i("we choose", "nous choisissons", [].concat(a.nous, a.choisissons, ["http://forvo.com/word/choisissons/#fr"]) );
 i("assist", "assister", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=assistez", slides2_page5]);
 i("you assist", "vous assistez", ["http://www.linguee.fr/francais-anglais/search?source=auto&query=vous", slides2_page5]);
 i("you are wearing your friend's sweater", "tu portes le pull de ton ami", ["http://www.linguee.fr/francais-anglais/traduction/pull.html", "http://forvo.com/word/pull/#fr", "http://forvo.com/word/ton/#fr", slides2_page5]);
@@ -700,7 +702,7 @@ i("UCSD Extension has a number of teachers", "UCSD Extension a une quantit\xe9 d
 */
 /*
 i("the quality of teachers is impressive!", "La qualit\xe9 des professeurs est impressionnante!", [audio_folder+"pronunciation_fr_professeur.mp3", audio_folder+"pronunciation_fr_professeur (1).mp3", audio_folder+"pronunciation_fr_la_reunion_parents-professeurs.mp3", audio_folder+"pronunciation_fr_impressionnante.mp3", "http://forvo.com/word/qualit%C3%A9/#fr", "http://forvo.com/word/la_r%C3%A9union_parents-professeurs/#fr", "http://forvo.com/search/impressionnante/", slides2_page6]);
-i("our teacher gives a composition or essay", "notre professeur donne une composition ou une r\xe9daction", [].concat(audio.notre, audio.professeur, audio.donne, audio.composition, audio.ou, audio.redaction, ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/search/ou/fr/", "http://forvo.com/search/r%C3%A9daction/fr/", slides2_page6]) );
+i("our teacher gives a composition or essay", "notre professeur donne une composition ou une r\xe9daction", [].concat(a.notre, a.professeur, a.donne, a.composition, a.ou, a.redaction, ["http://forvo.com/word/notre/#fr", "http://forvo.com/word/donne/#fr", "http://forvo.com/search/composition/fr/", "http://forvo.com/search/ou/fr/", "http://forvo.com/search/r%C3%A9daction/fr/", slides2_page6]) );
 */
 /*
 i("the composition has a strict organization", "La composition a une organisation stricte", ["http://forvo.com/word/organisation/#fr", "http://forvo.com/word/stricte/#fr", slides2_page6]);
@@ -719,7 +721,7 @@ i("[masculine nouns]", "le gouvernement, le r\xe9alisme, le journal, le pommier,
 i("the government", "le gouvernement", ["http://forvo.com/word/gouvernement/#fr"]);
 i("the realism", "le r\xe9alisme", ["http://forvo.com/word/r%C3%A9alisme/#fr"]);
 i("the journal", "le journal", ["http://forvo.com/word/le_journal/#fr"]);
-i("the apple tree", "le pommier", [].concat(audio.pommier, ["http://forvo.com/word/pommier/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=pommier"]) );
+i("the apple tree", "le pommier", [].concat(a.pommier, ["http://forvo.com/word/pommier/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=pommier"]) );
 i("the corridor", "le couloir", ["http://forvo.com/word/couloir/#fr"]);
 i("the garage", "le garage", ["http://forvo.com/word/garage/#fr"]);
 i("the geranium", "le g\xe9ranium", ["http://forvo.com/word/g%C3%A9ranium/#fr"]);
@@ -735,11 +737,11 @@ i("the competence", "la comp\xe9tence", ["http://forvo.com/word/comp%C3%A9tence/
 */
 //
 /*
-i("park the car", "garer la voiture", [].concat(audio.garer_la_voiture, ["http://forvo.com/word/garer_la_voiture/#fr"]) );
-i("the job", "le poste", [].concat(audio.le_poste, [slides2_page7]) );
-i("the post office", "la poste", [].concat(audio.la_poste, ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", slides2_page7]) );
-i("the tour", "le tour", [].concat(audio.le_tour_de_france, ["http://forvo.com/search/le%20tour%20de%20france/", "http://forvo.com/word/le_tour/#fr", slides2_page7]) );
-i("the tower", "la tour", [].concat(audio.la_tour_dargent, ["http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]) );
+i("park the car", "garer la voiture", [].concat(a.garer_la_voiture, ["http://forvo.com/word/garer_la_voiture/#fr"]) );
+i("the job", "le poste", [].concat(a.le_poste, [slides2_page7]) );
+i("the post office", "la poste", [].concat(a.la_poste, ["http://www.linguee.fr/francais-anglais/search?source=auto&query=poste", slides2_page7]) );
+i("the tour", "le tour", [].concat(a.le_tour_de_france, ["http://forvo.com/search/le%20tour%20de%20france/", "http://forvo.com/word/le_tour/#fr", slides2_page7]) );
+i("the tower", "la tour", [].concat(a.la_tour_dargent, ["http://forvo.com/word/la_tour_d%27argent/#fr", slides2_page7]) );
 */
 //--------------------------------------------------
 //--------------------------------------------------
@@ -757,7 +759,7 @@ i("the cleanilness", "la propret\xe9", ["http://www.linguee.fr/francais-anglais/
 /*
 // class 2 - slides page 11
 i("an ancient man", "un homme ancien", [audio_folder+"pronunciation_fr_un_homme.mp3", audio_folder+"pronunciation_fr_ancien.mp3", "http://forvo.com/search/un%20homme/fr/", "http://forvo.com/word/ancien/#fr", slides2_page11]);
-i("an ancient woman", "une femme ancienne", [].concat(audio.un_femme, audio.ancienne, ["http://forvo.com/search/une%20femme/", "http://forvo.com/word/ancienne/#fr", slides2_page11]) );
+i("an ancient woman", "une femme ancienne", [].concat(a.un_femme, a.ancienne, ["http://forvo.com/search/une%20femme/", "http://forvo.com/word/ancienne/#fr", slides2_page11]) );
 i("ancient men", "des hommes anciens", [audio_folder+"pronunciation_fr_des_hommes.mp3", audio_folder+"pronunciation_fr_anciens.mp3", "http://forvo.com/search/des%20hommes/", "http://forvo.com/word/anciens/#fr", "http://www.linguee.fr/francais-anglais/search?source=auto&query=anciens", slides2_page11]);
 i("ancient women", "des femmes anciennes", [audio_folder+"pronunciation_fr_droits_des_femmes.mp3", audio_folder+"pronunciation_fr_droits_des_femmes (1).mp3", audio_folder+"pronunciation_fr_anciennes.mp3", audio_folder+"pronunciation_fr_anciennes (1).mp3", "http://forvo.com/search/des%20femmes/", "http://forvo.com/word/anciennes/#fr", slides2_page11]);
 //
@@ -819,7 +821,7 @@ i("13", "treize", [audio_folder+"pronunciation_fr_treize.mp3", audio_folder+"pro
 i("14", "quatorze", [audio_folder+"pronunciation_fr_quatorze.mp3", audio_folder+"pronunciation_fr_quatorze (1).mp3", audio_folder+"pronunciation_fr_quatorze (2).mp3", "http://forvo.com/search/quatorze/", slides2_page13]);
 i("15", "quinze", [audio_folder+"pronunciation_fr_quinze.mp3", audio_folder+"pronunciation_fr_quinze (1).mp3", audio_folder+"pronunciation_fr_quinze (2).mp3", audio_folder+"pronunciation_fr_quinze (3).mp3", audio_folder+"pronunciation_fr_quinze (4).mp3", "http://forvo.com/search/quinze/", slides2_page13]);
 i("16", "seize", [audio_folder+"pronunciation_fr_seize.mp3", audio_folder+"pronunciation_fr_seize (1).mp3", audio_folder+"pronunciation_fr_seize (2).mp3", audio_folder+"pronunciation_fr_seize (3).mp3", "http://forvo.com/search/seize/", slides2_page13]);
-i("17", "dix-sept", [].concat(audio.dix_sept, ["http://forvo.com/word/dix-sept/#fr", slides2_page13]) );
+i("17", "dix-sept", [].concat(a.dix_sept, ["http://forvo.com/word/dix-sept/#fr", slides2_page13]) );
 i("18", "dix-huit", ["http://forvo.com/word/dix-huit/#fr", slides2_page13]);
 i("19", "dix-neuf", ["http://forvo.com/word/dix-neuf/#fr", slides2_page13]);
 i("20", "vingt", [audio_folder+"pronunciation_fr_vingt.mp3", audio_folder+"pronunciation_fr_vingt (1).mp3", audio_folder+"pronunciation_fr_vingt (2).mp3", audio_folder+"pronunciation_fr_vingt (3).mp3", audio_folder+"pronunciation_fr_vingt (4).mp3", audio_folder+"pronunciation_fr_vingt (5).mp3", audio_folder+"pronunciation_fr_vingt (6).mp3", "http://forvo.com/search/vingt/", slides2_page13]);
@@ -842,12 +844,12 @@ i("1,000", "mille", [audio_folder+"pronunciation_fr_mille.mp3", audio_folder+"pr
 i("31", "trente et un", [audio_folder+"pronunciation_fr_trente_et_un.mp3", audio_folder+"pronunciation_fr_trente_et_un (1).mp3", "http://forvo.com/word/trente_et_un/#fr"]);
 i("32", "trente-deux", [audio_folder+"pronunciation_fr_trente-deux.mp3", audio_folder+"pronunciation_fr_trente-deux (1).mp3", audio_folder+"pronunciation_fr_trente-deux (2).mp3", "http://forvo.com/word/trente-deux/#fr"]);
 i("33", "trente-trois", [audio_folder+"pronunciation_fr_trente-trois.mp3", audio_folder+"pronunciation_fr_trente-trois (1).mp3", "http://forvo.com/word/trente-trois/#fr"]);
-i("34", "trente-quatre", audio.trente_quatre);
+i("34", "trente-quatre", a.trente_quatre);
 i("35", "trente-cinq", ["http://forvo.com/word/trente-cinq/#fr"]);
 i("36", "trente-six", [audio_folder+"pronunciation_fr_trente-six.mp3", "http://forvo.com/word/trente-six/#fr"]);
 i("37", "trente-sept", [audio_folder+"pronunciation_fr_trente-sept.mp3", "http://forvo.com/word/trente-sept/#fr"]);
-i("38", "trente-huit", [].concat(audio.trente_huit, ["http://forvo.com/word/trente-huit/#fr"]) );
-i("39", "trente-neuf", [].concat(audio.trente_neuf, ["http://forvo.com/word/trente-neuf/#fr"]) );
+i("38", "trente-huit", [].concat(a.trente_huit, ["http://forvo.com/word/trente-huit/#fr"]) );
+i("39", "trente-neuf", [].concat(a.trente_neuf, ["http://forvo.com/word/trente-neuf/#fr"]) );
 i("77", "soixante-dix-sept", [audio_folder+"pronunciation_fr_soixante-dix-sept.mp3", "http://forvo.com/word/soixante-dix-sept/#fr"]);
 i("78", "soixante-dix-huit", [audio_folder+"pronunciation_fr_soixante-dix-huit.mp3", "http://forvo.com/word/soixante-dix-huit/#fr"]);
 i("79", "soixante-dix-neuf", ["http://forvo.com/word/soixante-dix-neuf/#fr"]);
@@ -865,356 +867,356 @@ i("I am 31 years old", "j'ai trente-et-un ans", [audio_folder+"pronunciation_fr_
 //--------------------------------------------------
 //--------------------------------------------------
 /*
-i("perfect", "parfait", audio.parfait);
-i("something", "quelque chose", audio.quelque_chose);
-i("this", "ce", audio.ce);
-i("see you next week", "\xe0 la semaine prochaine", audio.a_la_semaine_prochaine);
+i("perfect", "parfait", a.parfait);
+i("something", "quelque chose", a.quelque_chose);
+i("this", "ce", a.ce);
+i("see you next week", "\xe0 la semaine prochaine", a.a_la_semaine_prochaine);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 3 notes
-i("a number", "un chiffre", audio.un_chiffre);
-i("identical", "identique", audio.identique);
-i("belt", "ceinture", audio.ceinture);
-i("high fashion", "haute couture", audio.haut_couture);
-i("bottle", "bouteille", audio.bouteille);
-i("beach", "plage", audio.plage);
-i("billion", "milliard", audio.milliard);
-i("euro", "euro", audio.euro);
-i("now", "maintenant", audio.maintenant);
-i("plural", "pluriel", audio.pluriel);
-i("married", "mari\xe9", audio.marie);
-i("winter", "hiver", audio.hiver);
-i("spring", "printemps", audio.printemps);
-i("summer", "\xe9t\xe9", audio.ete);
-i("autumn", "automne", audio.automne);
-i("today", "aujourd'hui", audio.aujourd_hui);
-i("tomorrow", "demain", audio.demain);
-i("yesterday", "hier", audio.hier);
+i("a number", "un chiffre", a.un_chiffre);
+i("identical", "identique", a.identique);
+i("belt", "ceinture", a.ceinture);
+i("high fashion", "haute couture", a.haut_couture);
+i("bottle", "bouteille", a.bouteille);
+i("beach", "plage", a.plage);
+i("billion", "milliard", a.milliard);
+i("euro", "euro", a.euro);
+i("now", "maintenant", a.maintenant);
+i("plural", "pluriel", a.pluriel);
+i("married", "mari\xe9", a.marie);
+i("winter", "hiver", a.hiver);
+i("spring", "printemps", a.printemps);
+i("summer", "\xe9t\xe9", a.ete);
+i("autumn", "automne", a.automne);
+i("today", "aujourd'hui", a.aujourd_hui);
+i("tomorrow", "demain", a.demain);
+i("yesterday", "hier", a.hier);
 */
 //--------------------------------------------------
 //--------------------------------------------------
 // class 3
 // slides page 2
 /*
-i("see you Thursday", "\xe0 jeudi", audio.a_jeudi);
-i("turn the page", "tournez la page", [].concat(audio.tournez, audio.la_page));
-i("open the book", "ouvrez le livre", [].concat(audio.ouvrez, audio.le_livre));
-i("close the book", "fermez le livre", [].concat(audio.fermez, audio.le_livre));
-i("look at the whiteboard", "regardez le tableau", [].concat(audio.regardez, audio.tableau));
-i("write your name", "\xe9crivez votre nom", [].concat(audio.ecrivez, audio.votre_nom_ici));
-i("raise your hand", "levez la main", [].concat(audio.levez, audio.la_main));
-i("take a pen", "prenez un stylo", [].concat(audio.prenez, audio.un_stylo));
+i("see you Thursday", "\xe0 jeudi", a.a_jeudi);
+i("turn the page", "tournez la page", [].concat(a.tournez, a.la_page));
+i("open the book", "ouvrez le livre", [].concat(a.ouvrez, a.le_livre));
+i("close the book", "fermez le livre", [].concat(a.fermez, a.le_livre));
+i("look at the whiteboard", "regardez le tableau", [].concat(a.regardez, a.tableau));
+i("write your name", "\xe9crivez votre nom", [].concat(a.ecrivez, a.votre_nom_ici));
+i("raise your hand", "levez la main", [].concat(a.levez, a.la_main));
+i("take a pen", "prenez un stylo", [].concat(a.prenez, a.un_stylo));
 */
 //--------------------------------------------------
 //--------------------------------------------------
 // class 4
 /*
-i("to have", "avoir", audio.avoir);
-i("I have", "j'ai", audio.jai);
-i("you have", "tu as", audio.tu_as);
-i("he/she/it has", "il a", audio.il_a);
-i("we have", "nous avons", [].concat(audio.nous_avons, [slides2_page6]) );
-i("you(pl) have", "vous avez", audio.vous_avez);
-i("they have", "ils ont", audio.ils_ont);
+i("to have", "avoir", a.avoir);
+i("I have", "j'ai", a.jai);
+i("you have", "tu as", a.tu_as);
+i("he/she/it has", "il a", a.il_a);
+i("we have", "nous avons", [].concat(a.nous_avons, [slides2_page6]) );
+i("you(pl) have", "vous avez", a.vous_avez);
+i("they have", "ils ont", a.ils_ont);
 //
-i("to be", "\xeatre", audio.etre);
-i("I am", "je suis", audio.je_suis);
-i("you are", "tu es", audio.tu_es);
-i("he/she/it is", "il est", audio.il_est);
-i("we are", "nous sommes", audio.nous_sommes);
-i("you(pl) are", "vous \xeates", audio.vous_etes);
-i("they are", "ils sont", audio.ils_sont);
+i("to be", "\xeatre", a.etre);
+i("I am", "je suis", a.je_suis);
+i("you are", "tu es", a.tu_es);
+i("he/she/it is", "il est", a.il_est);
+i("we are", "nous sommes", a.nous_sommes);
+i("you(pl) are", "vous \xeates", a.vous_etes);
+i("they are", "ils sont", a.ils_sont);
 */
 /*
 // class 4 - slides page 2
-i("grand parents", "les grands-parents", audio.les_grands_parents);
-i("grandfather", "grand-p\xe8re", audio.grand_pere);
-i("grandmother", "grand-m\xe8re", audio.grand_mere);
-i("children", "les enfants", audio.les_enfants);
-i("daughters", "filles", audio.filles);
-i("sons", "fils", audio.fils);
-i("brothers", "fr\xe8res", audio.freres);
-i("sisters", "soeurs", audio.soeurs);
-i("granddaughter", "petite-fille", audio.petite_fille);
-i("grandson", "petit-fils", audio.petit_fils);
-i("parents", "parents", audio.parents);
-i("build 5 sentences that make sense using the verb 'to be' or 'having'", "construisez 5 phrases qui ont du sens en utilisant les verbes '\xeatre' ou 'avoir'", [].concat(audio.construisez, audio.phrases, audio.qui, audio.ont, audio.du, audio.sens, audio.en_utilisant, audio.verbes));
+i("grand parents", "les grands-parents", a.les_grands_parents);
+i("grandfather", "grand-p\xe8re", a.grand_pere);
+i("grandmother", "grand-m\xe8re", a.grand_mere);
+i("children", "les enfants", a.les_enfants);
+i("daughters", "filles", a.filles);
+i("sons", "fils", a.fils);
+i("brothers", "fr\xe8res", a.freres);
+i("sisters", "soeurs", a.soeurs);
+i("granddaughter", "petite-fille", a.petite_fille);
+i("grandson", "petit-fils", a.petit_fils);
+i("parents", "parents", a.parents);
+i("build 5 sentences that make sense using the verb 'to be' or 'having'", "construisez 5 phrases qui ont du sens en utilisant les verbes '\xeatre' ou 'avoir'", [].concat(a.construisez, a.phrases, a.qui, a.ont, a.du, a.sens, a.en_utilisant, a.verbes));
 */
 // class 4 - slides page 6
 /*
-i("to be called", "s'appeler", [].concat(audio.sappeler, slides4_page6));
-i("I am called / my name is", "je m'appelle", [].concat(audio.je_mappelle, slides4_page6));
-i("you are called", "tu t'appelles", [].concat(audio.tappelles, slides4_page6));
-i("he/she/it is called", "il s'appelle", [].concat(audio.il_sappelle, slides4_page6));
-i("we call ourselves", "nous nous appelons", [].concat(audio.nous_nous_appelons, slides4_page6));
-i("you(pl) are called", "vous vous appelez", [].concat(audio.vous_vous_appelez, slides4_page6));
-i("they are called", "elles s'appellent", [].concat(audio.elles_sappellent, slides4_page6));
+i("to be called", "s'appeler", [].concat(a.sappeler, slides4_page6));
+i("I am called / my name is", "je m'appelle", [].concat(a.je_mappelle, slides4_page6));
+i("you are called", "tu t'appelles", [].concat(a.tappelles, slides4_page6));
+i("he/she/it is called", "il s'appelle", [].concat(a.il_sappelle, slides4_page6));
+i("we call ourselves", "nous nous appelons", [].concat(a.nous_nous_appelons, slides4_page6));
+i("you(pl) are called", "vous vous appelez", [].concat(a.vous_vous_appelez, slides4_page6));
+i("they are called", "elles s'appellent", [].concat(a.elles_sappellent, slides4_page6));
 //
-i("to love", "aimer", [].concat(audio.aimer, slides4_page6));
-i("I love", "aime", [].concat(audio.aime, slides4_page6));
-i("you love", "aimes", [].concat(audio.aimes, slides4_page6));
-i("he/she/it loves", "aime", [].concat(audio.aime, slides4_page6));
-i("we love", "aimons", [].concat(audio.aimons, slides4_page6));
-i("you(pl) love", "aimez", [].concat(audio.aimez, slides4_page6));
-i("they love", "aiment", [].concat(audio.aiment, slides4_page6));
+i("to love", "aimer", [].concat(a.aimer, slides4_page6));
+i("I love", "aime", [].concat(a.aime, slides4_page6));
+i("you love", "aimes", [].concat(a.aimes, slides4_page6));
+i("he/she/it loves", "aime", [].concat(a.aime, slides4_page6));
+i("we love", "aimons", [].concat(a.aimons, slides4_page6));
+i("you(pl) love", "aimez", [].concat(a.aimez, slides4_page6));
+i("they love", "aiment", [].concat(a.aiment, slides4_page6));
 */
 /*
 //
-i("to practice", "pratiquer", [].concat(audio.pratiquer, slides4_page6));
-i("I practice", "pratique", [].concat(audio.pratique, slides4_page6));
-i("you practice", "pratiques", [].concat(audio.pratiques, slides4_page6));
-i("he/she/it practices", "pratique", [].concat(audio.pratique, slides4_page6));
-i("we practice", "pratiquons", [].concat(audio.pratiquons, slides4_page6));
-i("you(pl) practice", "pratiquez", [].concat(audio.pratiquez, slides4_page6));
-i("they practice", "pratiquent", [].concat(audio.pratiquent, slides4_page6));
+i("to practice", "pratiquer", [].concat(a.pratiquer, slides4_page6));
+i("I practice", "pratique", [].concat(a.pratique, slides4_page6));
+i("you practice", "pratiques", [].concat(a.pratiques, slides4_page6));
+i("he/she/it practices", "pratique", [].concat(a.pratique, slides4_page6));
+i("we practice", "pratiquons", [].concat(a.pratiquons, slides4_page6));
+i("you(pl) practice", "pratiquez", [].concat(a.pratiquez, slides4_page6));
+i("they practice", "pratiquent", [].concat(a.pratiquent, slides4_page6));
 //
-i("you(pl) look at", "regardez", [].concat(audio.regardez, slides4_page6));
+i("you(pl) look at", "regardez", [].concat(a.regardez, slides4_page6));
 */
 /*
 // class 4 - slides page 7
-i("to prefer", "pr\xe9f\xe9rer", [].concat(audio.preferer, slides4_page7));
-i("I prefer", "pr\xe9f\xe8re", [].concat(audio.prefere, slides4_page7));
-i("you prefer", "pr\xe9f\xe8res", [].concat(audio.preferes, slides4_page7));
-i("he/she/it prefers", "pr\xe9f\xe8re", [].concat(audio.prefere, slides4_page7));
-i("we prefer", "nous pr\xe9f\xe9rons", [].concat(audio.preferons, slides4_page7));
-i("you(pl) prefer", "pr\xe9f\xe9rez", [].concat(audio.preferez, slides4_page7));
-i("they prefer", "pr\xe9f\xe8rent", [].concat(audio.preferent, slides4_page7));
+i("to prefer", "pr\xe9f\xe9rer", [].concat(a.preferer, slides4_page7));
+i("I prefer", "pr\xe9f\xe8re", [].concat(a.prefere, slides4_page7));
+i("you prefer", "pr\xe9f\xe8res", [].concat(a.preferes, slides4_page7));
+i("he/she/it prefers", "pr\xe9f\xe8re", [].concat(a.prefere, slides4_page7));
+i("we prefer", "nous pr\xe9f\xe9rons", [].concat(a.preferons, slides4_page7));
+i("you(pl) prefer", "pr\xe9f\xe9rez", [].concat(a.preferez, slides4_page7));
+i("they prefer", "pr\xe9f\xe8rent", [].concat(a.preferent, slides4_page7));
 */
 /*
 // class 4 - page 10
-i("my (m,s)", "mon", [].concat(audio.mon, slides4_page10));
-i("my (f,s)", "ma", [].concat(audio.ma, slides4_page10));
-i("your (m,s)", "ton", [].concat(audio.ton, slides4_page10));
-i("your (f,s)", "ta", [].concat(audio.ta, slides4_page10));
-i("his/hers/its (m,s)", "son", [].concat(audio.son, slides4_page10));
-i("his/her/its (f,s)", "sa", [].concat(audio.sa, slides4_page10));
-i("our (s)", "notre", [].concat(audio.notre, slides4_page10));
-i("your(pl) (s)", "votre", [].concat(audio.votre, slides4_page10));
-i("their (s)", "leur", [].concat(audio.leur, slides4_page10));
+i("my (m,s)", "mon", [].concat(a.mon, slides4_page10));
+i("my (f,s)", "ma", [].concat(a.ma, slides4_page10));
+i("your (m,s)", "ton", [].concat(a.ton, slides4_page10));
+i("your (f,s)", "ta", [].concat(a.ta, slides4_page10));
+i("his/hers/its (m,s)", "son", [].concat(a.son, slides4_page10));
+i("his/her/its (f,s)", "sa", [].concat(a.sa, slides4_page10));
+i("our (s)", "notre", [].concat(a.notre, slides4_page10));
+i("your(pl) (s)", "votre", [].concat(a.votre, slides4_page10));
+i("their (s)", "leur", [].concat(a.leur, slides4_page10));
 //
-i("my (pl)", "mes", [].concat(audio.mes, slides4_page10));
-i("your(s) (pl)", "tes", [].concat(audio.tes, slides4_page10));
-i("his/hers/its (pl)", "ses", [].concat(audio.ses, slides4_page10));
-i("our (pl)", "nos", [].concat(audio.nos, slides4_page10));
-i("your(pl) (pl)", "vos", [].concat(audio.vos, slides4_page10));
-i("their (pl)", "leurs", [].concat(audio.leurs, slides4_page10));
+i("my (pl)", "mes", [].concat(a.mes, slides4_page10));
+i("your(s) (pl)", "tes", [].concat(a.tes, slides4_page10));
+i("his/hers/its (pl)", "ses", [].concat(a.ses, slides4_page10));
+i("our (pl)", "nos", [].concat(a.nos, slides4_page10));
+i("your(pl) (pl)", "vos", [].concat(a.vos, slides4_page10));
+i("their (pl)", "leurs", [].concat(a.leurs, slides4_page10));
 */
 // class 4 - page 11
 /*
-i("January", "Janvier", audio.janvier);
-i("February", "F\xe9vrier", audio.fevrier);
-i("March", "Mars", audio.mars);
-i("April", "Avril", audio.avril);
-i("May", "Mai", audio.mai);
-i("June", "Juin", audio.juin);
-i("July", "Juillet", audio.juillet);
-i("August", "Ao\xfbt", audio.aout);
-i("September", "Septembre", audio.septembre);
-i("October", "Octobre", audio.octobre);
-i("November", "Novembre", audio.novembre);
-i("December", "D\xe9cembre", audio.decembre);
+i("January", "Janvier", a.janvier);
+i("February", "F\xe9vrier", a.fevrier);
+i("March", "Mars", a.mars);
+i("April", "Avril", a.avril);
+i("May", "Mai", a.mai);
+i("June", "Juin", a.juin);
+i("July", "Juillet", a.juillet);
+i("August", "Ao\xfbt", a.aout);
+i("September", "Septembre", a.septembre);
+i("October", "Octobre", a.octobre);
+i("November", "Novembre", a.novembre);
+i("December", "D\xe9cembre", a.decembre);
 //
 // singular / masculine object
-i("my love", "mon amour", audio.mon_amour);
-i("my darling", "mon ch\xe9ri", audio.mon_cheri)
-i("your computer", "ton ordinateur", audio.ton_ordinateur);
-i("what's your phone number", "quel est ton num\xe9ro de t\xe9l\xe9phone", audio.quel_est_ton_numero_de_telephone);
-i("his computer", "son ordinateur", audio.son_ordinateur);
-i("his trip", "son trip", audio.son_trip);
+i("my love", "mon amour", a.mon_amour);
+i("my darling", "mon ch\xe9ri", a.mon_cheri)
+i("your computer", "ton ordinateur", a.ton_ordinateur);
+i("what's your phone number", "quel est ton num\xe9ro de t\xe9l\xe9phone", a.quel_est_ton_numero_de_telephone);
+i("his computer", "son ordinateur", a.son_ordinateur);
+i("his trip", "son trip", a.son_trip);
 //
 // singular / feminine object
-i("my Mom", "ma m\xe8re", audio.ma_mere);
-i("my wife", "ma femme", audio.ma_femme);
-i("your fashion", "ta mode", audio.ta_mode);
-i("your life", "ta vie", audio.ta_vie);
-i("return his jacket", "retourner sa veste", audio.retourner_sa_veste);
-i("his family", "sa famille", audio.sa_famille);
+i("my Mom", "ma m\xe8re", a.ma_mere);
+i("my wife", "ma femme", a.ma_femme);
+i("your fashion", "ta mode", a.ta_mode);
+i("your life", "ta vie", a.ta_vie);
+i("return his jacket", "retourner sa veste", a.retourner_sa_veste);
+i("his family", "sa famille", a.sa_famille);
 //
 // plural / singular object
-i("our sugar", "notre sucre", audio.notre_sucre);
-i("your(pl) job", "votre travail", audio.votre_travail);
-i("their university", "leur universit\xe9", audio.leur_universite);
+i("our sugar", "notre sucre", a.notre_sucre);
+i("your(pl) job", "votre travail", a.votre_travail);
+i("their university", "leur universit\xe9", a.leur_universite);
 //
 // plural object
-i("my favorites", "mes favorites", audio.mes_favorites);
-i("your friends", "tes amis", audio.tes_amis);
-i("turn its wheels", "allumer ses roues", audio.allumer_ses_roues);
-i("our homework", "nos devoirs", audio.nos_devoirs);
-i("our luggage", "nos bagages", audio.nos_bagages);
-i("open your books", "ouvrez vos livres", audio.ouvrez_vos_livres);
-i("their eyes", "leurs yeux", audio.leurs_yeux);
+i("my favorites", "mes favorites", a.mes_favorites);
+i("your friends", "tes amis", a.tes_amis);
+i("turn its wheels", "allumer ses roues", a.allumer_ses_roues);
+i("our homework", "nos devoirs", a.nos_devoirs);
+i("our luggage", "nos bagages", a.nos_bagages);
+i("open your books", "ouvrez vos livres", a.ouvrez_vos_livres);
+i("their eyes", "leurs yeux", a.leurs_yeux);
 */
 //--------------------------------------------------
 //--------------------------------------------------
 /*
 // class 5
-i("month", "mois", audio.mois);
+i("month", "mois", a.mois);
 //
-i("to take", "prendre", audio.prendre);
-i("I take", "je prends", audio.je_prends);
-i("you take", "tu prends", audio.tu_prends);
-i("she takes", "elle prend", audio.elle_prend);
-i("we take", "nous prenons", audio.nous_prenons);
-i("you(pl) take", "vous prenez", audio.vous_prenez);
-i("they take", "elles prennent", audio.elles_prennent);
+i("to take", "prendre", a.prendre);
+i("I take", "je prends", a.je_prends);
+i("you take", "tu prends", a.tu_prends);
+i("she takes", "elle prend", a.elle_prend);
+i("we take", "nous prenons", a.nous_prenons);
+i("you(pl) take", "vous prenez", a.vous_prenez);
+i("they take", "elles prennent", a.elles_prennent);
 //
-i("to want", "vouloir", audio.vouloir);
-i("I want", "je veux", [].concat(audio.je_veux, audio.veux));
-i("you want", "tu veux", [].concat(audio.tu_veux, audio.veux));
-i("she wants", "elle veut", [].concat(audio.elle_veut, audio.veut));
-i("we want", "nous voulons", [].concat(audio.nous_voulons, audio.voulons));
-i("you(pl) want", "vous voulez", [].concat(audio.vous_voulez, audio.voulez));
-i("they want", "elles veulent", [].concat(audio.elles_veulent, audio.veulent));
+i("to want", "vouloir", a.vouloir);
+i("I want", "je veux", [].concat(a.je_veux, a.veux));
+i("you want", "tu veux", [].concat(a.tu_veux, a.veux));
+i("she wants", "elle veut", [].concat(a.elle_veut, a.veut));
+i("we want", "nous voulons", [].concat(a.nous_voulons, a.voulons));
+i("you(pl) want", "vous voulez", [].concat(a.vous_voulez, a.voulez));
+i("they want", "elles veulent", [].concat(a.elles_veulent, a.veulent));
 //
-i("to go", "aller", audio.aller);
-i("I go", "je vais", [].concat(audio.je_vais, audio.vais));
-i("you go", "tu vas", audio.tu_vas);
-i("he goes", "il va", audio.il_va);
-i("we go", "nous allons", audio.nous_allons);
-i("you(pl) go", "vous allez", audio.vous_allez);
-i("they go", "elles vont", audio.elles_vont);
+i("to go", "aller", a.aller);
+i("I go", "je vais", [].concat(a.je_vais, a.vais));
+i("you go", "tu vas", a.tu_vas);
+i("he goes", "il va", a.il_va);
+i("we go", "nous allons", a.nous_allons);
+i("you(pl) go", "vous allez", a.vous_allez);
+i("they go", "elles vont", a.elles_vont);
 //
-i("to do", "faire", audio.faire);
-i("I do", "je fais", audio.je_fais);
-i("you do", "tu fais", audio.tu_fais);
-i("she does", "elle fait", audio.elle_fait);
-i("we do", "nous faisons", audio.nous_faisons);
-i("you(pl) do", "vous fa\xeetes", audio.vous_faites);
-i("they do", "elles font", audio.elles_font);
+i("to do", "faire", a.faire);
+i("I do", "je fais", a.je_fais);
+i("you do", "tu fais", a.tu_fais);
+i("she does", "elle fait", a.elle_fait);
+i("we do", "nous faisons", a.nous_faisons);
+i("you(pl) do", "vous fa\xeetes", a.vous_faites);
+i("they do", "elles font", a.elles_font);
 //
-i("to know", "savoir", audio.savoir);
-i("I know", "je sais", audio.je_sais);
-i("you know", "tu sais", audio.tu_sais);
-i("she knows", "elle sait", audio.elle_sait);
-i("he knows", "il sait", audio.il_sait);
-i("we know", "nous savons", audio.nous_savons);
-i("you(pl) know", "vous savez", audio.vous_savez);
-i("they know", "elles savent", [].concat(audio.elles_savent, audio.ils_savent));
+i("to know", "savoir", a.savoir);
+i("I know", "je sais", a.je_sais);
+i("you know", "tu sais", a.tu_sais);
+i("she knows", "elle sait", a.elle_sait);
+i("he knows", "il sait", a.il_sait);
+i("we know", "nous savons", a.nous_savons);
+i("you(pl) know", "vous savez", a.vous_savez);
+i("they know", "elles savent", [].concat(a.elles_savent, a.ils_savent));
 //
-i("to be able", "pouvoir", audio.pouvoir);
-i("I can", "je peux", audio.je_peux);
-i("you can", "tu peux", audio.tu_peux);
-i("she can", "elle peut", audio.elle_peut);
-i("we can", "nous pouvons", audio.nous_pouvons);
-i("you(pl) can", "vous pouvez", audio.vous_pouvez);
-i("they can", "elles peuvent", audio.elles_peuvent);
-i("to read", "lire", audio.lire);
-i("after", "apr\xe8s", audio.apres);
-i("husband", "mari", audio.mari);
-i("son in law", "beau-fils", audio.beau_fils);
-i("mother in law", "belle-m\xe8re", [].concat(audio.belle_mere, audio.la_belle_mere, audio.ma_belle_mere));
-i("niece", "ni\xe8ce", audio.niece);
-i("nephew", "neveu", audio.neveu);
-i("aunt", "tante", audio.tante);
-i("brother in law", "beau-fr\xe8re", audio.beau_frere);
-i("cousin (m)", "cousin", audio.cousin);
-i("cousin (f)", "cousine", audio.cousine);
-i("a horse", "un cheval", audio.un_cheval);
-i("the horses", "les chevaux", audio.les_chevaux);
-i("the city", "la ville", audio.la_ville);
-i("countryside", "campagne", audio.campagne);
-i("noise", "bruit", audio.bruit);
-i("silence", "silence", audio.silence);
-i("to paint", "peindre", audio.peindre);
-i("to bike", "faire du v\xe9lo", audio.faire_du_velo);
-i("to surf", "faire du surf", audio.faire_du_surf);
-i("to swim", "nager", audio.nager);
+i("to be able", "pouvoir", a.pouvoir);
+i("I can", "je peux", a.je_peux);
+i("you can", "tu peux", a.tu_peux);
+i("she can", "elle peut", a.elle_peut);
+i("we can", "nous pouvons", a.nous_pouvons);
+i("you(pl) can", "vous pouvez", a.vous_pouvez);
+i("they can", "elles peuvent", a.elles_peuvent);
+i("to read", "lire", a.lire);
+i("after", "apr\xe8s", a.apres);
+i("husband", "mari", a.mari);
+i("son in law", "beau-fils", a.beau_fils);
+i("mother in law", "belle-m\xe8re", [].concat(a.belle_mere, a.la_belle_mere, a.ma_belle_mere));
+i("niece", "ni\xe8ce", a.niece);
+i("nephew", "neveu", a.neveu);
+i("aunt", "tante", a.tante);
+i("brother in law", "beau-fr\xe8re", a.beau_frere);
+i("cousin (m)", "cousin", a.cousin);
+i("cousin (f)", "cousine", a.cousine);
+i("a horse", "un cheval", a.un_cheval);
+i("the horses", "les chevaux", a.les_chevaux);
+i("the city", "la ville", a.la_ville);
+i("countryside", "campagne", a.campagne);
+i("noise", "bruit", a.bruit);
+i("silence", "silence", a.silence);
+i("to paint", "peindre", a.peindre);
+i("to bike", "faire du v\xe9lo", a.faire_du_velo);
+i("to surf", "faire du surf", a.faire_du_surf);
+i("to swim", "nager", a.nager);
 //--------------------------------------------------
 //--------------------------------------------------
-i("why", "pourquoi", audio.pourquoi);
-i("grifter/swindler", "escroc", audio.escroc);
-i("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(audio.couleur, audio.prefere));
-i("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", audio.piece_de_resistance);
-i("skeleton", "squelette", audio.squelette);
+i("why", "pourquoi", a.pourquoi);
+i("grifter/swindler", "escroc", a.escroc);
+i("your favorite color", "ta couleur pr\xe9f\xe9r\xe9e", [].concat(a.couleur, a.prefere));
+i("the most noteworthy or prized feature, aspect, event, article, etc. of a series or group; special item or attraction", "pi\xe8ce de r\xe9sistance", a.piece_de_resistance);
+i("skeleton", "squelette", a.squelette);
 */
-i("psychoanalysis", "psychanalyse", audio.psychanalyse);
+i("psychoanalysis", "psychanalyse", a.psychanalyse);
 /*
-i("saturday", "le samedi", audio.le_samedi);
-i("sunday", "le dimanche", audio.le_dimanche);
-i("go out with his friends", "sortir avec ses copains", [].concat(audio.sortir, audio.avec, audio.ses, audio.copains));
-i("I stand up to say hello", "je me l\xe8ve pour dire bonjour", [].concat(audio.je_me_leve, audio.leve, audio.pour, audio.dire, audio.bonjour));
+i("saturday", "le samedi", a.le_samedi);
+i("sunday", "le dimanche", a.le_dimanche);
+i("go out with his friends", "sortir avec ses copains", [].concat(a.sortir, a.avec, a.ses, a.copains));
+i("I stand up to say hello", "je me l\xe8ve pour dire bonjour", [].concat(a.je_me_leve, a.leve, a.pour, a.dire, a.bonjour));
 */
-i("I stand up", "je me l\xe8ve", audio.je_me_leve);
+i("I stand up", "je me l\xe8ve", a.je_me_leve);
 /*
-i("coffee", "du caf\xe9", audio.du_cafe);
-i("how are you?", "\xe7a va?", audio.ca_va);
+i("coffee", "du caf\xe9", a.du_cafe);
+i("how are you?", "\xe7a va?", a.ca_va);
 //--------------------------------------------------
 //--------------------------------------------------
 // class 6 - 11.5.15
-i("Christine gets up early every day", "Christine se l\xe8ve tous les jours de bonne heure", [].concat(audio.leve, audio.tous_les_jours, audio.de_bonne_heure, audio.bonne_heure));
-i("early", "de bonne heure", audio.de_bonne_heure);
-i("every day", "tous les jours", audio.tous_les_jours);
+i("Christine gets up early every day", "Christine se l\xe8ve tous les jours de bonne heure", [].concat(a.leve, a.tous_les_jours, a.de_bonne_heure, a.bonne_heure));
+i("early", "de bonne heure", a.de_bonne_heure);
+i("every day", "tous les jours", a.tous_les_jours);
 //
-i("she wakes up very slowly", "elle se r\xe9veille tr\xe8s lentement", [].concat(audio.elle_se_reveille_tres_lentement, audio.reveille, audio.tres, audio.lentement));
-i("wake up", "r\xe9veille", audio.reveille);
-i("very", "tr\xe8s", audio.tres);
-i("slowly", "lentement", audio.lentement);
+i("she wakes up very slowly", "elle se r\xe9veille tr\xe8s lentement", [].concat(a.elle_se_reveille_tres_lentement, a.reveille, a.tres, a.lentement));
+i("wake up", "r\xe9veille", a.reveille);
+i("very", "tr\xe8s", a.tres);
+i("slowly", "lentement", a.lentement);
 //
-i("Bernard always showers in the morning", "Bernard se douche toujours le matin", [].concat("http://forvo.com/word/il_se_douche_toujours_le_matin/", audio.douche, audio.toujours, audio.le_matin, audio.matin));
-i("shower", "douche", audio.douche);
-i("always", "toujours", audio.toujours);
-i("morning", "matin", [].concat(audio.le_matin, audio.matin));
+i("Bernard always showers in the morning", "Bernard se douche toujours le matin", [].concat("http://forvo.com/word/il_se_douche_toujours_le_matin/", a.douche, a.toujours, a.le_matin, a.matin));
+i("shower", "douche", a.douche);
+i("always", "toujours", a.toujours);
+i("morning", "matin", [].concat(a.le_matin, a.matin));
 //
-i("then he shaves in front of the mirror", "ensuite, il se rase devant le miroir", [].concat(audio.ensuite, audio.rase, audio.devant, audio.miroir));
-i("then", "ensuite", audio.ensuite);
-i("he is shaving", "il se rase", [].concat(audio.il_se_rase, audio.rase));
-i("in front of", "devant", audio.devant);
-i("mirror", "miroir", audio.miroir);
+i("then he shaves in front of the mirror", "ensuite, il se rase devant le miroir", [].concat(a.ensuite, a.rase, a.devant, a.miroir));
+i("then", "ensuite", a.ensuite);
+i("he is shaving", "il se rase", [].concat(a.il_se_rase, a.rase));
+i("in front of", "devant", a.devant);
+i("mirror", "miroir", a.miroir);
 //
-i("Camille hurries in the morning", "Camille se d\xe9p\xeache le matin", [].concat(audio.depeche, audio.le_matin, audio.matin));
-i("she hurries", "elle se d\xe9p\xeache", [].concat(audio.elle_se_depeche, audio.depeche));
+i("Camille hurries in the morning", "Camille se d\xe9p\xeache le matin", [].concat(a.depeche, a.le_matin, a.matin));
+i("she hurries", "elle se d\xe9p\xeache", [].concat(a.elle_se_depeche, a.depeche));
 //
-// i("She always dresses very quickly because she does not like to be late for school", "elle s'habille toujours tr\xe8s vite parce qu'elle n'aime pas \xeatre en retard pour l'\xe9cole", [].concat("http://forvo.com/word/elle_s%27habille/", audio.habille, audio.je_mhabille, audio.toujours, audio.vite, audio.parce, audio.quelle, audio.naime_pas, audio.etre_en_retard, audio.pour, audio.lecole));
-i("dresses", "habille", audio.habille);
-i("I dress", "je m'habille", audio.je_mhabille);
-i("quick", "vite", audio.vite);
-i("because", "parce / parce que", [].concat(audio.parce, audio.parce_que));
-i("does not like", "n'aime pas", audio.naime_pas);
-i("to be late", "\xeatre en retard", audio.etre_en_retard);
-i("school", "l'\xe9cole", audio.lecole);
+// i("She always dresses very quickly because she does not like to be late for school", "elle s'habille toujours tr\xe8s vite parce qu'elle n'aime pas \xeatre en retard pour l'\xe9cole", [].concat("http://forvo.com/word/elle_s%27habille/", a.habille, a.je_mhabille, a.toujours, a.vite, a.parce, a.quelle, a.naime_pas, a.etre_en_retard, a.pour, a.lecole));
+i("dresses", "habille", a.habille);
+i("I dress", "je m'habille", a.je_mhabille);
+i("quick", "vite", a.vite);
+i("because", "parce / parce que", [].concat(a.parce, a.parce_que));
+i("does not like", "n'aime pas", a.naime_pas);
+i("to be late", "\xeatre en retard", a.etre_en_retard);
+i("school", "l'\xe9cole", a.lecole);
 */
 //
 /*
-i("Bernard trains at the gym three times a week", "Bernard s'entra\xeene au gymnase trois fois par semaine", [].concat(audio.sentrainer, audio.au, audio.gymnase, audio.fois, audio.par_semaine));
-i("train / work out", "s'entra\xeener", audio.sentrainer);
-i("the", "au", audio.au);
-i("gym", "gymnase", audio.gymnase);
-i("times", "fois", audio.fois);
-i("per week", "par semaine", audio.par_semaine);
+i("Bernard trains at the gym three times a week", "Bernard s'entra\xeene au gymnase trois fois par semaine", [].concat(a.sentrainer, a.au, a.gymnase, a.fois, a.par_semaine));
+i("train / work out", "s'entra\xeener", a.sentrainer);
+i("the", "au", a.au);
+i("gym", "gymnase", a.gymnase);
+i("times", "fois", a.fois);
+i("per week", "par semaine", a.par_semaine);
 //
-i("Marie brushes her teeth before going to bed", "Marie se brosse les dents avant d'aller au lit", [].concat(audio.brosse, audio.les_dents, audio.avant, audio.lheure_daller_au_lit));
-i("brush", "brosse", audio.brosse);
-i("teeth", "les dents", audio.les_dents);
-i("before", "avant", audio.avant);
-i("bedtime", "l'heure d'aller au lit", audio.lheure_daller_au_lit);
-i("bed", "lit", audio.lit);
+i("Marie brushes her teeth before going to bed", "Marie se brosse les dents avant d'aller au lit", [].concat(a.brosse, a.les_dents, a.avant, a.lheure_daller_au_lit));
+i("brush", "brosse", a.brosse);
+i("teeth", "les dents", a.les_dents);
+i("before", "avant", a.avant);
+i("bedtime", "l'heure d'aller au lit", a.lheure_daller_au_lit);
+i("bed", "lit", a.lit);
 //
-i("Marie and Nathalie go to bed early on school days", "Marie et Nathalie se couchent t\xf4t les jours de classe", [].concat(audio.se_couchent, audio.tot, audio.salle_de_classe));
-i("they go to bed", "se couchent", audio.se_couchent);
-i("early", "t\xf4t", audio.tot);
-i("earlier", "plus t\xf4t", audio.se_lever_plus_tot);
-i("classroom", "salle de classe", audio.salle_de_classe);
+i("Marie and Nathalie go to bed early on school days", "Marie et Nathalie se couchent t\xf4t les jours de classe", [].concat(a.se_couchent, a.tot, a.salle_de_classe));
+i("they go to bed", "se couchent", a.se_couchent);
+i("early", "t\xf4t", a.tot);
+i("earlier", "plus t\xf4t", a.se_lever_plus_tot);
+i("classroom", "salle de classe", a.salle_de_classe);
 //
-i("all my friends", "tous mes amis", audio.tous_mes_amis);
-i("library", "biblioth\xe8que", audio.bibliotheque);
+i("all my friends", "tous mes amis", a.tous_mes_amis);
+i("library", "biblioth\xe8que", a.bibliotheque);
 */
 //--------------------------------------------------
 //--------------------------------------------------
 // class 7 (missed) - 11.12.15
 /*
 i("useful vocabulary", "vocabulaire utile", ["http://forvo.com/word/vocabulaire/#fr", "http://forvo.com/word/utile/#fr"]);
-i("take the bus", "prendre l'autobus", [].concat(audio.prendre, "http://forvo.com/word/l%27autobus/#fr"));
+i("take the bus", "prendre l'autobus", [].concat(a.prendre, "http://forvo.com/word/l%27autobus/#fr"));
 i("at the bookstore", "\xe0 la librairie", ["http://forvo.com/word/librairie/#fr"]);
 i("at the theater", "au th\xe9\xe2tre", ["http://forvo.com/word/aller_au_th%C3%A9%C3%A2tre/#fr"]);
 i("pay", "payer", ["http://forvo.com/word/payer/#fr"]);
 */
-i("do they love to play volleyball? Yes, they love to play volleyball", "Est-ce qu'ils aiment faire du volleyball? Oui, ils aiment faire du volleyball", audio.est_cequils_aiment_faire_du_volleyball);
+i("do they love to play volleyball? Yes, they love to play volleyball", "Est-ce qu'ils aiment faire du volleyball? Oui, ils aiment faire du volleyball", a.est_cequils_aiment_faire_du_volleyball);
 /*
 i("what do you say? I say \"it's nice out today!\"", "Qu'est-ce que tu dis? Je dis: \"il fait beau aujourd'hui!\"", ["http://forvo.com/word/qu%27est-ce_que/#fr", "http://forvo.com/word/il_fait_beau_aujourd%27hui/#fr"]);
 i("it's nice out", "il fait beau", ["http://forvo.com/word/il_fait_beau/#fr"]);
 i("do you eat Nutella? No, I do not eat Nutella", "Manges-tu du Nutella? Non, je ne mange pas de Nutella.");
 */
-i("Who wins the Oscar for Best Actress? Julianne Moore wins the Oscar for Best Actress.", "Qui gagne l'Oscar de la meilleure actrice? Julianne Moore gagne l'Oscar de la meilleure actrice.", [].concat(audio.gagne, audio.meilleure, audio.actrice));
+i("Who wins the Oscar for Best Actress? Julianne Moore wins the Oscar for Best Actress.", "Qui gagne l'Oscar de la meilleure actrice? Julianne Moore gagne l'Oscar de la meilleure actrice.", [].concat(a.gagne, a.meilleure, a.actrice));
 /*
 i("She speaks French fluently? Yes, she speaks French fluently.", "Elle parle fran\xe7ais couramment? Oui, elle parle fran\xe7ais couramment.", ["http://forvo.com/word/elle_parle/#fr", "http://forvo.com/word/couramment/#fr"]);
 i("Put the following activities in the correct order", "Mettre les activit\xe9s suivantes dans le bon ordre", ["http://forvo.com/word/mettre/#fr", "http://forvo.com/word/activit%C3%A9s/#fr", "http://forvo.com/word/dans/#fr", "http://forvo.com/word/ordre/#fr"]);
@@ -1258,7 +1260,7 @@ i("students do their exercises", "Les \xe9tudiantes font leurs exercices");
 i("you(pl) want a croissant", "vous voulez un croissant");
 i("we want to eat", " Nous avons envie de manger");
 i("Jessica Chastain is an actress", "Jessica Chastain est une actrice");
-i("this (masculine)", "ce / cet", [].concat(audio.ce, "http://forvo.com/word/cet/#fr"));
+i("this (masculine)", "ce / cet", [].concat(a.ce, "http://forvo.com/word/cet/#fr"));
 i("this (feminine)", "cette", ["http://forvo.com/word/cette/#fr"]);
 i("these", "ces", ["http://forvo.com/word/ces/#fr"]);
 i("this store is beautiful", "Ce magasin est tr\xe8s beau", ["http://forvo.com/word/magasin/#fr"]);
@@ -1274,11 +1276,11 @@ i("I drink water throughout the day", "Je bois de l'eau toute la journ\xe9e", ["
 i("When I was little, I hated broccoli", "Quand j'\xe9tais petit, je d\xe9testais les brocolis");
 i("Chocolate is good with banana", "Le chocolat, c'est bon avec la banane");
 i("You still want some cake?", "Veux tu encore du g\xe2teau?");
-i("Take salad. Take salami.", "Prends de la salade. Prends du salami.", [].concat(audio.du));
+i("Take salad. Take salami.", "Prends de la salade. Prends du salami.", [].concat(a.du));
 i("look for the logical places", "cherchez les endroits logiques", ["http://forvo.com/word/cherchez/#fr", "http://forvo.com/word/endroits/#fr", "http://forvo.com/word/logiques/#fr"]);
 i("We went skiing in winter in the mountains", "On fait du ski en hiver \xe0 la montagne");
 i("We do the shopping at the mall", "Nous faisons les courses au centre commercial.");
-i("We take long walks in the countryside", "On fait des longues promenades \xe0 la campagne.", [].concat("http://forvo.com/word/fait/#fr", "http://forvo.com/word/longues/#fr", "http://forvo.com/word/promenades/#fr", audio.campagne));
+i("We take long walks in the countryside", "On fait des longues promenades \xe0 la campagne.", [].concat("http://forvo.com/word/fait/#fr", "http://forvo.com/word/longues/#fr", "http://forvo.com/word/promenades/#fr", a.campagne));
 i("We go fishing very often in the river", "On p\xeache tr\xe8s souvent dans une rivi\xe8re.");
 i("We sometimes picnic under a tree", "Nous pique-niquons parfois sous un arbre.");
 i("Many students are partying in the club", "Beaucoup d'\xe9tudiants font la f\xeate \xe0 la discoth\xe8que.", ["http://forvo.com/word/faire_la_f%C3%AAte/#fr", "http://forvo.com/word/discoth%C3%A8que/#fr"]);
@@ -1291,31 +1293,31 @@ i("Many people go to the gym", "Beaucoup de gens font de la gym au gymnase.", ["
 //--------------------------------------------------
 // class 8 - 11.19.15
 /*
-i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", [].concat(audio.a_dans_2_semaines, audio.joyeux));
-i("in one week", "dans une semaine", audio.dans_une_semaine);
+i("see you in two weeks and happy Thanksgiving", "\xe0 dans 2 semaines et joyeux Thanksgiving!", [].concat(a.a_dans_2_semaines, a.joyeux));
+i("in one week", "dans une semaine", a.dans_une_semaine);
 // slide 2
-i("see sculptures", "voir des sculptures", audio.sculptures);
-i("cut their long hair", "se couper les cheveux longs", [].concat(audio.se_couper, audio.les_cheveux_longs, audio.longs));
-i("eat a good burger", "manger un bon hamburger", [].concat(audio.manger_un_bon_hamburger, audio.hamburger));
-i("to drink a coffee", "boire un caf\xe9", audio.boire_un_cafe);
+i("see sculptures", "voir des sculptures", a.sculptures);
+i("cut their long hair", "se couper les cheveux longs", [].concat(a.se_couper, a.les_cheveux_longs, a.longs));
+i("eat a good burger", "manger un bon hamburger", [].concat(a.manger_un_bon_hamburger, a.hamburger));
+i("to drink a coffee", "boire un caf\xe9", a.boire_un_cafe);
 i("to work", "travailler", "http://forvo.com/word/travailler/#fr");
-i("shopping", "faire les courses", audio.faire_les_courses);
-i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", [].concat(audio.lire_un_livre_a_lexterieur, audio.lexterieur));
-i("to relax", "se reposer", audio.se_reposer);
-i("fix my car", "r\xe9parer ma voiture", audio.reparer_ma_voiture);
+i("shopping", "faire les courses", a.faire_les_courses);
+i("read a book outside", "lire un livre \xe0 l'ext\xe9rieur", [].concat(a.lire_un_livre_a_lexterieur, a.lexterieur));
+i("to relax", "se reposer", a.se_reposer);
+i("fix my car", "r\xe9parer ma voiture", a.reparer_ma_voiture);
 // slide 3
-i("if these descriptions are true or false", "si ces descriptions sont vraies ou fausses", [].concat(audio.descriptions, audio.vraies, audio.fausses));
+i("if these descriptions are true or false", "si ces descriptions sont vraies ou fausses", [].concat(a.descriptions, a.vraies, a.fausses));
 i("it is in the street", "il est dans la rue");
 i("post office", "bureau de poste");
-i("the town hall", "la mairie", audio.mairie);
-i("beside / next to", "\xe0 c\xf4t\xe9", audio.a_cote);
-i("next to a high school", "\xe0 c\xf4t\xe9 d'un lyc\xe9e", audio.a_cote_dun_lycee);
+i("the town hall", "la mairie", a.mairie);
+i("beside / next to", "\xe0 c\xf4t\xe9", a.a_cote);
+i("next to a high school", "\xe0 c\xf4t\xe9 d'un lyc\xe9e", a.a_cote_dun_lycee);
 */
-i("there is a church facing the public garden", "il y a une église en face du jardin public", [].concat(audio.eglise, audio.en_face, "http://forvo.com/word/jardin/#fr", audio.public));
+i("there is a church facing the public garden", "il y a une église en face du jardin public", [].concat(a.eglise, a.en_face, "http://forvo.com/word/jardin/#fr", a.public));
 i("public garden", "jardin public", ["http://forvo.com/word/jardin/#fr", "http://forvo.com/word/public/#fr"]);
-i("the theater is far from the bank", "le théatre est loin de la banque", [].concat(audio.le_theatre));
-i("the theater", "le théâtre", audio.le_theatre);
-i("the library is in front of the town hall", "la bibliothêque est devant la mairie", [].concat(audio.devant, audio.mairie));
+i("the theater is far from the bank", "le théatre est loin de la banque", [].concat(a.le_theatre));
+i("the theater", "le théâtre", a.le_theatre);
+i("the library is in front of the town hall", "la bibliothêque est devant la mairie", [].concat(a.devant, a.mairie));
 i("there is a sculpture under a tree, on the terrace of the museum", "il y a une sculpture sous un arbre, sur la terrasse du musée");
 i("under", "sous", "http://forvo.com/word/sous/#fr");
 i("tree", "arbre", "http://forvo.com/word/arbre/#fr");
@@ -1323,35 +1325,35 @@ i("terrace", "terrasse", "http://forvo.com/word/terrasse/#fr");
 i("sculpture", "sculpture", "http://forvo.com/word/sculpture/#fr");
 i("museum", "musée", "http://forvo.com/word/mus%C3%A9e/#fr");
 i("on the table", "sur la table", "http://forvo.com/word/sur_la_table/#fr");
-i("the hospital is behind the theater", "l'hôpital est derrière le théâtre", [].concat(audio.derriere));
+i("the hospital is behind the theater", "l'hôpital est derrière le théâtre", [].concat(a.derriere));
 i("hospital", "l'hôpital", "http://forvo.com/word/l%27h%C3%B4pital/#fr");
-i("behind", "derrière", audio.derriere);
+i("behind", "derrière", a.derriere);
 i("the primary school is near the public garden", "l'école primaire est près du jardin public");
 i("primary school", "école primaire", "http://forvo.com/word/%C3%A9cole_primaire/#fr");
 i("near", "près", "http://forvo.com/word/pr%C3%A8s/#fr");
 i("there is a chimney on the roof of the church", "il y a une cheminée sur le toit de l'église");
-i("chimney", "cheminée", audio.la_cheminee);
+i("chimney", "cheminée", a.la_cheminee);
 i("the roof", "le toit", "http://forvo.com/word/le_toit/#fr");
-i("there is a cafe between the high school and the train station", "il y a un café entre le lycée et la gare", [].concat(audio.gare));
+i("there is a cafe between the high school and the train station", "il y a un café entre le lycée et la gare", [].concat(a.gare));
 i("between", "entre", "http://forvo.com/word/entre/#fr");
 i("train station", "gare", "http://forvo.com/word/gare/#fr");
 // slide 4
-i("use the right demonstrative adjective", "utilisez le bon adjectif démonstratif", audio.adjectif_demonstratif);
-i("what do you prefer? This jacket or this suit?", "Qu’est-ce que tu préfères? Cette veste ou ce costume?", [].concat(audio.tu_preferes, audio.cette, audio.costume));
-i("these shoes are very expensive", "ces chaussures sont très chères", audio.cheres);
-i("expensive", "chères", "http://forvo.com/word/ch%C3%A8res/#fr", audio.cheres);
-i("I use this computer for work", "j’utilise cet ordinateur pour travailler", audio.jutilise);
+i("use the right demonstrative adjective", "utilisez le bon adjectif démonstratif", a.adjectif_demonstratif);
+i("what do you prefer? This jacket or this suit?", "Qu’est-ce que tu préfères? Cette veste ou ce costume?", [].concat(a.tu_preferes, a.cette, a.costume));
+i("these shoes are very expensive", "ces chaussures sont très chères", a.cheres);
+i("expensive", "chères", "http://forvo.com/word/ch%C3%A8res/#fr", a.cheres);
+i("I use this computer for work", "j’utilise cet ordinateur pour travailler", a.jutilise);
 //--------------------------------------------------
 //--------------------------------------------------
 /*
-i("me neither", "moi non plus", audio.moi_non_plus);
-i("you neither", "toi non plus", audio.toi_non_plus);
+i("me neither", "moi non plus", a.moi_non_plus);
+i("you neither", "toi non plus", a.toi_non_plus);
 */
-i("see stars", "voir des \xe9toiles", audio.voir_des_etoiles);
+i("see stars", "voir des \xe9toiles", a.voir_des_etoiles);
 /*
 i("word", "mot", "http://forvo.com/word/mot/#fr");
-i("this morning", "ce matin", audio.ce_matin);
-i("I'll take this round loaf of bread [\"country bread\"]", "je vais prendre ce pain de campagne", audio.pain_de_campagne);// text page 222
+i("this morning", "ce matin", a.ce_matin);
+i("I'll take this round loaf of bread [\"country bread\"]", "je vais prendre ce pain de campagne", a.pain_de_campagne);// text page 222
 */
 //--------------------------------------------------
 //--------------------------------------------------
