@@ -453,6 +453,7 @@ audio.costume = ["pronunciation_fr_costume.mp3"];
 audio.eglise = getlist("pronunciation_fr_église.mp3", 1);
 audio.en_face = ["pronunciation_fr_en_face.mp3"];
 audio.public = ["pronunciation_fr_public.mp3"];
+audio.gare = getlist("pronunciation_fr_gare.mp3", 1);
 //--------------------------------------------------
 /*
 audio. = [""];
@@ -1331,7 +1332,7 @@ i("near", "près", "http://forvo.com/word/pr%C3%A8s/#fr");
 i("there is a chimney on the roof of the church", "il y a une cheminée sur le toit de l'église");
 i("chimney", "cheminée", audio.la_cheminee);
 i("the roof", "le toit", "http://forvo.com/word/le_toit/#fr");
-i("there is a cafe between the high school and the train station", "il y a un café entre le lycée et la gare");
+i("there is a cafe between the high school and the train station", "il y a un café entre le lycée et la gare", [].concat(audio.gare));
 i("between", "entre", "http://forvo.com/word/entre/#fr");
 i("train station", "gare", "http://forvo.com/word/gare/#fr");
 // slide 4
@@ -1345,7 +1346,9 @@ i("I use this computer for work", "j’utilise cet ordinateur pour travailler", 
 /*
 i("me neither", "moi non plus", audio.moi_non_plus);
 i("you neither", "toi non plus", audio.toi_non_plus);
+*/
 i("see stars", "voir des \xe9toiles", audio.voir_des_etoiles);
+/*
 i("word", "mot", "http://forvo.com/word/mot/#fr");
 i("this morning", "ce matin", audio.ce_matin);
 i("I'll take this round loaf of bread [\"country bread\"]", "je vais prendre ce pain de campagne", audio.pain_de_campagne);// text page 222
